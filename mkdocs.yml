@@ -18,7 +18,8 @@ pages:
     - Smart Home: examples/smart-home.md
     - Vending Machine: examples/vending-machine.md
     - Wearable Device: examples/wearable-device.md
-- SDK:
-    - C: sdk/c.md
-    - Java: sdk/java.md
-    - PHP: sdk/php.md
+- Integration:
+    - REST: integration/rest.md
+    - C: integration/c.md
+    - Java: integration/java.md
+    - PHP: integration/php.md
