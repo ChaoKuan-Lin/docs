@@ -31,10 +31,8 @@ Operating System: linux, ubuntu, debian
 ## Requirement
 To install `MoBagel-C-SDK`, you need the following tools/libraries in your environment(linux base). 
 
-```
-sudo apt-get update && sudo apt-get install -y cmake libcurl4-openssl-dev g++
-```
 
+* [gcc](https://gcc.gnu.org) - GNU C Compiler.
 * [cmake](https://cmake.org/) - Build libmobagel library.
 * [libcurl](https://curl.haxx.se/libcurl/) - perform HTTP/HTTPS.
  
