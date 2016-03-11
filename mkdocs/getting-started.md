@@ -1,49 +1,54 @@
 # Getting Started
 
-This short tutorial will walk you through the basic setups of your MoBagel account. These are the only steps you need to do.
+---
+## Introduction
 
- 1. Sign up for an account  
- 2. Login to the dashboard  
- 4. Create your Product  
- 5. Create your Device  
- 6. Send a report of your Device   
+MoBagel is an advanced device management and predictive analytics solution for hardware companies. Similar to Google Analytics or Mixpanel for web and mobile analytics, MoBagel is an analytics solution designed specifically for hardware devices. 
+
+This short tutorial will outline the steps to integrate MoBagel with your devices and help you begin tracking your hardware usage today.
 
 ---
-## Sign up for an account
-To use the MoBagel API, you will need a MoBagel Account. [Create an account](https://app.mobagel.com/signup).
+## Creating an account
+If you do not have an account, please create an account [here](https://app.mobagel.com/signup). After you create an account, you will be directed to the dashboard.
 
 ---
-## Login to the dashboard
-Login with your MoBagel account.  
-![login](../img/docs/login.png)
+## Creating a new product
+To use MoBagel, you first have to create a `product`, which is essentially a group of same `devices`. You can create new products in the dashboard. 
+
+For example:     
+
+ * [Product Name] iBulb
+ * [Product Brief] Smart light bulb
+ * [Product Description] Wi-Fi connected light bulb with motion sensors and temperature sensors.
+
+After you create a `product`, you will receive a `product_key`, which will be used to create `devices` later on.
 
 ---
-## Create a new Product
-Your product is an essential part of the MoBagel platform. It's the type of your device, such as Smart Air Conditioner, Smart Lock or Robot Cleaner. For more information about [product](user-guide/introduction.md#product).  
+## Installing SDK on your device
+MoBagel offers SDK in the following languages: 
 
-Fill out the information of your product. *[Examples]  
-   
- 
- 1. `Product Name` : Name of your Product [iConditioner1.0]
- 2. `Product Brief` : Brief description of your Product [Smart air conditioner]
- 3. `Product Description` : Detailed information about your Product  
- [Provide Wi-Fi, 3G/4G, Bluetooth 4.0. APP monitoring and remote control]
+* REST
+* Java
+* NodeJS
+* Objective-C
+* C/C++
+* Python
+* PHP
 
-![add-product](../img/docs/add-product.gif)
 
----
-## Create a new Device
-Device is the basic unit of MoBagel platform. Each device should only belong to a single product, but a product can contain multiple devices. For more information about [device](user-guide/introduction.md#device).
-
-1. Click on the Product you just created
-2. Click `Create Now!`
-3. Pull the bar to your right to choose how many devices you want to add, and click `Create`.  
- 
-After you completed creating devices, you can see the information of your devices on the Device List. If you want to take a look at the details, simply click on it. 
-![device-section](../img/docs/add-device.gif)
+To find the detailed guide of a specific language, please click on 'Integrations' in the menu bar.
 
 ---
-## Send a report of your Device
+## Connecting sensor properties
+
+
+
+---
+## Creating device
+
+
+---
+## Sending first report
 
 To send a report, there are little steps to do:
 
