@@ -27,6 +27,7 @@ For each response, the format will look like:
     {
         "code": $code,
         "message": $message,
+        "timestamp": $timestamp,
         "data": $data
     }
 
@@ -51,7 +52,8 @@ Path: `/products/{product_id}/devices/{device_id}/reports`
 | c_xxx             | string/number | You can put your custom parameter with prefix `c_` |
 
 
-Example: Report basic device with location
+Example: Report basic device with location  
+
 ```http
 POST /products/A001/devices/D001/reports
 
@@ -72,7 +74,7 @@ POST /products/A001/devices/D001/reports
 {
     "data":
     {
-        "state": "FATAL_ERROR",
+        "state": "ERROR",
         "c_id": 5512,
         "c_temperature": 31.5,
         "c_t-unit": "°C",
