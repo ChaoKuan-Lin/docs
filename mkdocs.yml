@@ -8,7 +8,7 @@ theme_dir: cinder
 # theme: united
 
 pages:
-# - Home: index.md
+- Home: getting-started.md
 # - Get Started: get-started.md
 - Getting Started: getting-started.md
 
