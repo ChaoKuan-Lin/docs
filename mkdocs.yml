@@ -1,5 +1,5 @@
 site_name: MoBagel Docs
-site_description: Bagel API Documentation
+site_description: MoBagel API Documentation
 docs_dir: mkdocs
 site_dir: docs
 site_favicon: favicon.png
@@ -8,7 +8,7 @@ theme_dir: cinder
 # theme: united
 
 pages:
-- Home: index.md
+# - Home: index.md
 # - Get Started: get-started.md
 - Getting Started: getting-started.md
 
