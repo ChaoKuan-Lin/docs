@@ -9,13 +9,9 @@ theme_dir: cinder
 
 pages:
 # - Home: index.md
-- Get Started: get-started.md
+# - Get Started: get-started.md
 - Getting Started: getting-started.md
-- User Guide:
-    - Configuration: user-guide/configuration.md
-    - Introduction: user-guide/introduction.md
-    - Authentication: user-guide/authentication.md
-    - Error Handling: user-guide/error-handling.md
+
 # - Examples:
 #     - Smart Home: examples/smart-home.md
 #     - Vending Machine: examples/vending-machine.md
@@ -25,3 +21,8 @@ pages:
     - C: integrations/c.md
     - Java: integrations/java.md
     - PHP: integrations/php.md
+# - User Guide:
+    # - Configuration: user-guide/configuration.md
+# - Glossary: user-guide/introduction.md
+    # - Authentication: user-guide/authentication.md
+    # - Error Handling: user-guide/error-handling.md
