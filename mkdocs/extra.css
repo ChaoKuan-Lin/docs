@@ -1,0 +1,53 @@
+a{
+	color:#ec6952;
+}
+
+a:hover{
+	color:#ec6952;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	color:#ec6952;
+}
+
+body > div.navbar.navbar-default.navbar-fixed-top > div > div.navbar-header > a:hover{
+	color:#ec6952;
+}
+
+.bs-sidenav{
+	font-size:14px;
+}
+
+.bs-sidebar .nav > li > a:hover,
+.bs-sidebar .nav > li > a:focus {
+    text-decoration: none;
+    border-right: 5px solid;
+        background: #f6f6f6;
+}
+
+.bs-sidebar .nav > .active > a, .bs-sidebar .nav > .active:hover > a, .bs-sidebar .nav > .active:focus > a, .bs-sidebar .nav > .active > a:hover {
+    font-weight: bolder;
+    border-right: 5px solid;
+    background: #f6f6f6;
+}
+
+body > footer{
+	display:none;
+}
+
+body > div.navbar.navbar-default.navbar-fixed-top{
+	border-bottom-width: 0px;
+}
+
+body > div.navbar.navbar-default.navbar-fixed-top > div > div.navbar-collapse.collapse > ul.nav.navbar-nav.navbar-right{
+	display:none;
+}
+
+/*ul.nav li.second-level {
+    padding-left:12px;
+}
+
+
+ul.nav li.third-level {
+    padding-left: 24px;
+}*/

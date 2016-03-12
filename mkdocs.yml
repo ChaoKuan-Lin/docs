@@ -1,25 +1,28 @@
-site_name: Bagel API Docs
+site_name: MoBagel Docs
 site_description: Bagel API Documentation
 docs_dir: mkdocs
 site_dir: docs
-
-# theme: readthedocs
+site_favicon: favicon.png
+extra_css: [extra.css]
+theme_dir: cinder
 # theme: united
 
 pages:
-- Home: index.md
-- Get Started: get-started.md
-- User Guide:
-    - Configuration: user-guide/configuration.md
-    - Introduction: user-guide/introduction.md
+# - Home: index.md
+# - Get Started: get-started.md
+- Getting Started: getting-started.md
+
+# - Examples:
+#     - Smart Home: examples/smart-home.md
+#     - Vending Machine: examples/vending-machine.md
+#     - Wearable Device: examples/wearable-device.md
+- Integrations:
+    - REST: integrations/rest.md
+    - C: integrations/c.md
+    - Java: integrations/java.md
+    - PHP: integrations/php.md
+# - User Guide:
+    # - Configuration: user-guide/configuration.md
+# - Glossary: user-guide/introduction.md
     # - Authentication: user-guide/authentication.md
-    - Error Handling: user-guide/error-handling.md
-- Examples:
-    - Smart Home: examples/smart-home.md
-    - Vending Machine: examples/vending-machine.md
-    - Wearable Device: examples/wearable-device.md
-- Integration:
-    - REST: integration/rest.md
-    - C: integration/c.md
-    - Java: integration/java.md
-    - PHP: integration/php.md
+    # - Error Handling: user-guide/error-handling.md
