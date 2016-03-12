@@ -103,5 +103,4 @@ Fail response
 }
 ```
 
-*More information about [error handling](error-handling.md)*
 

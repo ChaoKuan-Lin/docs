@@ -1,3 +1,6 @@
+＃Getting Started
+
+---
 ## Introduction
 
 MoBagel is an advanced device management and predictive analytics solution for hardware companies. Similar to Google Analytics or Mixpanel for web and mobile analytics, MoBagel is an analytics solution designed specifically for hardware devices. 
@@ -10,7 +13,7 @@ If you do not have an account, please create an account [here](https://app.mobag
 
 ---
 ## Creating a new product
-To use MoBagel, you first have to create a `product`, which is essentially a group of same `devices`. You can create new products in the dashboard. 
+To use MoBagel, you first have to create a `product`, which is essentially a group of same `device`. You can create new products in the dashboard. 
 
 For example:     
 
@@ -18,7 +21,7 @@ For example:
  * [Product Brief] Smart light bulb
  * [Product Description] Wi-Fi connected light bulb with motion sensors and temperature sensors.
 
-After you create a `product`, the system will generate a `product_key`, which will be used to create `devices` later on.
+After you create a `product`, the system will generate a `product_key`, which will be used to create `device` later on.
 
 ---
 ## Installing SDK on your device
