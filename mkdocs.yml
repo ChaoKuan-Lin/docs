@@ -10,7 +10,7 @@ theme_dir: cinder
 pages:
 # - Home: index.md
 # - Get Started: get-started.md
-- Getting Started: getting-started.md
+- Getting Started: index.md
 
 # - Examples:
 #     - Smart Home: examples/smart-home.md
