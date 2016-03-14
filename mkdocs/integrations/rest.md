@@ -16,9 +16,11 @@ This API is used to register a new device for your product. You can simply use t
 + Header:
     * Product-Key: The product key you get on the dashboard
 + Body:
+
 | Parameter        | Type          | Description                       |
 | :--:             | :-----:       | :----                             |
 | None            |         |   |
+
 + Example:
 ```
 {}
