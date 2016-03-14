@@ -1,5 +1,5 @@
 site_name: MoBagel Docs
-site_description: Bagel API Documentation
+site_description: MoBagel API Documentation
 docs_dir: mkdocs
 site_dir: docs
 site_favicon: favicon.png
@@ -10,7 +10,7 @@ theme_dir: cinder
 pages:
 # - Home: index.md
 # - Get Started: get-started.md
-- Getting Started: getting-started.md
+- Getting Started: index.md
 
 # - Examples:
 #     - Smart Home: examples/smart-home.md
@@ -19,8 +19,8 @@ pages:
 - Integrations:
     - REST: integrations/rest.md
     - C: integrations/c.md
-    - Java: integrations/java.md
-    - PHP: integrations/php.md
+    # - Java: integrations/java.md
+    # - PHP: integrations/php.md
 # - User Guide:
     # - Configuration: user-guide/configuration.md
 # - Glossary: user-guide/introduction.md

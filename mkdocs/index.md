@@ -1,33 +1,80 @@
-# MoBagel
-
-MoBagel is a company based in Silicon Valley & Taipei. We provide analytics software for hardware manufacturers and designers. 
-
-We enable our customers to:
-
-+ Remotely monitor devices performance in real-time
-+ Optimize product features by analyzing usage behavior
-+ Revolutionize CRM by proactively engaging with customers rather than passively waiting for reports or complaints
-
-![brief](../img/docs/brief.png)
+# Getting Started
 
 ---
+## Introduction
 
-## Overview
+MoBagel is an advanced device management and predictive analytics solution for hardware companies. Similar to Google Analytics or Mixpanel for web and mobile analytics, MoBagel is an analytics solution designed specifically for hardware devices. 
 
-The MoBagel API allows users to connect their IoT devices with MoBagel’s powerful cloud analytics platform, which processes data in real-time and provides highly customizable dashboards to help users make data-driven solutions.
-
-![overview](../img/docs/overview.png)
-
----
-
-## Related links
-1. [Official Website](http://www.mobagel.com)
-3. [Facebook](https://www.facebook.com/mobagel)
-4. [AngelList](https://angel.co/mobagel)
-5. [LinkedIn](https://www.linkedin.com/company/mobagel)
+This short tutorial will outline the steps to integrate MoBagel with your devices and help you begin tracking your hardware usage today.
 
 ---
+## Creating an account
+If you do not have an account, please create an account [here](https://app.mobagel.com/signup). After you create an account, you will be directed to the dashboard.
 
-## Contact us
-Welcome to contact us: [us@mobagel.com](mailto:us@mobagel.com)  
-Or looking for any support: [support@mobagel.com](mailto:support@mobagel.com)
+---
+## Creating a new product
+To use MoBagel, you first have to create a `product`, which is essentially a group of same `device`. You can create new products in the dashboard. 
+
+For example:     
+
+ * [Product Name] iBulb
+ * [Product Brief] Smart light bulb
+ * [Product Description] Wi-Fi connected light bulb with motion sensors and temperature sensors.
+
+After you create a `product`, the system will generate a `product_key`, which will be used to create `device` later on.
+
+---
+## Installing SDK on your device
+MoBagel offers SDK in the following languages: 
+
+* REST
+* Java
+* NodeJS
+* Objective-C
+* C/C++
+* Python
+* PHP
+
+
+To find the detailed guide of a specific language, please click on 'Integrations' in the menu bar.
+
+---
+## Register your first device
+
+Once you generated a `product_key` from the dashboard, you can use the `product_key` and `registerDevice` function to register a `device` in your application.
+
+```
+
+    // create mobagel object
+    string product_key = "1111111111222222222233333333334444444444555555555566666666667777";
+    MoBagel *mobagel = new MoBagel(product_key);
+
+    // register a device
+    string device_key = mobagel->registerDevice();
+
+```
+
+<!-- -
+## Connecting sensor properties
+
+
+
+
+
+ -->
+---
+## Sending first report
+
+Once you connect the sensor properties, you can generate a report with the `sendReport` function.
+
+```
+    // sample report
+    "data":
+    {
+        "state": "normal",
+        "c_humidity": 30,
+        "c_function": "humidify" , 
+        "c_temperature": 80 
+    }
+
+```
