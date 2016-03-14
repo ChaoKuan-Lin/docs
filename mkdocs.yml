@@ -19,8 +19,8 @@ pages:
 - Integrations:
     - REST: integrations/rest.md
     - C: integrations/c.md
-    - Java: integrations/java.md
-    - PHP: integrations/php.md
+    # - Java: integrations/java.md
+    # - PHP: integrations/php.md
 # - User Guide:
     # - Configuration: user-guide/configuration.md
 # - Glossary: user-guide/introduction.md

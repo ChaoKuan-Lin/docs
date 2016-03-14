@@ -54,14 +54,14 @@ Once you generated a `product_key` from the dashboard, you can use the `product_
 
 ```
 
----
+<!-- -
 ## Connecting sensor properties
 
 
 
 
 
-
+ -->
 ---
 ## Sending first report
 
