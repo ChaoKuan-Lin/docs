@@ -1,14 +1,14 @@
 # REST API
 
-## Overview
+# Overview
 This section covers the basics of the MoBagel API and how you can utilize MoBagel's platform to improve your IoT devices.
 
-## API List
+# API List
 
 + Register API: Register a new device
 + Report API: Send a report
 
-## Register API
+# Register API
 This API is used to register a new device for your product. You can simply use this API to generate mass devices to do mass deployment. However, your devices is limited. Please use this API carefully to avoid reaching the limitation of your account.
 
 ### Request
@@ -48,7 +48,7 @@ Fail response
 }
 ```
 
-## Report API
+### Report API
 This API is used to report the state of your devices. The report content can be customised to what you want. If you would like to report the temperature of your device, just use add `c_` as the prefix.
 ![report](../../img/docs/report.png)
 
