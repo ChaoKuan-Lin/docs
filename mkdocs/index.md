@@ -55,14 +55,28 @@ Once you generated a `product_key` from the dashboard, you can use the `product_
 ```
 
 ---
-# Connecting sensor properties
+# Connecting custom properties or events
 
-In your device application, you will need to connect your sensor properties to prepare your report.
+In your device application, you will need to prepare your report before sending it to MoBagel.
 
-For example:
+* Determining different `states` of your devices to send along with your report
 
-* Determining different `states`
-* Adding custom sensor properties beginning with `c_`
+```
+//example states
+
+"state": "normal"
+"state": "error"
+```
+
+* Adding custom properties or events with a key beginning with `c_`
+    
+```
+//example custom properties or events
+
+"c_temperature": 30
+"c_event": “turned_on"
+```
+
 * Deciding when to send reports (time, frequency, events)
 
 ---

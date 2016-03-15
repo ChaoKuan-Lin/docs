@@ -17,7 +17,7 @@ For example:
  * [Product Brief] Smart light bulb
  * [Product Description] Wi-Fi connected light bulb with motion sensors and temperature sensors.
 
-## Locating your product_key
+## Locating your product key
 After you create a `product`, the system will generate a `product_key`, which will be used to create `device` later on.
 
 To find your `product_key`, go to Overview -> Product List -> Click on your product.
@@ -140,14 +140,28 @@ You can then use the `registerDevice` function to register a `device` in your ap
 string device_key = mobagel->registerDevice();
 ```
 
-## Connecting sensor properties
+## Connecting custom properties or events
 
-In your actual device application, you will need to connect your sensor properties to prepare your report.
+In your device application, you will need to prepare your report before sending it to MoBagel.
 
-For example:
+* Determining different `states` of your devices to send along with your report
 
-* Determining different `states`
-* Adding custom sensor properties beginning with `c_`
+```
+//example states
+
+"state": "normal"
+"state": "error"
+```
+
+* Adding custom properties or events with a key beginning with `c_`
+    
+```
+//example custom properties or events
+
+"c_temperature": 30
+"c_event": “turned_on"
+```
+
 * Deciding when to send reports (time, frequency, events)
 
 ## Sending first report
