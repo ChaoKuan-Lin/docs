@@ -1,5 +1,5 @@
 # MoBagel-C-SDK   
-Use MoBagel-C-SDK to quickly install MoBagel to your device(s). MoBagel-C-SDK is a modern, open-source C library that makes it easy to integrate your C application with MoBagel. 
+Use MoBagel-C-SDK to quickly install MoBagel to your device(s). MoBagel-C-SDK is an open-source C library that makes it easy to integrate your C application with MoBagel. 
 
 
 ---
@@ -9,7 +9,7 @@ Use MoBagel-C-SDK to quickly install MoBagel to your device(s). MoBagel-C-SDK is
 If you do not have an account, please create an account [here](https://app.mobagel.com/signup). After you create an account, you will be directed to the dashboard.
 
 ## Creating a new product  
-To use MoBagel, you first have to create a `product`, which is essentially a group of same `device`. You can create new products in the dashboard. 
+To use MoBagel, you first have to create a `product`, which is a parent class of a `device`. You can create new products in the dashboard. 
 
 For example:     
 
