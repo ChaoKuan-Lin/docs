@@ -17,7 +17,10 @@ For example:
  * [Product Brief] Smart light bulb
  * [Product Description] Wi-Fi connected light bulb with motion sensors and temperature sensors.
 
+## Locating your product_key
 After you create a `product`, the system will generate a `product_key`, which will be used to create `device` later on.
+
+To find your `product_key`, go to Overview -> Product List -> Click on your product.
 
 
 ---
