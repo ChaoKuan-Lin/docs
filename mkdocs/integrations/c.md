@@ -159,7 +159,7 @@ In your device application, you will need to prepare your report before sending 
 //example custom properties or events
 
 "c_temperature": 30
-"c_event": “turned_on"
+"c_event": "turned_on"
 ```
 
 * Deciding when to send reports (time, frequency, events)
