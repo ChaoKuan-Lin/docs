@@ -23,6 +23,6 @@ pages:
     # - PHP: integrations/php.md
 # - User Guide:
     # - Configuration: user-guide/configuration.md
-# - Glossary: user-guide/introduction.md
+- Glossary: glossary.md
     # - Authentication: user-guide/authentication.md
     # - Error Handling: user-guide/error-handling.md

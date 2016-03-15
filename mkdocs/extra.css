@@ -51,3 +51,7 @@ ul.nav li.second-level {
 ul.nav li.third-level {
     padding-left: 24px;
 }
+
+.bs-sidebar .nav > li > a {
+	padding: 3px 20px;
+}
