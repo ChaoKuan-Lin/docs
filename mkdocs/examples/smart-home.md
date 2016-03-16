@@ -64,8 +64,6 @@ POST /products/A001/devices/D001/reports
 ```
 
 
-## Smart Lock
-
 ## Smart Air Cleaner
 
 Smart Air Cleaner can see the air and keep harmful particles outdoor initiatively. It works behind the scenes to help users breathe cleaner, fresher air in their home.   
@@ -94,7 +92,7 @@ Every 5 minutes, the Smart Air Cleaner will send a report up to the cloud.
 
 Example: Report basic device state with location
 ```http
-POST /products/A001/devices/D001/reports
+POST /products/A002/devices/D001/reports
 
 {
     "data":
@@ -118,17 +116,13 @@ POST /products/A002/devices/D001/reports
         "c_id": 1612,
         "c_mode": "night mode",
         "c_speed": "high",
-        "c_air-quality": "2.7",
+        "c_air-quality": 2.7,
         "c_air-unit": "PM",
         "c_fan-status": "Normal",
         "c_compressor": "Normal"
-        "c_filter-usage": "76",
+        "c_filter-usage": 76,
         "c_filter-unit": "%",
 
     }
 }
 ```
-
-## Smart Robot Cleaner
-
-## Smart TV
