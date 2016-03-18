@@ -35,7 +35,11 @@ POST /products/A003/devices/D001/reports
     }
 }
 
-```http
+```
+Example: Report custom device   
+(Including Device-ID, Mode, Speeed, Air-Quality, Fan-Status, Compressor-Status, Filter-Usage.)
+
+```json
 POST /products/A003/devices/D001/reports
 
 {
@@ -47,12 +51,12 @@ POST /products/A003/devices/D001/reports
         "c_temp-unit": "°C",
         "c_coin": 47,
         "c_coin-unit": "%",
-        "c_product1": 1,
-        "c_p1-unit":"times"
-        "c_product2": 3,
-        "c_p2-unit":"times"
-        "c_product6": 1,
-        "c_p6-unit":"times"
+        "c_product_1": 1,
+        "c_p1-unit": "times",
+        "c_product_2": 3,
+        "c_p2-unit": "times",
+        "c_product_6": 1,
+        "c_p6-unit": "times",
         "c_female": 2,
         "c_male": 3,
         "c_age-10~15": 0,
