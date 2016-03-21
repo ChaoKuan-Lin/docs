@@ -19,6 +19,8 @@ pages:
 - Integrations:
     - REST: integrations/rest.md
     - C: integrations/c.md
+    - iOS Objective C: integrations/iOS_objective_c.md
+    - iOS Swift: integrations/iOS_swift.md
     # - Java: integrations/java.md
     # - PHP: integrations/php.md
 # - User Guide:

@@ -15,7 +15,7 @@ body > div.navbar.navbar-default.navbar-fixed-top > div > div.navbar-header > a:
 }
 
 .bs-sidenav{
-	font-size:14px;
+	font-size:12px;
 }
 
 .bs-sidebar .nav > li > a:hover,
@@ -53,5 +53,5 @@ ul.nav li.third-level {
 }
 
 .bs-sidebar .nav > li > a {
-	padding: 3px 20px;
+	padding: 3px 15px;
 }

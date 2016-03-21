@@ -26,8 +26,12 @@ To find your `product_key`, go to Overview -> Product List -> Click on your prod
 ---
 # Installation
 
-## Supported Platforms
-Operating System: Linux, ubuntu, debian
+## Supported Platform
+
+* Linux
+* ubuntu
+* debian
+​
 
 ## Requirement
 To install `MoBagel C SDK` on your device, you need the following tools/libraries in your Linux based environment. 
