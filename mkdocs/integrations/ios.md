@@ -1,10 +1,8 @@
-# MoBagel-ios-SDK   
-Use MoBagel-ios-SDK to quickly install MoBagel to your device(s). MoBagel-ios-SDK is an open-source ios library that makes it easy to integrate your ios application with MoBagel. 
-​
+# MoBagel iOS SDK   
+Use MoBagel iOS SDK to quickly install MoBagel to your device(s).  MoBagel iOS SDK is an open-source ios library that makes it easy to integrate your ios application with MoBagel. 
 ​
 ---
 # Preparation
-​
 ## Creating an account
 If you do not have an account, please create an account [here](https://app.mobagel.com/signup). After you create an account, you will be directed to the dashboard.
 ​
@@ -25,12 +23,11 @@ To find your `product_key`, go to Overview -> Product List -> Click on your prod
 ​
 ---
 # Installation
-​
 ## Supported Platform
 Platform: ios
 ​
 ## Requirement
-To install `MoBagel-ios-SDK` on your device, you need the following tool in your ios environment.  
+To install `MoBagel iOS SDK` on your device, you need the following tool in your ios environment.  
 ​
 'AFNetworking', '~> 2.3'
 ​
@@ -41,16 +38,14 @@ MoBagelSDK is available through [CocoaPods](http://cocoapods.org/). To install i
 pod "MoBagel", '~> 1.0.0'
 ```
 ​
-​
 ---
 # Example Walkthrough (Objective-C)
-​
 ## Full Example
 ​
 Please refer to example codes in [Github](https://github.com/MOBAGEL/mobagel-ios-sdk/tree/master/Example)
 ​
 ## Import Framework
-Please import MoBagel-ios-SDK as following.
+Please import MoBagel iOS SDK as following.
 ​
 ```
  #import <MoBagel/MoBagel.h>
@@ -150,7 +145,7 @@ NSDictionary* reportData = @{
 Please refer to example codes in [Github](https://github.com/MOBAGEL/mobagel-ios-sdk/tree/master/Example)
 ​
 ## Import Framework
-Please import MoBagel-ios-SDK as following.
+Please import MoBagel iOS SDK as following.
 ​
 ```
  #import Mobagel

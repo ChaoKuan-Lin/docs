@@ -1,5 +1,5 @@
-# MoBagel-python-SDK   
-Use MoBagel-python-SDK to quickly install MoBagel to your device(s). MoBagel-python-SDK is an open-source python library that makes it easy to integrate your python application with MoBagel. 
+# MoBagel Python SDK   
+Use MoBagel Python SDK to quickly install MoBagel to your device(s). MoBagel Python SDK is an open-source python library that makes it easy to integrate your python application with MoBagel. 
 
 ---
 

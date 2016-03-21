@@ -1,5 +1,5 @@
-# MoBagel-C-SDK   
-Use MoBagel-C-SDK to quickly install MoBagel to your device(s). MoBagel-C-SDK is an open-source C library that makes it easy to integrate your C application with MoBagel. 
+# MoBagel C SDK
+Use MoBagel C SDK to quickly install MoBagel to your device(s). MoBagel C SDK is an open-source C library that makes it easy to integrate your C application with MoBagel. 
 
 
 ---
@@ -30,13 +30,13 @@ To find your `product_key`, go to Overview -> Product List -> Click on your prod
 Operating System: Linux, ubuntu, debian
 
 ## Requirement
-To install `MoBagel-C-SDK` on your device, you need the following tools/libraries in your Linux based environment. 
+To install `MoBagel C SDK` on your device, you need the following tools/libraries in your Linux based environment. 
 
 * [gcc](https://gcc.gnu.org) - GNU C Compiler.
 * [cmake](https://cmake.org/) - Build libmobagel library.
 * [libcurl](https://curl.haxx.se/libcurl/) - perform HTTP/HTTPS.
  
-If do you not have these tools/libraries, `MoBagel-C-SDK` will install these for you.
+If do you not have these tools/libraries, `MoBagel C SDK` will install these for you.
 
 ## Installing SDK
 
