@@ -2,7 +2,7 @@
 
 ## Smart Air Conditioner
 
-![report](../../img/docs/report.png)
+![airconditioner](../../img/docs/airconditioner.png)
 
 Smart Air Conditioner has the brains to minimize energy usage without sacrificing comfort. With a host of automation features, it improves user experience and enhance convenience. 
 
