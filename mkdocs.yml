@@ -22,6 +22,7 @@ pages:
     - python: integrations/python.md
     - node: integrations/node.md
     - java: integrations/java.md
+    - php: integrations/php.md
     - iOS Swift: integrations/ios_swift.md
     - iOS Objective C: integrations/ios_objective_c.md
     # - Java: integrations/java.md
