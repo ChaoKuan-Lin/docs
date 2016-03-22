@@ -19,6 +19,9 @@ pages:
 - Integrations:
     - REST: integrations/rest.md
     - C: integrations/c.md
+    - iOS: integrations/ios.md
+    - python: integrations/python.md
+    - node: integrations/node.md
     # - Java: integrations/java.md
     # - PHP: integrations/php.md
 # - User Guide:
@@ -26,3 +29,7 @@ pages:
 - Glossary: glossary.md
     # - Authentication: user-guide/authentication.md
     # - Error Handling: user-guide/error-handling.md
+- Use Cases: 
+    - Smart Home: cases/smart-home.md
+    - Vending Machine: cases/vending-machine.md
+    - Wearable Device: cases/wearable-device.md

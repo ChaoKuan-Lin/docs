@@ -1,6 +1,7 @@
 # Vending Machine
 
 ## Smart Vending Machine
+![vending machine](../../img/docs/vending.png)
 
 Smart Vending Machine technology is evolving quickly, and new machines are engaging shoppers like never before with touch-screen controls,  gesture-based interaction, and cashless payment. Unlike the past, more and more information are collected. MoBagel can analyze all these customer data to advance inventory management and improve product forecasting. Through real-time monitor and predictive analytics, you can also visualize your vending machine status on MoBagel dashboard and make sure everything is alright.
 

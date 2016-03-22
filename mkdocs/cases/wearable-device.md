@@ -1,5 +1,6 @@
 # Wearable Device
 
-## Report By Bluetooth
+## Smart Watch
+![smartwatch](../../img/docs/smartwatch.png)
 
 ## 
