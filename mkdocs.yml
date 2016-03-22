@@ -19,14 +19,11 @@ pages:
 - Integrations:
     - REST: integrations/rest.md
     - C: integrations/c.md
-<<<<<<< HEAD
-    - iOS: integrations/ios.md
     - python: integrations/python.md
     - node: integrations/node.md
-=======
-    - iOS Objective C: integrations/ios_objective_c.md
+    - java: integrations/java.md
     - iOS Swift: integrations/ios_swift.md
->>>>>>> b228e72ccf4d8679d5eeff56caf9618e7cbe6904
+    - iOS Objective C: integrations/ios_objective_c.md
     # - Java: integrations/java.md
     # - PHP: integrations/php.md
 # - User Guide:

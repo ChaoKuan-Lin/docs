@@ -31,7 +31,7 @@ To find your `product_key`, go to Overview -> Product List -> Click on your prod
 
 ## Requirement
 
-* 'AFNetworking', '~> 2.3'
+['AFNetworking', '~> 2.3'](https://github.com/AFNetworking/AFNetworking)
 ​
 
 ## Installing SDK
