@@ -1,6 +1,6 @@
 # Examples
 
-In order tuse MoBagel to effectively manage and analyze your devices, you will need address the two following questions about your product:
+In order to use MoBagel to effectively manage and analyze your devices, you will need address the two following questions about your product:
 
 ## What custom properties or events should I add to my report? 
 
@@ -80,31 +80,27 @@ POST /products/A001/devices/D001/reports
 
 ## Smart Air Cleaner
 
-Smart Air Cleaner can see the air and keep harmful particles outdoor initiatively. It works behind the scenes to help users breathe cleaner, fresher air in their home.   
-What enhances purchasing intent?   
-It's the automatic detection and intelligent functions. Your product can keep consumers as comfortable as possible while saving them money and providing them a cleaner environment.  
-With MoBagel device management service, you can easily visualize problems and advance user experience. 
+If you have a smart air cleaner, you might ask yourself these questions to help you decide which custom properties or events to track:
 
-#### What report needs?
-How to get a useful report instead of unorganized, messy information?  
-First, you'll have to decide what you want to know from the users.  
-Such as how do users actually use your product,  
-when does the user turn on/off,  
-which speed mode does the user prefer,  
-How's the air quality?  
-Moreover, you can visualise user's bedtime through switching the mode to night mode.  
-Is the fan running normally or too much fluff sticking to it?  
-You might also want to know about  the status of the filter, in order to proactively sell new filters to the user. 
-  
 
-Every report will contain rich metadata according to your custom settings. You can easily monitor and manage your devices on MoBagel's dashboard. Moreover, with real-time predictive analytics, preventing errors is also the main function of our service.
+* What do I want to know about my users?
 
-#### Frequency of sending report?
-According to different products, you can set the frequency of sending report.  
-As to Smart Air Cleaner, our default value will be 5 minutes.
-Every 5 minutes, the Smart Air Cleaner will send a report up to the cloud.
+* How can I track these information?   
 
-Example: Report basic device state with location
+* How do they actually use your product?  
+
+* How often does the user use the product and under what conditions?
+
+* How long do your air filters last?
+
+* What season of the year do your customers use the air clean the most?
+
+* What feature does the user love most about your product?
+
+* What is the air quality of the user's room like? Could you possibly use this information to upsell more products?
+
+### Report basic device state with location
+
 ```http
 POST /products/A002/devices/D001/reports
 
@@ -117,7 +113,8 @@ POST /products/A002/devices/D001/reports
     }
 }
 ```
-Example: Report custom device   
+### Report custom device  
+
 (Including Device-ID, Mode, Speeed, Air-Quality, Fan-Status, Compressor-Status, Filter-Usage.)
 
 ```http
@@ -145,29 +142,24 @@ POST /products/A002/devices/D001/reports
 # Example: Vending Machine
 
 ## Smart Vending Machine
-![vending machine](../../img/docs/vending.png)
 
-Smart Vending Machine technology is evolving quickly, and new machines are engaging shoppers like never before with touch-screen controls,  gesture-based interaction, and cashless payment. Unlike the past, more and more information are collected. MoBagel can analyze all these customer data to advance inventory management and improve product forecasting. Through real-time monitor and predictive analytics, you can also visualize your vending machine status on MoBagel dashboard and make sure everything is alright.
+Smart Vending Machine technology is evolving quickly, and new machines are engaging with customers like never before with touch-screen controls,  gesture-based interaction, and cashless payment. Unlike the past, vendors can now gain powerful insights about their vending machines and use them to maximize their business objectives. MoBagel can convert customer data to advanced inventory management and use predictive analytics to improve product forecasting. Through real-time monitor and predictive analytics, you can visualize and analyze your entire line of vending machines in a simple, easy-to-use dashboard.
 
-## What report needs?
-What kind of useful information should you include in the report?    
-In other words, what do you want to know from the shoppers and the machines?    
-Is the machine temperature normal,  
-Is there enough coins,  
-What kind of products and how many of them are sold in a period of time.  
-We can also collect information from the customers.   
-Such as the gender/age/emotion of the customers.  
-What kind of customers buy what type of products?  
-Does the weather influence specific product sales number?  
+Possible questions to ask yourself:
 
-Every report will contain rich metadata according to your custom settings. You can easily monitor and manage your devices on MoBagel's dashboard. With real-time predictive analytics, preventing errors is also the main function of our service.
+* What are the top factors that contribute to succcessful sales?
 
-## Frequency of sending report?
-According to different products, you can set the frequency of sending report.    
-As to Smart Vending Machine, our default value will be 10 minutes.  
-Every 10 minutes, the Smart Vending Machine will send a report up to the cloud.
+* What is your top selling product, and how many of them will be sold next month?
 
-Example: Report basic device state with location
+* How do I make the most efficient maintenance routes?
+
+* Is the machine currently functional? When will the next malfunction be?
+
+* How do your customers behave under different locations and times?
+
+
+### Report basic device state with location
+
 ```http
 POST /products/A003/devices/D001/reports
 
@@ -181,7 +173,9 @@ POST /products/A003/devices/D001/reports
 }
 
 ```
-Example: Report custom device   
+
+### Report custom device   
+
 (Including Device-ID, Mode, Speeed, Air-Quality, Fan-Status, Compressor-Status, Filter-Usage.)
 
 ```json
