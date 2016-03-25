@@ -8,31 +8,24 @@ theme_dir: cinder
 # theme: united
 
 pages:
-# - Home: index.md
-# - Get Started: get-started.md
+
 - Getting Started: index.md
 
-# - Examples:
-#     - Smart Home: examples/smart-home.md
-#     - Vending Machine: examples/vending-machine.md
-#     - Wearable Device: examples/wearable-device.md
 - Integrations:
     - REST: integrations/rest.md
+    # - python: integrations/python.md
+    - Node: integrations/node.md
+    - Java: integrations/java.md
+    - PHP: integrations/php.md
     - C: integrations/c.md
-    - python: integrations/python.md
-    - node: integrations/node.md
-    - java: integrations/java.md
-    - php: integrations/php.md
     - iOS Swift: integrations/ios_swift.md
     - iOS Objective C: integrations/ios_objective_c.md
-    # - Java: integrations/java.md
-    # - PHP: integrations/php.md
-# - User Guide:
-    # - Configuration: user-guide/configuration.md
-- Glossary: glossary.md
-    # - Authentication: user-guide/authentication.md
-    # - Error Handling: user-guide/error-handling.md
-- Use Cases: 
-    - Smart Home: cases/smart-home.md
-    - Vending Machine: cases/vending-machine.md
-    - Wearable Device: cases/wearable-device.md
+
+- Reference:
+    - Glossary: glossary.md
+    - Examples: examples.md
+
+# - Use Cases: 
+#     - Smart Home: cases/smart-home.md
+#     - Vending Machine: cases/vending-machine.md
+#     - Wearable Device: cases/wearable-device.md
