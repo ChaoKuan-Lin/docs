@@ -1,39 +1,40 @@
 # Examples
 
-In order to effectively use MoBagel to manage and analyze your devices, you will need address the two following questions about your product:
+In order tuse MoBagel to effectively manage and analyze your devices, you will need address the two following questions about your product:
 
-1. What custom properties should I add to my report? 
+## What custom properties or events should I add to my report? 
 
-2. How often should I sent reports?
+Custom properties or events enables you to track anything that your hardware allows, such as temperature sensors, humidity sensors, accelerometers, feature usage, and status of components. To determine which custom properties to add, you should first list out all of the possible properties that your hardware is capable of tracking, and then ask yourself which of these properties would help your device management and analytics, such as which properties will lead to malfunctioning, or which properties will give you the customer insights that you want.
+
+## How often should I send reports?
+
+The frequency of sending reports varies according to the type of your product. It can range from once every few days to once every few seconds. If your product requires constant and careful monitoring, such as industrial machines or security systems, then you should send reports frequently in order to avoid delays in error detection. 
 
 ---
-## Smart Home
+# Example: Smart Home
 
-### Smart Air Conditioner
+## Smart Air Conditioner
 
-![airconditioner](../../img/docs/airconditioner.png)
-
-Smart Air Conditioner has the brains to minimize energy usage without sacrificing comfort. With a host of automation features, it improves user experience and enhance convenience. 
-
-#### What report needs?
-So what kind of information should you include in the report?  
-In other words, what do you want to know from users?   
-How do they actually use your product?  
-What exact temperature does the user prefer?  
-Is the compressor working alright?  
-Is the ambient temperature abnormal?  
-Wants to learn user’s weekly time table and preference to turn on the air-conditioner?  
-Or maybe in a complicated scenario, whether people turned their air conditioners off when they left home to save money and conserve energy or left them on to ensure that their home was cool and comfortable when they returned?  
-
-Every report will contain rich metadata according to your custom settings. You can easily monitor and manage your devices on MoBagel's dashboard. Moreover, with real-time predictive analytics, preventing errors is also the main function of our service. 
-
-#### Frequency of sending report?
-According to different products, you can set the frequency of sending report.  
-As to Smart Air Conditioner, our default value will be 1 minute.
-Every minute, the Smart Air Conditioner will send a report up to the cloud.
+If you have a smart air conditioner, you might ask yourself these questions to help you decide which custom properties or events to track:
 
 
-Example: Report basic device state with location
+* What do I want to know about my users?
+
+* How can I track these information?   
+
+* How do they actually use your product?  
+
+* What is the user's exact temperature preference over the course of a day/month/year?  
+
+* Is the compressor functional?
+
+* Is the ambient temperature abnormal?  
+
+* Is the air conditioner actually saving the user on energy bills?
+
+
+### Report basic device state with location
+
 ```http
 POST /products/A001/devices/D001/reports
 
@@ -46,8 +47,10 @@ POST /products/A001/devices/D001/reports
     }
 }
 ```
-Example: Report custom device   
-(Including Device-ID, Mode, Temperature, Ambient-Temperature, Fan-Speed, Humidity, Power-Consumption, Power-Stability and Compressor-Status.)
+
+### Report custom device 
+
+(including Device-ID, Mode, Temperature, Ambient-Temperature, Fan-Speed, Humidity, Power-Consumption, Power-Stability and Compressor-Status.)
 
 ```http
 POST /products/A001/devices/D001/reports
@@ -75,7 +78,7 @@ POST /products/A001/devices/D001/reports
 ```
 
 
-### Smart Air Cleaner
+## Smart Air Cleaner
 
 Smart Air Cleaner can see the air and keep harmful particles outdoor initiatively. It works behind the scenes to help users breathe cleaner, fresher air in their home.   
 What enhances purchasing intent?   
@@ -139,14 +142,14 @@ POST /products/A002/devices/D001/reports
 ```
 
 ---
-## Vending Machine
+# Example: Vending Machine
 
-### Smart Vending Machine
+## Smart Vending Machine
 ![vending machine](../../img/docs/vending.png)
 
 Smart Vending Machine technology is evolving quickly, and new machines are engaging shoppers like never before with touch-screen controls,  gesture-based interaction, and cashless payment. Unlike the past, more and more information are collected. MoBagel can analyze all these customer data to advance inventory management and improve product forecasting. Through real-time monitor and predictive analytics, you can also visualize your vending machine status on MoBagel dashboard and make sure everything is alright.
 
-### What report needs?
+## What report needs?
 What kind of useful information should you include in the report?    
 In other words, what do you want to know from the shoppers and the machines?    
 Is the machine temperature normal,  
@@ -159,7 +162,7 @@ Does the weather influence specific product sales number?
 
 Every report will contain rich metadata according to your custom settings. You can easily monitor and manage your devices on MoBagel's dashboard. With real-time predictive analytics, preventing errors is also the main function of our service.
 
-### Frequency of sending report?
+## Frequency of sending report?
 According to different products, you can set the frequency of sending report.    
 As to Smart Vending Machine, our default value will be 10 minutes.  
 Every 10 minutes, the Smart Vending Machine will send a report up to the cloud.
