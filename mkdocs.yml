@@ -5,6 +5,7 @@ site_dir: docs
 site_favicon: favicon.png
 extra_css: [extra.css]
 theme_dir: cinder
+google_analytics: ['UA-70490559-1', 'mobagel.com']
 # theme: united
 
 pages:
