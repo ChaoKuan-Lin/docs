@@ -25,7 +25,7 @@ To find your `product_key`, go to Overview -> Product List -> Click on your prod
 ---
 # Installation
 ## Installing SDK
-You can install MoBagel Java SDK from [HERE.](GitHubhttps://github.com/MOBAGEL/mobagel-java-sdk/blob/master/mobagel-sdk.jar)
+You can install MoBagel Java SDK from [here.](https://github.com/MOBAGEL/mobagel-java-sdk/blob/master/mobagel-sdk.jar)
 
 ---
 # Example Walkthrough
@@ -91,7 +91,7 @@ In your device application, you will need to prepare your report before sending 
 
 ## Sending first report
 ```
-MoBagelDevice device = MoBagelDevice(key);
+MoBagelDevice device = new MoBagelDevice(key);
 final HashMap map = new HashMap<>();
 map.put("state", "Put your device state here"); // (mandatory)
 //map.put("custom-key-with-prefix-c_" , "custom-field"); //(optional)
