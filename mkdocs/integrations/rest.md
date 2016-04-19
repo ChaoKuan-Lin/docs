@@ -22,10 +22,6 @@ This API is used to register a new device for your product. You can simply use t
 | :--:             | :-----:       | :----                             |
 | None            |         |   |
 
-+ Example:
-```
-{}
-```
 
 ### Response
 Success response
@@ -33,8 +29,18 @@ Success response
 + Body:
 ```
 {
-    "data": "aDeviceKey",
-    "timestamp": 1412343212
+  "data": {
+    "type": "device",
+    "id": "requestId",
+    "attributes": {
+      "key": "{YOUR_DEVICE_KEY}",
+      "updatedAt": 1461062720,
+      "activatedAt": 0,
+      "token": [
+      ],
+      "createdAt": 1461062720
+    }
+  }
 }
 ```
 
@@ -43,57 +49,48 @@ Fail response
 + Body:
 ```
 {
-    "message": "errorMessage",
-    "timestamp": 1412343212
+  "errors": [
+    {
+      "title": "{ERROR_TITLE}",
+      "detail": "{ERROR_DETAIL}"
+    }
+  ]
 }
 ```
 
 ### Report API
 This API is used to report the state of your devices. The report content can be customised to what you want. If you would like to report the temperature of your device, just use add `c_` as the prefix.
-![report](../../img/docs/report.png)
 
 ### Request
 + Method: `POST`
-+ URL: `https://api.mobagel.com/v2/reports`
++ URL: `https://api.mobagel.com/v2/report`
 + Header:
     * Device-Key: The device key you just register on the above
 + Body:
+
 | Parameter        | Type          | Description                       |
 | :--:             | :-----:       | :----                             |
 | state            | string        | State of device                   |
-| latlng(optional) | string        | Latitude and longitude of device  |
-|                  |               | format `latitude:longitude`       |
 | c_xxx             | string/number | You can put your custom parameter with prefix `c_` |
 
 
-Example: Report basic device with location  
+Example: Report basic device  
 
 ```http
-POST /products/A001/devices/D001/reports
-
 {
-    "data":
-    {
-        "state": "ERROR",
-        "latitude": 12.321,
-        "longitude": -32.12
-    }
+    "state": "ERROR"
 }
 ```
 
 Example: Report custom device
 ```http
-POST /products/A001/devices/D001/reports
-
 {
-    "data":
-    {
-        "state": "ERROR",
-        "c_id": 5512,
-        "c_temperature": 31.5,
-        "c_t-unit": "°C",
-        "c_pressure": 1.12,
-        "c_p-unit": "atm"
-    }
+    "state": "ERROR",
+    "c_id": 5512,
+    "c_temperature": 31.5,
+    "c_t-unit": "°C",
+    "c_pressure": 1.12,
+    "c_p-unit": "atm"
 }
 ```
+
