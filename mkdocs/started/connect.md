@@ -10,17 +10,17 @@ This short tutorial will outline the steps to integrate MoBagel with your device
 ---
 # Creating an account
 If you do not have an account, please create an account [here](https://app.mobagel.com/signup). After you create an account, you will be directed to the dashboard.
-<img src="../../../img/MoBagel_Getting_Started/Sign_up.png" width="800">  
+<img src="../img/MoBagel_Getting_Started/Sign_up.png" width="800">  
 
 ---
 # Creating a new product
 To use MoBagel, you first have to create a `product`, which is essentially a group of same `device`. You will be prompted to create a new product when you first enter the dashboard.
 
-<img src="../../../img/MoBagel_Getting_Started/Enter_Product_name.png" width="800">  
+<img src="../img/MoBagel_Getting_Started/Enter_Product_name.png" width="800">  
 
 After you create a `product`, you can go to **_Configuration -> Product Settings_** Info to retrieve your `product_key`, which will be used to create `device` later on.
 
-<img src="../../../img/MoBagel_Getting_Started/Product_key.png" width="800">  
+<img src="../img/MoBagel_Getting_Started/Product_key.png" width="800">  
 
 ---
 # Installing SDK on your device
@@ -40,11 +40,11 @@ To find the detailed guide of a specific language, please click on `Integrations
 ---
 # Adding custom properties
 
-<img src="../../../img/MoBagel_Getting_Started/Config_settings.png" width="200">   
+<img src="../img/MoBagel_Getting_Started/Config_settings.png" width="200">   
 In **_Product Settings_** under **_Configuration_**, you can add custom properties to your product.   
 Custom properties should have the following requirements:   
 
-<img src="../../../img/MoBagel_Getting_Started/Device_Settings.png" width="800">   
+<img src="../img/MoBagel_Getting_Started/Device_Settings.png" width="800">   
 
 * **ID**:   
 Property ID (with the exception of `state`) should always begin with `c_` to indicate that it is a custom property. In addition, property IDs are unique and cannot repeat with itself.

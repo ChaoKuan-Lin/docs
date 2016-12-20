@@ -10,12 +10,17 @@ This short tutorial will outline the steps to integrate MoBagel with your device
 ---
 # Creating an account
 If you do not have an account, please create an account [here](https://app.mobagel.com/signup). After you create an account, you will be directed to the dashboard.
+<img src="../img/MoBagel_Getting_Started/Sign_up.png" width="800">  
 
 ---
 # Creating a new product
 To use MoBagel, you first have to create a `product`, which is essentially a group of same `device`. You will be prompted to create a new product when you first enter the dashboard.
 
-After you create a `product`, you can go to Configuration -> Device Info to retrieve your `product_key`, which will be used to create `device` later on.
+<img src="../img/MoBagel_Getting_Started/Enter_Product_name.png" width="800">  
+
+After you create a `product`, you can go to **_Configuration -> Product Settings_** Info to retrieve your `product_key`, which will be used to create `device` later on.
+
+<img src="../img/MoBagel_Getting_Started/Product_key.png" width="800">  
 
 ---
 # Installing SDK on your device
@@ -30,28 +35,29 @@ MoBagel offers SDK in the following languages:
 * Python
 * PHP
 
-
-To find the detailed guide of a specific language, please click on 'Integrations' in the menu bar.
+To find the detailed guide of a specific language, please click on `Integrations` in the menu bar.
 
 ---
 # Adding custom properties
 
-In the Configuration, you can add custom properties to your product. Custom properties should have the following requirements:
+<img src="../img/MoBagel_Getting_Started/Config_settings.png" width="200">   
+In **_Product Settings_** under **_Configuration_**, you can add custom properties to your product.   
+Custom properties should have the following requirements:   
 
-* **ID**: Property ID (with the exception of `state`) should always begin with `c_` to indicate that it is a custom property. In addition, property IDs are unique and cannot repeat with itself.
+<img src="../img/MoBagel_Getting_Started/Device_Settings.png" width="800">   
 
-* **Name**: The property name is your nickname for your property. For example, if your ID is 'c_012421', you can set the name as 'temperature'. The modules in the dashboard will display your property name instead of your property ID.
+* **ID**:   
+Property ID (with the exception of `state`) should always begin with `c_` to indicate that it is a custom property. In addition, property IDs are unique and cannot repeat with itself.
 
-* **Type**: There are two types of properties: category and numeric. Category uses a set of string options and numeric uses numeric options (optional).
+* **Name**:   
+The property name is your nickname for your property. For example, if your ID is `c_012421`, you can set the name as `temperature`. The modules in the dashboard will display your property name instead of your property ID.
 
-* **Options**:
-    - **Category**: please add all the possible string values of your property by typing in the options column. The server will use this to prevent your devices from sending erroraneous reports.
-    
-    - **Numeric** (optional): please set a min and max value for your numeric property to help protect your data from errors. For example, if your numeric property is humidity level, then you can set min and max to 0 and 100, respectively. This will allow our system to reject any reports with humidity levels that are not in this range because those values are theoretically impossible (i.e. negative humidity level).
+* **Type**:   
+There are two types of properties: `string` and `number`.  
 
-Please note that you must configure your properties in your configuration before you send your first customized report.
+**_Please note that you must configure your properties in your configuration before you send your first customized report._**
 
-
+<!---
 
 ---
 # Register your first device

@@ -10,8 +10,8 @@ google_analytics: ['UA-70490559-1', 'mobagel.com']
 
 pages:
 
-- Getting Started: 
-    - Connect To MoBagel: started/connect.md
+- Get Started: 
+    - Connect To MoBagel: index.md
     - MoBagel Dashboard: started/dashboard.md
 
 - Integrations:

@@ -4,10 +4,12 @@ This section covers the basics of the MoBagel API and how you can utilize MoBage
 
 ----
 # API List
-+ ####[`Register API`](#Register)
-    * Register a new device for your product.
-+ ####[`Report API`](#Report)
-    * Send a report.
+
+####[`Register API`](#Register)
+* Register a new device for your product.
+
+####[`Report API`](#Report)
+* Send a report.
 
 
 <a name="Register"></a>
