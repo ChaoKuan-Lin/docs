@@ -10,17 +10,19 @@ google_analytics: ['UA-70490559-1', 'mobagel.com']
 
 pages:
 
-- Getting Started: index.md
+- Getting Started: 
+    - Connect To MoBagel: started/connect.md
+    - MoBagel Dashboard: started/dashboard.md
 
 - Integrations:
     - REST: integrations/rest.md
-    - Python: integrations/python.md
-    - Node: integrations/node.md
-    - Java: integrations/java.md
-    - PHP: integrations/php.md
-    - C++: integrations/c++.md
-    - iOS Swift: integrations/ios_swift.md
-    - iOS Objective C: integrations/ios_objective_c.md
+#    - Python: integrations/python.md
+#    - Node: integrations/node.md
+#    - Java: integrations/java.md
+#    - PHP: integrations/php.md
+#    - C++: integrations/c++.md
+#    - iOS Swift: integrations/ios_swift.md
+#    - iOS Objective C: integrations/ios_objective_c.md
 
 - Reference:
     - Glossary: glossary.md

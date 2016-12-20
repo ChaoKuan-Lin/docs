@@ -1,52 +1,66 @@
 # REST API
 
-# Overview
 This section covers the basics of the MoBagel API and how you can utilize MoBagel's platform to improve your IoT devices.
 
+----
 # API List
++ ####[`Register API`](#Register)
+    * Register a new device for your product.
++ ####[`Report API`](#Report)
+    * Send a report.
 
-+ Register API: Register a new device
-+ Report API: Send a report
 
+<a name="Register"></a>
+
+----
 # Register API
-This API is used to register a new device for your product. You can simply use this API to generate mass devices to do mass deployment. However, your devices is limited. Please use this API carefully to avoid reaching the limitation of your account.
+This API is used to register a new `Device` for your `Product`.  
+You can simply use this API to generate mass devices to do mass deployment. However, your devices are limited. Please use this API carefully to avoid reaching the limitation of your account.
 
 ### Request
 + Method: `POST`
 + URL: `https://api.mobagel.com/v2/register`
-+ Header:
-    * Product-Key: The product key you get on the dashboard
-+ Body:
-
-| Parameter        | Type          | Description                       |
-| :--:             | :-----:       | :----                             |
-| None            |         |   |
++ Headers:
+    * `Product-Key`: The Product Key you get on the dashboard. (Under `Basic Information` in **_Configeration -> Product Settings_**)
+    * `Content-Type`: application/json
++ Body (Choose one below to send):
+    * Fill in an `Empty State`.  
+      `{}`
+    * Fill in `Device Attribute` you have set on the dashboard. (Under `Device Settings` in **_Configeration -> Product Settings_**)  
+      `
+      {
+        "c_apple": "1",
+        "c_banana": "2",
+        "c_car": "3"
+      }
+      `  
+      (This serves as an example, please use the attributes you have manaually set.)
 
 
 ### Response
-Success response
-+ HTTP status code: 200
-+ Body:
++ Success response:
+    * `HTTP status code`: 200
+    * `Body`:
 ```
 {
-  "data": {
-    "type": "device",
-    "id": "requestId",
-    "attributes": {
-      "key": "{YOUR_DEVICE_KEY}",
-      "updatedAt": 1461062720,
-      "activatedAt": 0,
-      "token": [
-      ],
-      "createdAt": 1461062720
-    }
+  "_id": "An id will be generated automatically.",
+  "key": "A key will be genereated here for each new device.",
+  "productId": "A productId will be generated automatically.",
+  "createdAt": "A timestamp of the time created.",
+  "updatedAt": "A timestamp of the time updated.",
+  "activatedAt": "0001-01-01T00:00:00Z",
+  "properties": {
+    "c_apple": "1",
+    "c_banana": "2",
+    "c_car": "3"
   }
 }
 ```
+<!---
 
-Fail response
-+ HTTP status code: not 200
-+ Body:
++ Fail response:
+    * `HTTP status code`: not 200
+    * `Body`:
 ```
 {
   "errors": [
@@ -57,23 +71,41 @@ Fail response
   ]
 }
 ```
+--->
 
+<a name="Report"></a> 
+
+----
 ### Report API
 This API is used to report the state of your devices. The report content can be customised to what you want. If you would like to report the temperature of your device, just use add `c_` as the prefix.
 
 ### Request
 + Method: `POST`
 + URL: `https://api.mobagel.com/v2/report`
-+ Header:
-    * Device-Key: The device key you just register on the above
++ Headers:
+    * `Device-Key`: The Device Key of a created device. (Under `Device List` in **_Configeration -> Device Management_**)
 + Body:
 
 | Parameter        | Type          | Description                       |
 | :--:             | :-----:       | :----                             |
 | state            | string        | State of device                   |
-| c_xxx             | string/number | You can put your custom parameter with prefix `c_` |
+| c_xxx            | string/number | Custom parameters must start with prefix `c_` |
+
+An example would look like this. 
+      `
+      {
+        "state": "Normal",
+        "c_daddy": "99",
+        "c_mommy": "100"
+      }
+      `
 
 
+### Response
++ Success response:
+    * Returns an id string.
+
+<!---
 Example: Report basic device  
 
 ```http
@@ -93,4 +125,4 @@ Example: Report custom device
     "c_p-unit": "atm"
 }
 ```
-
+--->
