@@ -27,11 +27,10 @@ Listed below follows the order of the left menu on the MoBagel dashboard, skip t
     * [Usage](#Usage)
     * [Segmentation](#Segmentation)
 * Monitoring
-    * Real Time
-    * Notification
+    * [Real Time](#Real_Time)
+    * [Notification](#Notification)
 * Prediction
-    * Calculate
-    * Recommendations
+    * [Recommendations](#Recommendations)
 * Configuration
     * Product Settings
     * Device Management
@@ -200,18 +199,73 @@ Listed below follows the order of the left menu on the MoBagel dashboard, skip t
         ----
         * `Zoom`, `Reset`, `Raw Data`, `Line`, `Bar` and `Save as Image` work the same way as mentioned before.
 
-<!---
+<a name="Real_Time"></a>  
+
 ----
 ## Monitoring
 
-* Real Time
-* Notification
+* ###Real Time
+
+    * If you have not set up any monitoring or alerts, click on the blue `Set up now` button. You will then be taken to the `Notification` page.
+    * Continue this part after you have configured your settings in `Notificaiton`.
+        <img src="../../../img/MoBagel_Dashboard/Real_time_set_up.png" width="800"> 
+    * All changes from your device reports will show on screen in real time, coming from the right.
+        <img src="../../../img/MoBagel_Dashboard/Real_Time.gif" width="800">
+
+<a name="Notification"></a>  
+
+----
+* ###Notification
+    * Click on `Configure Notification` to set up monitoring for your product. 
+    <img src="../../../img/MoBagel_Dashboard/Notifications_start.png" width="800">
+
+
+    * Current Notification Method
+        - Your currnet method of notification is shown here.
+        <img src="../../../img/MoBagel_Dashboard/Notifications_empty_1.png" width="800">
+
+    * Configure Method
+        - Your currnet method of notification is shown here.
+        <img src="../../../img/MoBagel_Dashboard/Notifications_empty_2.png" width="800">
+
+    * Configure Normal Ranges
+        * If you have not set up `Device Settings` you will find nothing here.
+        <img src="../../../img/MoBagel_Dashboard/Notifications_empty_000.png" width="800">
+        * Configure your normal ranges here by clicking on the `Edit` button. If your report values exceed the ranges, you will receive a notification.
+        <img src="../../../img/MoBagel_Dashboard/Configure_Normal_Ranges.gif" width="800">
+
+        
+
+
+        
+
+<a name="Recommendations"></a>      
 
 ----
 ## Prediction
 
-* Calculate
-* Recommendations
+* ###Recommendations
+    
+    ----    
+    * On the top of the page, you can decide the frequency of the data and the time window you would like to observerve.
+    <img src="../../../img/MoBagel_Dashboard/Recommendations_none.gif" width="800">
+        
+        ----
+        * The `History`(Red Line) and `Prediction`(Dotted Line) of your report data will be shown here.
+        <img src="../../../img/MoBagel_Dashboard/Recommendations_all.png" width="800">
+        ----
+        * Click on `Prediction` to hide `Prediction`.
+        <img src="../../../img/MoBagel_Dashboard/Recommendations_hide_prediction.png" width="800"> 
+        ----
+        * Click on `History` to hide `History`.
+        <img src="../../../img/MoBagel_Dashboard/Recommendations_hide_history.png" width="800">
+        ----
+        * Suggestions for various actions will be listed on the right hand side.
+        <img src="../../../img/MoBagel_Dashboard/Recommendations_suggestions.png" width="800">
+
+
+
+<!--
 
 ----
 ## Configuration
