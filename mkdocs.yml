@@ -16,8 +16,8 @@ pages:
 
 - Integrations:
     - REST: integrations/rest.md
-#    - Python: integrations/python.md
-#    - Node: integrations/node.md
+    - Python: integrations/python.md
+    - Node: integrations/node.md
 #    - Java: integrations/java.md
 #    - PHP: integrations/php.md
 #    - C++: integrations/c++.md

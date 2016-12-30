@@ -31,9 +31,8 @@ You can simply use this API to generate mass devices to do mass deployment. Howe
     * Fill in `Device Attribute` you have set on the dashboard. (Under `Device Settings` in **_Configeration -> Product Settings_**)  
       `
       {
-        "c_apple": "1",
-        "c_banana": "2",
-        "c_car": "3"
+        "c_temp": "1",
+        "c_motion": "2",
       }
       `  
       (This serves as an example, please use the attributes you have manaually set.)
@@ -52,9 +51,8 @@ You can simply use this API to generate mass devices to do mass deployment. Howe
   "updatedAt": "A timestamp of the time updated.",
   "activatedAt": "0001-01-01T00:00:00Z",
   "properties": {
-    "c_apple": "1",
-    "c_banana": "2",
-    "c_car": "3"
+    "c_temp": "1",
+    "c_motion": "2",
   }
 }
 ```
@@ -97,8 +95,8 @@ An example would look like this.
       `
       {
         "state": "Normal",
-        "c_daddy": "99",
-        "c_mommy": "100"
+        "c_temp": "99",
+        "c_motion": "100"
       }
       `
 

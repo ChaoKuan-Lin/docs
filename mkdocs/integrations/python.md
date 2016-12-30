@@ -62,71 +62,35 @@ mobagel-python-sdk
 
 ---
 # Example Walkthrough
-## Full Example
-You can see example codes at github: /mobagel-python-sdk/example/
-[click me](https://github.com/MoBagel/mobagel-python-sdk/tree/master/example)
-
-```
-    __author__ = "MoBagel Inc."
-    
-    import json
-    import pybagel
-    from pprint import pprint
-    
-    print "\nThis is MoBagel Python SDK sample, you can learn how to `register device` and `report state` in this sample code\n"
-    
-    product_key = "1111111111222222222233333333334444444444555555555566666666667777"
-    # Initialize a Client Instance by product_key
-    client = pybagel.Client(product_key=product_key)
-    
-    print "Register device..."
-    # register a device_key by client
-    code, content = client.registerDevice()
-    response = json.loads(content.decode('utf-8'))
-    print "Data response: "
-    pprint(response)
-    
-    print "\n========================================================\n"
-    
-    print "Send report..."
-    
-    device_key = response["data"]["attributes"]["key"];
-    content = {
-                "state": "Put your state here!",
-                "c_customization" : "python_sdk_test",
-                "c_develop_zone" : "PythonSDK"
-            }
-    
-    # SendReport
-    code, content = client.sendReport(
-        device_key=device_key,
-        content=content
-        )
-    # return report_id and report_timestamp
-    response = json.loads(content.decode('utf-8'))
-    print "Data response: "
-    pprint(response)
-
-```
 
 ## Registering your first device
 
 Once you generated a product_key from the dashboard, you can use the product_key and registerDevice function to register a device in your application.
 
 ```
-    # Import package
-    import pybagel
-    import json
+# ENV: python3.5.1 / python2.7.6
+import json
+import pybagel
 
-    product_key = "YOUR_PRODUCT_KEY"
-    # Initialize a Client Instance by product_key
-    client = pybagel.Client(product_key=product_key)
-    
-    # Register a device_key by client
-    code, content = client.registerDevice()
-    response = json.loads(content.decode('utf-8'))
-    device_key = response["data"]["attributes"]["key"];
-    # Save device_key
+# Initialize a client instance by product_key
+c = pybagel.MoBagelClient(
+    product_key="1111111111222222222233333333334444444444555555555566666666667777"
+)
+
+# Custom properties, should be created in the MoBagel dashboard
+content = {
+    "c_string": "7777",
+    "c_number": 7777
+}
+
+# register a new device
+status_code, body = c.registerDevice(content)
+response = json.loads(body.decode('utf-8'))
+
+# return a new device_key
+print("Status code:", status_code)
+print("Response data:", response)
+print("Device Key:", response["key"])
 
 ```
 
@@ -156,22 +120,35 @@ In your device application, you will need to prepare your report before sending 
 
 ## Sending first report
 ```
-    print "Send report..."
-    
-    device_key = response["data"]["attributes"]["key"];
-    content = {
-                "state": "Put your state here!",
-                "c_customization" : "python_sdk_test",
-                "c_develop_zone" : "PythonSDK"
-            }
-    
-    # SendReport
-    code, content = client.sendReport(
-        device_key=device_key,
-        content=content
-        )
-    # return report_id and report_timestamp
-    response = json.loads(content.decode('utf-8'))
-    print "Data response: "
-    pprint(response)
+# ENV: python3.5.1 / python2.7.6
+import json
+try:
+    import pybagel
+except:
+    import sys
+    import os
+    filepath = os.path.dirname(os.path.abspath(__file__))
+    sys.path.append(filepath+'/..')
+    import pybagel
+
+# Initialize a Client Instance by product_key
+# You can register a device and get a device_key according "example_registerDevice.py"
+c = pybagel.MoBagelClient(
+    device_key="1111111111222222222233333333334444444444555555555566666666667777"
+)
+
+# Custom properties, should be created in the MoBagel dashboard
+content = {
+    "state": "normal",
+    "c_category": "555",
+    "c_numeric": 555
+}
+
+# send report with device key
+status_code, body = c.sendReport(content)
+response = json.loads(body.decode('utf-8'))
+
+# return status_code, product_id
+print("Status code:", status_code)
+print("Response data:", response)
 ```
