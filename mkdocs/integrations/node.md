@@ -70,8 +70,8 @@ var product_key = "1111111111222222222233333333334444444444555555555566666666667
 var c = mobagel.client(product_key);
 
 c.registerDevice({
-    c_string: 'Node SDK',
-    c_number: 123
+    s_string: 'Node SDK',
+    d_number: 123
 }, function(err, res, body) {
     if (err) throw err;
     if (Math.floor(res.statusCode / 100) === 2) {
@@ -100,8 +100,8 @@ In your device application, you will need to prepare your report before sending 
 ```
 //example custom properties or events
 
-"c_temperature": 30
-"c_event": "turned_on"
+"d_temperature": 30
+"s_event": "turned_on"
 ```
 
 * Deciding when to send reports (time, frequency, events)
@@ -115,8 +115,8 @@ var c = mobagel.client(product_key, device_key);
 
 c.sendReport({
     state: 'normal',
-    c_category: 'nodeSDK',
-    c_numeric: 123
+    s_category: 'nodeSDK',
+    d_numeric: 123
 }, function(err, res, body) {
     if (err) throw err;
     if (Math.floor(res.statusCode / 100) === 2) {

@@ -79,8 +79,8 @@ c = pybagel.MoBagelClient(
 
 # Custom properties, should be created in the MoBagel dashboard
 content = {
-    "c_string": "7777",
-    "c_number": 7777
+    "s_string": "7777",
+    "d_number": 7777
 }
 
 # register a new device
@@ -112,8 +112,8 @@ In your device application, you will need to prepare your report before sending 
 ```
 //example custom properties or events
 
-"c_temperature": 30
-"c_event": "turned_on"
+"d_temperature": 30
+"s_event": "turned_on"
 ```
 
 * Deciding when to send reports (time, frequency, events)
@@ -140,8 +140,8 @@ c = pybagel.MoBagelClient(
 # Custom properties, should be created in the MoBagel dashboard
 content = {
     "state": "normal",
-    "c_category": "555",
-    "c_numeric": 555
+    "s_category": "555",
+    "d_numeric": 555
 }
 
 # send report with device key
