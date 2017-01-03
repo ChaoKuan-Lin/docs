@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="shortcut icon" href="../../../../favicon.png">
+
+    <title>iOS Swift - MoBagel Docs</title>
+
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/base.css" rel="stylesheet">
+    <link href="../../css/cinder.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+
+
+    <link href="../../extra.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
+
+    
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-70490559-1', 'mobagel.com');
+    ga('send', 'pageview');
+    </script>
+    
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">MoBagel Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Get Started <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../..">Connect To MoBagel</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../started/dashboard/">MoBagel Dashboard</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Integrations <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../rest/">REST</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../python/">Python</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../node/">Node</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">iOS Swift</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../glossary/">Glossary</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../examples/">Examples</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../node/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../glossary/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="first-level active"><a href="#mobagel-ios-sdk">MoBagel iOS SDK</a></li>
+        
+    
+        <li class="first-level "><a href="#preparation">Preparation</a></li>
+        
+    
+        <li class="first-level "><a href="#creating-an-account">Creating an account</a></li>
+        
+    
+        <li class="first-level "><a href="#creating-a-new-product">Creating a new product</a></li>
+        
+    
+        <li class="first-level "><a href="#adding-custom-properties">Adding custom properties</a></li>
+        
+    
+        <li class="first-level "><a href="#installation">Installation</a></li>
+        
+            <li class="second-level"><a href="#requirement">Requirement</a></li>
+            
+        
+            <li class="second-level"><a href="#installing-sdk">Installing SDK</a></li>
+            
+        
+    
+        <li class="first-level "><a href="#example-walkthrough-swift">Example Walkthrough (Swift)</a></li>
+        
+            <li class="second-level"><a href="#registering-your-first-device">Registering your first device</a></li>
+            
+        
+            <li class="second-level"><a href="#connecting-custom-properties-or-events">Connecting custom properties or events</a></li>
+            
+        
+            <li class="second-level"><a href="#sending-first-report">Sending first report</a></li>
+            
+        
+    
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="mobagel-ios-sdk">MoBagel iOS SDK</h1>
+<p>Use MoBagel iOS SDK to quickly install MoBagel to your device(s).  MoBagel iOS SDK is an open-source iOS library that makes it easy to integrate your iOS application with MoBagel. 
+​</p>
+<hr />
+<h1 id="preparation">Preparation</h1>
+<h1 id="creating-an-account">Creating an account</h1>
+<p>If you do not have an account, please create an account <a href="https://app.mobagel.com/signup">here</a>. After you create an account, you will be directed to the dashboard.
+<img src="../../../img/MoBagel_Getting_Started/Sign_up.png" width="800">  </p>
+<hr />
+<h1 id="creating-a-new-product">Creating a new product</h1>
+<p>To use MoBagel, you first have to create a <code>product</code>, which is essentially a group of same <code>device</code>. You will be prompted to create a new product when you first enter the dashboard.</p>
+<p><img src="../../../img/MoBagel_Getting_Started/Enter_Product_name.png" width="800">  </p>
+<p>After you create a <code>product</code>, you can go to <strong><em>Configuration -&gt; Product Settings</em></strong> Info to retrieve your <code>product_key</code>, which will be used to create <code>device</code> later on.</p>
+<p><img src="../../../img/MoBagel_Getting_Started/Product_key.png" width="800">  </p>
+<hr />
+<h1 id="adding-custom-properties">Adding custom properties</h1>
+<p><img src="../../../img/MoBagel_Getting_Started/Config_settings.png" width="200"> <br />
+In <strong><em>Product Settings</em></strong> under <strong><em>Configuration</em></strong>, you can add custom properties to your product. <br />
+Custom properties should have the following requirements:   </p>
+<p><img src="../../../img/MoBagel_Getting_Started/Device_Settings.png" width="800">   </p>
+<ul>
+<li>
+<p><strong>ID</strong>: <br />
+Property ID will always begin with <code>d_</code> (for numbers) or <code>s_</code> (for strings) to indicate that it is a custom property, this will be automatically asigned when you select a <code>Type</code>. Property IDs are unique and cannot repeat with itself.</p>
+</li>
+<li>
+<p><strong>Name</strong>: <br />
+You can set a custom name for each property. For example, if your ID is <code>d_012421</code>, you can set the name as <code>temperature</code>. The modules in the dashboard will display your property name instead of your property ID.</p>
+</li>
+<li>
+<p><strong>Type</strong>: <br />
+There are two types of properties: <code>number</code> and <code>string</code>.</p>
+</li>
+</ul>
+<p><strong><em>Please note that you must configure your properties in your configuration before you send your first customized report.</em></strong>
+​</p>
+<hr />
+<h1 id="installation">Installation</h1>
+<ul>
+<li>iOS
+​</li>
+</ul>
+<h2 id="requirement">Requirement</h2>
+<p><a href="https://github.com/AFNetworking/AFNetworking">'AFNetworking', '~&gt; 2.3'</a></p>
+<h2 id="installing-sdk">Installing SDK</h2>
+<p><code>MoBagel iOS SDK</code> is available through <a href="http://cocoapods.org/">CocoaPods</a>. To install the SDK, simply add the following line to your Podfile:
+​</p>
+<pre><code>pod &quot;MoBagel&quot;, '~&gt; 1.0.0'
+</code></pre>
+
+<hr />
+<h1 id="example-walkthrough-swift">Example Walkthrough (Swift)</h1>
+<h2 id="registering-your-first-device">Registering your first device</h2>
+<p>​
+Using your <code>product_key</code> from the dashboard, you can replace the default <code>product_key</code> to your own <code>product_key</code> as following. 
+​</p>
+<pre><code>#import &lt;MoBagel/MoBagel.h&gt;
+
+MoBagelHandler* handler = [[MoBagelHandler alloc] init];
+MoBagelClient* client = [MoBagelClient clientWithProductKey:productKey];
+
+self.handler.apiHandler =  ^(NSInteger code, id responseObject) {
+    // responseObject contain deviceId &amp;&amp; deviceKey
+    NSLog(@&quot;ResponseObject: %@&quot;,responseObject);
+};
+
+self.handler.exceptionHandler =  ^(NSInteger code, id responseObject) {
+    NSLog(@&quot;Exception: %@&quot;,responseObject);
+};
+[client register:@{} handler:handler];
+​
+</code></pre>
+
+<p>​</p>
+<p>You can then use the <code>registerDevice</code> function to register a <code>device</code> in your application.<br />
+If you get your <code>device-key</code> , congratulations! You have successfully register a device.<br />
+​</p>
+<pre><code>let handler = MoBagelHandler();
+handler.registerHandler = {(code, data) -&gt; Void in
+    print(&quot;Http code: \(code) , device-key: \(data)&quot;);
+    let key = data
+    // Store your key here
+}
+handler.exceptionHandler = {(code, error) -&gt; Void in
+    print(&quot;Http code: \(code) , Error msg: \(error)&quot;);
+}
+client.registerDevice(handler)
+</code></pre>
+
+<h2 id="connecting-custom-properties-or-events">Connecting custom properties or events</h2>
+<p>​
+In your device application, you will need to prepare your report before sending it to MoBagel.  </p>
+<ul>
+<li>Determining different <code>states</code> of your devices to send along with your report
+​</li>
+</ul>
+<pre><code>//example states
+​
+&quot;state&quot;: &quot;normal&quot;
+&quot;state&quot;: &quot;error&quot;
+</code></pre>
+
+<ul>
+<li>Adding custom properties or events with a key beginning with <code>s_</code> or <code>d_</code></li>
+</ul>
+<pre><code>//example custom properties or events
+​
+&quot;d_temperature&quot;: 30
+&quot;s_event&quot;: &quot;turned_on&quot;
+</code></pre>
+
+<ul>
+<li>Deciding when to send reports (time, frequency, events)</li>
+</ul>
+<h2 id="sending-first-report">Sending first report</h2>
+<p>​You need <code>device-key</code> to send a report.<br />
+If you see <code>report response</code> , congratulations! You have successfully send a report.  </p>
+<pre><code>#import &lt;MoBagel/MoBagel.h&gt;
+
+MoBagelHandler* handler = [[MoBagelHandler alloc] init];
+MoBagelClient* client = [MoBagelClient clientWithDeviceKey:deviceKey];
+
+self.handler.apiHandler =  ^(NSInteger code, id responseObject) {
+    // responseObject contain deviceId &amp;&amp; deviceKey
+    NSLog(@&quot;ResponseObject: %@&quot;,responseObject);
+};
+
+self.handler.exceptionHandler =  ^(NSInteger code, id responseObject) {
+    NSLog(@&quot;Exception: %@&quot;,responseObject);
+};
+
+NSDictionary* data = @{
+    @&quot;state&quot;: @&quot;normal&quot;,
+    @&quot;d_temperature&quot;: @(30),
+    @&quot;s_event&quot;: @&quot;turned_on&quot;,
+};
+[client report:data handler:handler];
+</code></pre>
+
+<!-- 
+# Swift Sample code
+## Import framework
+
+wzxhzdk:6
+
+## Register device
+
+Using your `product_key` from the dashboard, you can replace the default `product_key` in /examples/main.cpp to your own `product_key`.  
+If you get your `device-key` , congratulations! You have successfully register a device.
+
+
+wzxhzdk:7
+
+## Send report
+You need `device-key` to send a report.  
+If you see `report response` , congratulations! You have successfully send a report.  
+
+
+wzxhzdk:8
+
+​ --></div>
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        <hr>
+        <p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+    </footer>
+
+    <script src="../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+    var base_url = '../..';
+    </script>
+    <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+    <script src="../../js/base.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        From here you can search these documents. Enter your search terms below.
+                    </p>
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                        </div>
+                    </form>
+                    <div id="mkdocs-search-results"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
+
+</html>
