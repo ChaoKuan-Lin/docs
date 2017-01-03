@@ -32,7 +32,7 @@ Custom properties should have the following requirements:
 Property ID will always begin with `d_` (for numbers) or `s_` (for strings) to indicate that it is a custom property, this will be automatically asigned when you select a `Type`. Property IDs are unique and cannot repeat with itself.
 
 * **Name**:   
-You can set a custom name for each property. For example, if your ID is `c_012421`, you can set the name as `temperature`. The modules in the dashboard will display your property name instead of your property ID.
+You can set a custom name for each property. For example, if your ID is `d_012421`, you can set the name as `temperature`. The modules in the dashboard will display your property name instead of your property ID.
 
 * **Type**:   
 There are two types of properties: `number` and `string`.
@@ -107,7 +107,7 @@ In your device application, you will need to prepare your report before sending 
 "state": "error"
 ```
 
-* Adding custom properties or events with a key beginning with `c_`
+* Adding custom properties or events with a key beginning with `d_` or `s_`
     
 ```
 //example custom properties or events

@@ -21,7 +21,7 @@ pages:
 #    - Java: integrations/java.md
 #    - PHP: integrations/php.md
 #    - C++: integrations/c++.md
-#    - iOS Swift: integrations/ios_swift.md
+    - iOS Swift: integrations/ios_swift.md
 #    - iOS Objective C: integrations/ios_objective_c.md
 
 - Reference:
