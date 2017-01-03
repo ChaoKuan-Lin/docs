@@ -1,7 +1,6 @@
 site_name: MoBagel Docs
 site_description: MoBagel API Documentation
 docs_dir: mkdocs
-site_dir: docs
 site_favicon: favicon.png
 extra_css: [extra.css]
 theme_dir: cinder
