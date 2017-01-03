@@ -1,0 +1,469 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Getting Started\n\n\n\n\nIntroduction\n\n\nMoBagel is an advanced device management and predictive analytics solution for hardware companies. Similar to Google Analytics or Mixpanel for web and mobile analytics, MoBagel is an analytics solution designed specifically for hardware devices. \n\n\nThis short tutorial will outline the steps to integrate MoBagel with your devices and help you begin tracking your hardware usage today.\n\n\n\n\nCreating an account\n\n\nIf you do not have an account, please create an account \nhere\n. After you create an account, you will be directed to the dashboard.\n\n  \n\n\n\n\nCreating a new product\n\n\nTo use MoBagel, you first have to create a \nproduct\n, which is essentially a group of same \ndevice\n. You will be prompted to create a new product when you first enter the dashboard.\n\n\n  \n\n\nAfter you create a \nproduct\n, you can go to \nConfiguration -\n Product Settings\n Info to retrieve your \nproduct_key\n, which will be used to create \ndevice\n later on.\n\n\n  \n\n\n\n\nInstalling SDK on your device\n\n\nMoBagel offers SDK in the following languages: \n\n\n\n\nREST\n\n\nJava\n\n\nNode\n\n\nSwift\n\n\nObjective-C\n\n\nC++\n\n\nPython\n\n\nPHP\n\n\n\n\nTo find the detailed guide of a specific language, please click on \nIntegrations\n in the menu bar.\n\n\n\n\nAdding custom properties\n\n\n \n\nIn \nProduct Settings\n under \nConfiguration\n, you can add custom properties to your product. \n\nCustom properties should have the following requirements:   \n\n\n   \n\n\n\n\n\n\nID\n: \n\nProperty ID will always begin with \nd_\n (for numbers) or \ns_\n (for strings) to indicate that it is a custom property, this will be automatically asigned when you select a \nType\n. Property IDs are unique and cannot repeat with itself.\n\n\n\n\n\n\nName\n: \n\nYou can set a custom name for each property. For example, if your ID is \nc_012421\n, you can set the name as \ntemperature\n. The modules in the dashboard will display your property name instead of your property ID.\n\n\n\n\n\n\nType\n: \n\nThere are two types of properties: \nnumber\n and \nstring\n.\n\n\n\n\n\n\nPlease note that you must configure your properties in your configuration before you send your first customized report.", 
+            "title": "Connect To MoBagel"
+        }, 
+        {
+            "location": "/#getting-started", 
+            "text": "", 
+            "title": "Getting Started"
+        }, 
+        {
+            "location": "/#introduction", 
+            "text": "MoBagel is an advanced device management and predictive analytics solution for hardware companies. Similar to Google Analytics or Mixpanel for web and mobile analytics, MoBagel is an analytics solution designed specifically for hardware devices.   This short tutorial will outline the steps to integrate MoBagel with your devices and help you begin tracking your hardware usage today.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/#creating-an-account", 
+            "text": "If you do not have an account, please create an account  here . After you create an account, you will be directed to the dashboard.", 
+            "title": "Creating an account"
+        }, 
+        {
+            "location": "/#creating-a-new-product", 
+            "text": "To use MoBagel, you first have to create a  product , which is essentially a group of same  device . You will be prompted to create a new product when you first enter the dashboard.      After you create a  product , you can go to  Configuration -  Product Settings  Info to retrieve your  product_key , which will be used to create  device  later on.", 
+            "title": "Creating a new product"
+        }, 
+        {
+            "location": "/#installing-sdk-on-your-device", 
+            "text": "MoBagel offers SDK in the following languages:    REST  Java  Node  Swift  Objective-C  C++  Python  PHP   To find the detailed guide of a specific language, please click on  Integrations  in the menu bar.", 
+            "title": "Installing SDK on your device"
+        }, 
+        {
+            "location": "/#adding-custom-properties", 
+            "text": "In  Product Settings  under  Configuration , you can add custom properties to your product.  \nCustom properties should have the following requirements:            ID :  \nProperty ID will always begin with  d_  (for numbers) or  s_  (for strings) to indicate that it is a custom property, this will be automatically asigned when you select a  Type . Property IDs are unique and cannot repeat with itself.    Name :  \nYou can set a custom name for each property. For example, if your ID is  c_012421 , you can set the name as  temperature . The modules in the dashboard will display your property name instead of your property ID.    Type :  \nThere are two types of properties:  number  and  string .    Please note that you must configure your properties in your configuration before you send your first customized report.", 
+            "title": "Adding custom properties"
+        }, 
+        {
+            "location": "/started/dashboard/", 
+            "text": "MoBagel Dashboard\n\n\n\n\nIntroduction\n\n\nWelcome to the \nMoBagel Dashboard\n, a snapshot of your devices for easy tracking and analysis.  \n\n\nIn this tutorial, we will guide you through each part of the MoBagel Dashboard.\n\n\n\n\nYour Current Products\n\n\nOn the left hand side of the dashboard, under the MoBagel logo, a drop-down menu will list the products you have already created.  \n\n\n  \n\n\nTo create a new one, simply click on \n+New Product\n.    \n\n\n  \n\n\n\n\nThe Dashboard\n\n\nListed below follows the order of the left menu on the MoBagel dashboard, skip to the page that most interests you or follow along and see what MoBagel's dashboard can do!\n\n\n\n\nAnalytics\n\n\nUsage\n\n\nSegmentation\n\n\n\n\n\n\nMonitoring\n\n\nReal Time\n\n\nNotification\n\n\n\n\n\n\nPrediction\n\n\nRecommendations\n\n\n\n\n\n\nConfiguration\n\n\nProduct Settings\n\n\nDevice Management\n\n\nData Setup\n\n\nDocs\n\n\n\n\n\n\n\n\n  \n\n\n\n\nAnalytics\n\n\nUsage\n\n\n\n\n\n\nUsage\n allows you to have a quick overview of all your devices all on one page, showing the number of users with regard to the time.\n\n\n  \n\n\n\n\n\n\nOn the upper right hand side, click on \nDay\n, \nWeek\n, \nMonth\n or \nYear\n and the graph changes along with \nPeak Usage\n and \nLowest Usage\n underneath.\n\n\n\n\n\n\n\n\n\n\n\n\nTotal Users\n\n\nShows all the current devices available\n\n\n\n\n\n\nActive Users\n\n\nShows devices currently active, this information can also be found in \nConfiguration -\n Device Management\n\n\n\n\n\n\nPeak Usage\n\n\nIndicated at the highest point in the graph above.\n\n\n\n\n\n\nLowest Usage\n\n\nIndicated at the lowest point in the graph above.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOn the upper right hand side we will also find some useful tabs under Day, Week, Month, and Year for manipulating the user frequency graph.\n\n\n\n\n\n\n\n\n\n\n - \nZoom\n  \n\n\nChoose a timeframe by clicking on Zoom once, then select the area on the graph you would like to magnify. Repeat to zoom in again.\n\n\n\n\n\n\n\n\n\n\n\n\n - \nReset\n\n\nGraph goes back one step each time you click on Reset.\n\n\n\n\n\n\n\n\n\n\n\n\n - \nRaw Data\n  \n\n\nSee Raw Data used to create the graph, click on \u201cclose\u201d on the lower-right hand side to return to graph.\n\n\n\n\n\n\n\n\n\n\n\n\n - \nLine\n  \n\n\nLine graph is set as default.\n\n\n\n\n\n\n\n\n\n\n\n\n - \nBar\n\n\nClick on Bar to show data as a Bar graph.\n\n\n\n\n\n\n\n\n\n\n\n\n - \nSave as Image\n\n\nDownload current graph shown.  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLast Usage\n\n    \n  \n\n\n\n\nSee how many reports were sent each hour for the last 24 hours. Place mouse cursor on bar for details.\n\n\n\n\n\n\n\n\n\n\n\n\nLast Usage Detail\n\n    \n\n\nTime\n\n\nLast time a report was sent.\n\n\n\n\n\n\nTotal Devices\n\n\nTotal Reports\n\n\nSee More In Segmentation\n\n\nClick to filter customised results in the \u201cSegmentation\u201d page.  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProperty Breakdown\n\n    \n\n\nListed here are all sensor properties sent in each report, also showing the range of values for each property.\n\n\nNumeric Property\n\n\nCategory Property\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUsage Location\n\n\nManage your devices and see where they are located from latitude and longitude data in the report.\n\n\nCountry\n\n\nUser\n\n\n%User\n\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nSegmentation\n\n\n\n\n\n\nCondition\n  \n\n\n\n\n\n\nCreate a segment using filters, for a specific timeframe or property states\n\n\n\n\n\n\n\n\n\nClick on \nAdd rule\n on the right hand side\n\n\n\n\n\n\n\n\n\nClick on \nAdd group\n for more complex filtering\n\n\n\n\nSelect the properties you would like to filter with \nAND\n / \nOR\n.\n\n\n\n\n\n\n\ne.g. \"state equal normal\" \nAND\n \"temperature_C is greater than 30\u201d \nAND\n (\"light_pct is null\" \nOR\n \u201cperiod_s is not null\u201d)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeries\n\n\n\n\n\n\nAnalyse the segment by comparing different series.\n\n\n\n\n\n\n\n\n\nClick \n+Add\n to create a new series.\n\n\n\n\n\n\n\n\n\nAdd as many series you would like to compare.\n\n\n\ne.g. We would like to see the a series that shows \u201cstate equal normal\u201d and compare this to another series \u201ctemperature_C greater 33\u201d on the same graph\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSelect Y-Axis\n\n\n\n\n\n\nConfigure your result to display the number of devices, number of reports, or property with respect to time.\n\n\n\n\n\n\n\n\n\ne.g. Here we choose \nDevice\n.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSelect Chart Type\n\n\n\n\n\n\nLine graph is set as default.\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResult\n\n\n\n\n\n\nScroll to the bottom of the page to generate results.\n\n  \n\n\n\n\n\n\n\n\nSet the time frame on the right hand side\n\n \n\n\n\n\n\n\n\n\ne.g. 12/01/2015 - 12/03/2016\n\n \n\n\n\n\n\n\n\n\nClick \nGenerate\n, this will need to be done every time there are changes made to the filters above.\n\n \n\n\n\n\n\n\n\n\nClick on the name of the series to hide/show it on the graph.\n\n \n\n\n\n\n\n\n\n\nZoom\n, \nReset\n, \nRaw Data\n, \nLine\n, \nBar\n and \nSave as Image\n work the same way as mentioned before.\n\n\n\n\n\n\n\n\n  \n\n\n\n\nMonitoring\n\n\nReal Time\n\n\n\n\nIf you have not set up any monitoring or alerts, click on the blue \nSet up now\n button. You will then be taken to the \nNotification\n page.\n\n\nContinue this part after you have configured your settings in \nNotificaiton\n.\n    \n \n\n\nAll changes from your device reports will show on screen in real time, coming from the right.\n    \n\n\n\n\n  \n\n\n\n\nNotification\n\n\n\n\n\n\nClick on \nConfigure Notification\n to set up monitoring for your product. \n\n\n\n\n\n\n\nCurrent Notification Method\n\n\n\n\nYour currnet method of notification is shown here.\n\n\n\n\n\n\n\n\n\nConfigure Method\n\n\n\n\nYour currnet method of notification is shown here.\n\n\n\n\n\n\n\n\n\nConfigure Normal Ranges\n\n\n\n\nIf you have not set up \nDevice Settings\n you will find nothing here.\n\n\n\nConfigure your normal ranges here by clicking on the \nEdit\n button. If your report values exceed the ranges, you will receive a notification.\n\n\n\n\n\n\n\n\n\n      \n\n\n\n\nPrediction\n\n\nRecommendations\n\n\n\n\n\n\n\n\nOn the top of the page, you can decide the frequency of the data and the time window you would like to observerve.\n\n\n\n\n\n\n\nThe \nHistory\n(Red Line) and \nPrediction\n(Dotted Line) of your report data will be shown here.\n\n\n\n\n\n\n\n\n\nClick on \nPrediction\n to hide \nPrediction\n.\n\n \n\n\n\n\n\n\n\n\nClick on \nHistory\n to hide \nHistory\n.\n\n\n\n\n\n\n\n\n\nSuggestions for various actions will be listed on the right hand side.", 
+            "title": "MoBagel Dashboard"
+        }, 
+        {
+            "location": "/started/dashboard/#mobagel-dashboard", 
+            "text": "", 
+            "title": "MoBagel Dashboard"
+        }, 
+        {
+            "location": "/started/dashboard/#introduction", 
+            "text": "Welcome to the  MoBagel Dashboard , a snapshot of your devices for easy tracking and analysis.    In this tutorial, we will guide you through each part of the MoBagel Dashboard.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/started/dashboard/#your-current-products", 
+            "text": "On the left hand side of the dashboard, under the MoBagel logo, a drop-down menu will list the products you have already created.        To create a new one, simply click on  +New Product .", 
+            "title": "Your Current Products"
+        }, 
+        {
+            "location": "/started/dashboard/#the-dashboard", 
+            "text": "Listed below follows the order of the left menu on the MoBagel dashboard, skip to the page that most interests you or follow along and see what MoBagel's dashboard can do!   Analytics  Usage  Segmentation    Monitoring  Real Time  Notification    Prediction  Recommendations    Configuration  Product Settings  Device Management  Data Setup  Docs", 
+            "title": "The Dashboard"
+        }, 
+        {
+            "location": "/started/dashboard/#analytics", 
+            "text": "", 
+            "title": "Analytics"
+        }, 
+        {
+            "location": "/started/dashboard/#usage", 
+            "text": "Usage  allows you to have a quick overview of all your devices all on one page, showing the number of users with regard to the time.        On the upper right hand side, click on  Day ,  Week ,  Month  or  Year  and the graph changes along with  Peak Usage  and  Lowest Usage  underneath.       Total Users  Shows all the current devices available    Active Users  Shows devices currently active, this information can also be found in  Configuration -  Device Management    Peak Usage  Indicated at the highest point in the graph above.    Lowest Usage  Indicated at the lowest point in the graph above.         On the upper right hand side we will also find some useful tabs under Day, Week, Month, and Year for manipulating the user frequency graph.       -  Zoom     Choose a timeframe by clicking on Zoom once, then select the area on the graph you would like to magnify. Repeat to zoom in again.        -  Reset  Graph goes back one step each time you click on Reset.        -  Raw Data     See Raw Data used to create the graph, click on \u201cclose\u201d on the lower-right hand side to return to graph.        -  Line     Line graph is set as default.        -  Bar  Click on Bar to show data as a Bar graph.        -  Save as Image  Download current graph shown.            Last Usage \n          See how many reports were sent each hour for the last 24 hours. Place mouse cursor on bar for details.       Last Usage Detail \n      Time  Last time a report was sent.    Total Devices  Total Reports  See More In Segmentation  Click to filter customised results in the \u201cSegmentation\u201d page.           Property Breakdown \n      Listed here are all sensor properties sent in each report, also showing the range of values for each property.  Numeric Property  Category Property         Usage Location  Manage your devices and see where they are located from latitude and longitude data in the report.  Country  User  %User", 
+            "title": "Usage"
+        }, 
+        {
+            "location": "/started/dashboard/#segmentation", 
+            "text": "Condition       Create a segment using filters, for a specific timeframe or property states     Click on  Add rule  on the right hand side     Click on  Add group  for more complex filtering   Select the properties you would like to filter with  AND  /  OR .    e.g. \"state equal normal\"  AND  \"temperature_C is greater than 30\u201d  AND  (\"light_pct is null\"  OR  \u201cperiod_s is not null\u201d)         Series    Analyse the segment by comparing different series.     Click  +Add  to create a new series.     Add as many series you would like to compare.  e.g. We would like to see the a series that shows \u201cstate equal normal\u201d and compare this to another series \u201ctemperature_C greater 33\u201d on the same graph        Select Y-Axis    Configure your result to display the number of devices, number of reports, or property with respect to time.     e.g. Here we choose  Device .        Select Chart Type    Line graph is set as default.           Result    Scroll to the bottom of the page to generate results.        Set the time frame on the right hand side       e.g. 12/01/2015 - 12/03/2016       Click  Generate , this will need to be done every time there are changes made to the filters above.       Click on the name of the series to hide/show it on the graph.       Zoom ,  Reset ,  Raw Data ,  Line ,  Bar  and  Save as Image  work the same way as mentioned before.", 
+            "title": "Segmentation"
+        }, 
+        {
+            "location": "/started/dashboard/#monitoring", 
+            "text": "", 
+            "title": "Monitoring"
+        }, 
+        {
+            "location": "/started/dashboard/#real-time", 
+            "text": "If you have not set up any monitoring or alerts, click on the blue  Set up now  button. You will then be taken to the  Notification  page.  Continue this part after you have configured your settings in  Notificaiton .\n        All changes from your device reports will show on screen in real time, coming from the right.", 
+            "title": "Real Time"
+        }, 
+        {
+            "location": "/started/dashboard/#notification", 
+            "text": "Click on  Configure Notification  to set up monitoring for your product.     Current Notification Method   Your currnet method of notification is shown here.     Configure Method   Your currnet method of notification is shown here.     Configure Normal Ranges   If you have not set up  Device Settings  you will find nothing here.  Configure your normal ranges here by clicking on the  Edit  button. If your report values exceed the ranges, you will receive a notification.", 
+            "title": "Notification"
+        }, 
+        {
+            "location": "/started/dashboard/#prediction", 
+            "text": "", 
+            "title": "Prediction"
+        }, 
+        {
+            "location": "/started/dashboard/#recommendations", 
+            "text": "On the top of the page, you can decide the frequency of the data and the time window you would like to observerve.    The  History (Red Line) and  Prediction (Dotted Line) of your report data will be shown here.     Click on  Prediction  to hide  Prediction .       Click on  History  to hide  History .     Suggestions for various actions will be listed on the right hand side.", 
+            "title": "Recommendations"
+        }, 
+        {
+            "location": "/integrations/rest/", 
+            "text": "REST API\n\n\nThis section covers the basics of the MoBagel API and how you can utilize MoBagel's platform to improve your IoT devices.\n\n\n\n\nAPI List\n\n\nRegister API\n\n\n\n\nRegister a new device for your product.\n\n\n\n\nReport API\n\n\n\n\nSend a report.\n\n\n\n\n\n\n\n\nRegister API\n\n\nThis API is used to register a new \nDevice\n for your \nProduct\n.\n\nYou can simply use this API to generate mass devices to do mass deployment. However, your devices are limited. Please use this API carefully to avoid reaching the limitation of your account.\n\n\nRequest\n\n\n\n\nMethod: \nPOST\n\n\nURL: \nhttps://api.mobagel.com/v2/register\n\n\nHeaders:\n\n\nProduct-Key\n: The Product Key you get on the dashboard. (Under \nBasic Information\n in \nConfigeration -\n Product Settings\n)\n\n\nContent-Type\n: application/json\n\n\n\n\n\n\nBody (Choose one below to send):\n\n\nFill in an \nEmpty State\n.\n\n\n{}\n\n\nFill in \nDevice Attribute\n you have set on the dashboard. (Under \nDevice Settings\n in \nConfigeration -\n Product Settings\n)\n\n\n{\n    \"c_temp\": \"1\",\n    \"c_motion\": \"2\",\n  }\n\n  (This serves as an example, please use the attributes you have manaually set.)\n\n\n\n\n\n\n\n\nResponse\n\n\n\n\nSuccess response:\n\n\nHTTP status code\n: 200\n\n\nBody\n:\n\n\n\n\n\n\n\n\n{\n  \n_id\n: \nAn id will be generated automatically.\n,\n  \nkey\n: \nA key will be genereated here for each new device.\n,\n  \nproductId\n: \nA productId will be generated automatically.\n,\n  \ncreatedAt\n: \nA timestamp of the time created.\n,\n  \nupdatedAt\n: \nA timestamp of the time updated.\n,\n  \nactivatedAt\n: \n0001-01-01T00:00:00Z\n,\n  \nproperties\n: {\n    \nc_temp\n: \n1\n,\n    \nc_motion\n: \n2\n,\n  }\n}\n\n\n\n\n\n\n\n \n\n\n\n\nReport API\n\n\nThis API is used to report the state of your devices. The report content can be customised to what you want. If you would like to report the temperature of your device, just use add \nc_\n as the prefix.\n\n\nRequest\n\n\n\n\nMethod: \nPOST\n\n\nURL: \nhttps://api.mobagel.com/v2/report\n\n\nHeaders:\n\n\nDevice-Key\n: The Device Key of a created device. (Under \nDevice List\n in \nConfigeration -\n Device Management\n)\n\n\n\n\n\n\nBody:\n\n\n\n\n\n\n\n\n\n\nParameter\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nstate\n\n\nstring\n\n\nState of device\n\n\n\n\n\n\nc_xxx\n\n\nstring/number\n\n\nCustom parameters must start with prefix \nc_\n\n\n\n\n\n\n\n\nAn example would look like this. \n      \n{\n        \"state\": \"Normal\",\n        \"c_temp\": \"99\",\n        \"c_motion\": \"100\"\n      }\n\n\nResponse\n\n\n\n\nSuccess response:\n\n\nReturns an id string.", 
+            "title": "REST"
+        }, 
+        {
+            "location": "/integrations/rest/#rest-api", 
+            "text": "This section covers the basics of the MoBagel API and how you can utilize MoBagel's platform to improve your IoT devices.", 
+            "title": "REST API"
+        }, 
+        {
+            "location": "/integrations/rest/#api-list", 
+            "text": "", 
+            "title": "API List"
+        }, 
+        {
+            "location": "/integrations/rest/#register-api", 
+            "text": "Register a new device for your product.", 
+            "title": "Register API"
+        }, 
+        {
+            "location": "/integrations/rest/#report-api", 
+            "text": "Send a report.", 
+            "title": "Report API"
+        }, 
+        {
+            "location": "/integrations/rest/#register-api_1", 
+            "text": "This API is used to register a new  Device  for your  Product . \nYou can simply use this API to generate mass devices to do mass deployment. However, your devices are limited. Please use this API carefully to avoid reaching the limitation of your account.", 
+            "title": "Register API"
+        }, 
+        {
+            "location": "/integrations/rest/#request", 
+            "text": "Method:  POST  URL:  https://api.mobagel.com/v2/register  Headers:  Product-Key : The Product Key you get on the dashboard. (Under  Basic Information  in  Configeration -  Product Settings )  Content-Type : application/json    Body (Choose one below to send):  Fill in an  Empty State .  {}  Fill in  Device Attribute  you have set on the dashboard. (Under  Device Settings  in  Configeration -  Product Settings )  {\n    \"c_temp\": \"1\",\n    \"c_motion\": \"2\",\n  } \n  (This serves as an example, please use the attributes you have manaually set.)", 
+            "title": "Request"
+        }, 
+        {
+            "location": "/integrations/rest/#response", 
+            "text": "Success response:  HTTP status code : 200  Body :     {\n   _id :  An id will be generated automatically. ,\n   key :  A key will be genereated here for each new device. ,\n   productId :  A productId will be generated automatically. ,\n   createdAt :  A timestamp of the time created. ,\n   updatedAt :  A timestamp of the time updated. ,\n   activatedAt :  0001-01-01T00:00:00Z ,\n   properties : {\n     c_temp :  1 ,\n     c_motion :  2 ,\n  }\n}", 
+            "title": "Response"
+        }, 
+        {
+            "location": "/integrations/rest/#report-api_1", 
+            "text": "This API is used to report the state of your devices. The report content can be customised to what you want. If you would like to report the temperature of your device, just use add  c_  as the prefix.", 
+            "title": "Report API"
+        }, 
+        {
+            "location": "/integrations/rest/#request_1", 
+            "text": "Method:  POST  URL:  https://api.mobagel.com/v2/report  Headers:  Device-Key : The Device Key of a created device. (Under  Device List  in  Configeration -  Device Management )    Body:      Parameter  Type  Description      state  string  State of device    c_xxx  string/number  Custom parameters must start with prefix  c_     An example would look like this. \n       {\n        \"state\": \"Normal\",\n        \"c_temp\": \"99\",\n        \"c_motion\": \"100\"\n      }", 
+            "title": "Request"
+        }, 
+        {
+            "location": "/integrations/rest/#response_1", 
+            "text": "Success response:  Returns an id string.", 
+            "title": "Response"
+        }, 
+        {
+            "location": "/integrations/python/", 
+            "text": "MoBagel Python SDK\n\n\nUse MoBagel Python SDK to quickly install MoBagel to your device(s). MoBagel Python SDK is an open-source python library that makes it easy to integrate your python application with MoBagel. \n\n\n\n\nPreparation\n\n\nCreating an account\n\n\nIf you do not have an account, please create an account \nhere\n. After you create an account, you will be directed to the dashboard.\n\n  \n\n\n\n\nCreating a new product\n\n\nTo use MoBagel, you first have to create a \nproduct\n, which is essentially a group of same \ndevice\n. You will be prompted to create a new product when you first enter the dashboard.\n\n\n  \n\n\nAfter you create a \nproduct\n, you can go to \nConfiguration -\n Product Settings\n Info to retrieve your \nproduct_key\n, which will be used to create \ndevice\n later on.\n\n\n  \n\n\n\n\nAdding custom properties\n\n\n \n\nIn \nProduct Settings\n under \nConfiguration\n, you can add custom properties to your product. \n\nCustom properties should have the following requirements:   \n\n\n   \n\n\n\n\n\n\nID\n: \n\nProperty ID will always begin with \nd_\n (for numbers) or \ns_\n (for strings) to indicate that it is a custom property, this will be automatically asigned when you select a \nType\n. Property IDs are unique and cannot repeat with itself.\n\n\n\n\n\n\nName\n: \n\nYou can set a custom name for each property. For example, if your ID is \nd_012421\n, you can set the name as \ntemperature\n. The modules in the dashboard will display your property name instead of your property ID.\n\n\n\n\n\n\nType\n: \n\nThere are two types of properties: \nnumber\n and \nstring\n.\n\n\n\n\n\n\nPlease note that you must configure your properties in your configuration before you send your first customized report.\n\n\n\u200b---  \n\n\nInstallation\n\n\nBefore you run mobagel-python-sdk, you need to install \npip\n first.\n\n\npip (Mac OS X)\n\n\n    $ sudo easy_install pip\n\n\n\n\npip (Ubuntu 14.04)\n\n\n    $ sudo apt-get install python-pip python-dev build-essential \n    $ sudo pip install --upgrade pip \n\n\n\n\nmobagel-python-sdk\n\n\n    $ sudo pip install mobagel-python-sdk\n\n\n\n\n\n\nExample Walkthrough\n\n\nRegistering your first device\n\n\nOnce you generated a product_key from the dashboard, you can use the product_key and registerDevice function to register a device in your application.\n\n\n# ENV: python3.5.1 / python2.7.6\nimport json\nimport pybagel\n\n# Initialize a client instance by product_key\nc = pybagel.MoBagelClient(\n    product_key=\n1111111111222222222233333333334444444444555555555566666666667777\n\n)\n\n# Custom properties, should be created in the MoBagel dashboard\ncontent = {\n    \ns_string\n: \n7777\n,\n    \nd_number\n: 7777\n}\n\n# register a new device\nstatus_code, body = c.registerDevice(content)\nresponse = json.loads(body.decode('utf-8'))\n\n# return a new device_key\nprint(\nStatus code:\n, status_code)\nprint(\nResponse data:\n, response)\nprint(\nDevice Key:\n, response[\nkey\n])\n\n\n\n\n\nConnecting custom properties or events\n\n\nIn your device application, you will need to prepare your report before sending it to MoBagel.  \n\n\n\n\nDetermining different \nstates\n of your devices to send along with your report\n\n\n\n\n//example states\n\n\nstate\n: \nnormal\n\n\nstate\n: \nerror\n\n\n\n\n\n\n\nAdding custom properties or events with a key beginning with \nd_\n or \ns_\n\n\n\n\n//example custom properties or events\n\n\nd_temperature\n: 30\n\ns_event\n: \nturned_on\n\n\n\n\n\n\n\nDeciding when to send reports (time, frequency, events)\n\n\n\n\nSending first report\n\n\n# ENV: python3.5.1 / python2.7.6\nimport json\ntry:\n    import pybagel\nexcept:\n    import sys\n    import os\n    filepath = os.path.dirname(os.path.abspath(__file__))\n    sys.path.append(filepath+'/..')\n    import pybagel\n\n# Initialize a Client Instance by product_key\n# You can register a device and get a device_key according \nexample_registerDevice.py\n\nc = pybagel.MoBagelClient(\n    device_key=\n1111111111222222222233333333334444444444555555555566666666667777\n\n)\n\n# Custom properties, should be created in the MoBagel dashboard\ncontent = {\n    \nstate\n: \nnormal\n,\n    \ns_category\n: \n555\n,\n    \nd_numeric\n: 555\n}\n\n# send report with device key\nstatus_code, body = c.sendReport(content)\nresponse = json.loads(body.decode('utf-8'))\n\n# return status_code, product_id\nprint(\nStatus code:\n, status_code)\nprint(\nResponse data:\n, response)", 
+            "title": "Python"
+        }, 
+        {
+            "location": "/integrations/python/#mobagel-python-sdk", 
+            "text": "Use MoBagel Python SDK to quickly install MoBagel to your device(s). MoBagel Python SDK is an open-source python library that makes it easy to integrate your python application with MoBagel.", 
+            "title": "MoBagel Python SDK"
+        }, 
+        {
+            "location": "/integrations/python/#preparation", 
+            "text": "", 
+            "title": "Preparation"
+        }, 
+        {
+            "location": "/integrations/python/#creating-an-account", 
+            "text": "If you do not have an account, please create an account  here . After you create an account, you will be directed to the dashboard.", 
+            "title": "Creating an account"
+        }, 
+        {
+            "location": "/integrations/python/#creating-a-new-product", 
+            "text": "To use MoBagel, you first have to create a  product , which is essentially a group of same  device . You will be prompted to create a new product when you first enter the dashboard.      After you create a  product , you can go to  Configuration -  Product Settings  Info to retrieve your  product_key , which will be used to create  device  later on.", 
+            "title": "Creating a new product"
+        }, 
+        {
+            "location": "/integrations/python/#adding-custom-properties", 
+            "text": "In  Product Settings  under  Configuration , you can add custom properties to your product.  \nCustom properties should have the following requirements:            ID :  \nProperty ID will always begin with  d_  (for numbers) or  s_  (for strings) to indicate that it is a custom property, this will be automatically asigned when you select a  Type . Property IDs are unique and cannot repeat with itself.    Name :  \nYou can set a custom name for each property. For example, if your ID is  d_012421 , you can set the name as  temperature . The modules in the dashboard will display your property name instead of your property ID.    Type :  \nThere are two types of properties:  number  and  string .    Please note that you must configure your properties in your configuration before you send your first customized report.  \u200b---", 
+            "title": "Adding custom properties"
+        }, 
+        {
+            "location": "/integrations/python/#installation", 
+            "text": "Before you run mobagel-python-sdk, you need to install  pip  first.  pip (Mac OS X)      $ sudo easy_install pip  pip (Ubuntu 14.04)      $ sudo apt-get install python-pip python-dev build-essential \n    $ sudo pip install --upgrade pip   mobagel-python-sdk      $ sudo pip install mobagel-python-sdk", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/integrations/python/#example-walkthrough", 
+            "text": "", 
+            "title": "Example Walkthrough"
+        }, 
+        {
+            "location": "/integrations/python/#registering-your-first-device", 
+            "text": "Once you generated a product_key from the dashboard, you can use the product_key and registerDevice function to register a device in your application.  # ENV: python3.5.1 / python2.7.6\nimport json\nimport pybagel\n\n# Initialize a client instance by product_key\nc = pybagel.MoBagelClient(\n    product_key= 1111111111222222222233333333334444444444555555555566666666667777 \n)\n\n# Custom properties, should be created in the MoBagel dashboard\ncontent = {\n     s_string :  7777 ,\n     d_number : 7777\n}\n\n# register a new device\nstatus_code, body = c.registerDevice(content)\nresponse = json.loads(body.decode('utf-8'))\n\n# return a new device_key\nprint( Status code: , status_code)\nprint( Response data: , response)\nprint( Device Key: , response[ key ])", 
+            "title": "Registering your first device"
+        }, 
+        {
+            "location": "/integrations/python/#connecting-custom-properties-or-events", 
+            "text": "In your device application, you will need to prepare your report before sending it to MoBagel.     Determining different  states  of your devices to send along with your report   //example states state :  normal  state :  error    Adding custom properties or events with a key beginning with  d_  or  s_   //example custom properties or events d_temperature : 30 s_event :  turned_on    Deciding when to send reports (time, frequency, events)", 
+            "title": "Connecting custom properties or events"
+        }, 
+        {
+            "location": "/integrations/python/#sending-first-report", 
+            "text": "# ENV: python3.5.1 / python2.7.6\nimport json\ntry:\n    import pybagel\nexcept:\n    import sys\n    import os\n    filepath = os.path.dirname(os.path.abspath(__file__))\n    sys.path.append(filepath+'/..')\n    import pybagel\n\n# Initialize a Client Instance by product_key\n# You can register a device and get a device_key according  example_registerDevice.py \nc = pybagel.MoBagelClient(\n    device_key= 1111111111222222222233333333334444444444555555555566666666667777 \n)\n\n# Custom properties, should be created in the MoBagel dashboard\ncontent = {\n     state :  normal ,\n     s_category :  555 ,\n     d_numeric : 555\n}\n\n# send report with device key\nstatus_code, body = c.sendReport(content)\nresponse = json.loads(body.decode('utf-8'))\n\n# return status_code, product_id\nprint( Status code: , status_code)\nprint( Response data: , response)", 
+            "title": "Sending first report"
+        }, 
+        {
+            "location": "/integrations/node/", 
+            "text": "MoBagel Node SDK\n\n\nUse MoBagel Node SDK to quickly install MoBagel to your device(s). MoBagel Node SDK is an open-source node library that makes it easy to integrate your node application with MoBagel. \n\n\n\n\nPreparation\n\n\nCreating an account\n\n\nIf you do not have an account, please create an account \nhere\n. After you create an account, you will be directed to the dashboard.\n\n  \n\n\n\n\nCreating a new product\n\n\nTo use MoBagel, you first have to create a \nproduct\n, which is essentially a group of same \ndevice\n. You will be prompted to create a new product when you first enter the dashboard.\n\n\n  \n\n\nAfter you create a \nproduct\n, you can go to \nConfiguration -\n Product Settings\n Info to retrieve your \nproduct_key\n, which will be used to create \ndevice\n later on.\n\n\n  \n\n\n\n\nAdding custom properties\n\n\n \n\nIn \nProduct Settings\n under \nConfiguration\n, you can add custom properties to your product. \n\nCustom properties should have the following requirements:   \n\n\n   \n\n\n\n\n\n\nID\n: \n\nProperty ID will always begin with \nd_\n (for numbers) or \ns_\n (for strings) to indicate that it is a custom property, this will be automatically asigned when you select a \nType\n. Property IDs are unique and cannot repeat with itself.\n\n\n\n\n\n\nName\n: \n\nYou can set a custom name for each property. For example, if your ID is \nd_012421\n, you can set the name as \ntemperature\n. The modules in the dashboard will display your property name instead of your property ID.\n\n\n\n\n\n\nType\n: \n\nThere are two types of properties: \nnumber\n and \nstring\n.\n\n\n\n\n\n\nPlease note that you must configure your properties in your configuration before you send your first customized report.\n\n\n\n\nInstallation\n\n\nSupported Platform\n\n\nOperating System: Windows, OS X, Linux and \nmore\n\n\nRequirement\n\n\nNode.js\n\n\nInstalling SDK\n\n\nnpm install mobagel-node-sdk\n\n\n\n\nor \ndownload directly from GitHub\n\n\n\n\nExample Walkthrough\n\n\nRegistering your first device\n\n\nOnce you generated a product_key from the dashboard, you can use the product_key and registerDevice function to register a device in your application.\n\n\nvar mobagel = require('mobagel-node-sdk');\nvar product_key = \n1111111111222222222233333333334444444444555555555566666666667777\n;\nvar c = mobagel.client(product_key);\n\nc.registerDevice({\n    s_string: 'Node SDK',\n    d_number: 123\n}, function(err, res, body) {\n    if (err) throw err;\n    if (Math.floor(res.statusCode / 100) === 2) {\n        console.log('Response data: ');\n    }\n    console.log(body);\n});\n\n\n\n\n\nConnecting custom properties or events\n\n\nIn your device application, you will need to prepare your report before sending it to MoBagel.  \n\n\n\n\nDetermining different \nstates\n of your devices to send along with your report\n\n\n\n\n//example states\n\n\nstate\n: \nnormal\n\n\nstate\n: \nerror\n\n\n\n\n\n\n\nAdding custom properties or events with a key beginning with \nc_\n\n\n\n\n//example custom properties or events\n\n\nd_temperature\n: 30\n\ns_event\n: \nturned_on\n\n\n\n\n\n\n\nDeciding when to send reports (time, frequency, events)\n\n\n\n\nSending first report\n\n\nvar mobagel = require('mobagel-node-sdk');\nvar product_key = \n;\nvar device_key = \n1111111111222222222233333333334444444444555555555566666666667777\n;\nvar c = mobagel.client(product_key, device_key);\n\nc.sendReport({\n    state: 'normal',\n    s_category: 'nodeSDK',\n    d_numeric: 123\n}, function(err, res, body) {\n    if (err) throw err;\n    if (Math.floor(res.statusCode / 100) === 2) {\n        console.log('Response data: ');\n    }\n    console.log(body);\n});", 
+            "title": "Node"
+        }, 
+        {
+            "location": "/integrations/node/#mobagel-node-sdk", 
+            "text": "Use MoBagel Node SDK to quickly install MoBagel to your device(s). MoBagel Node SDK is an open-source node library that makes it easy to integrate your node application with MoBagel.", 
+            "title": "MoBagel Node SDK"
+        }, 
+        {
+            "location": "/integrations/node/#preparation", 
+            "text": "", 
+            "title": "Preparation"
+        }, 
+        {
+            "location": "/integrations/node/#creating-an-account", 
+            "text": "If you do not have an account, please create an account  here . After you create an account, you will be directed to the dashboard.", 
+            "title": "Creating an account"
+        }, 
+        {
+            "location": "/integrations/node/#creating-a-new-product", 
+            "text": "To use MoBagel, you first have to create a  product , which is essentially a group of same  device . You will be prompted to create a new product when you first enter the dashboard.      After you create a  product , you can go to  Configuration -  Product Settings  Info to retrieve your  product_key , which will be used to create  device  later on.", 
+            "title": "Creating a new product"
+        }, 
+        {
+            "location": "/integrations/node/#adding-custom-properties", 
+            "text": "In  Product Settings  under  Configuration , you can add custom properties to your product.  \nCustom properties should have the following requirements:            ID :  \nProperty ID will always begin with  d_  (for numbers) or  s_  (for strings) to indicate that it is a custom property, this will be automatically asigned when you select a  Type . Property IDs are unique and cannot repeat with itself.    Name :  \nYou can set a custom name for each property. For example, if your ID is  d_012421 , you can set the name as  temperature . The modules in the dashboard will display your property name instead of your property ID.    Type :  \nThere are two types of properties:  number  and  string .    Please note that you must configure your properties in your configuration before you send your first customized report.", 
+            "title": "Adding custom properties"
+        }, 
+        {
+            "location": "/integrations/node/#installation", 
+            "text": "", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/integrations/node/#supported-platform", 
+            "text": "Operating System: Windows, OS X, Linux and  more", 
+            "title": "Supported Platform"
+        }, 
+        {
+            "location": "/integrations/node/#requirement", 
+            "text": "Node.js", 
+            "title": "Requirement"
+        }, 
+        {
+            "location": "/integrations/node/#installing-sdk", 
+            "text": "npm install mobagel-node-sdk  or  download directly from GitHub", 
+            "title": "Installing SDK"
+        }, 
+        {
+            "location": "/integrations/node/#example-walkthrough", 
+            "text": "", 
+            "title": "Example Walkthrough"
+        }, 
+        {
+            "location": "/integrations/node/#registering-your-first-device", 
+            "text": "Once you generated a product_key from the dashboard, you can use the product_key and registerDevice function to register a device in your application.  var mobagel = require('mobagel-node-sdk');\nvar product_key =  1111111111222222222233333333334444444444555555555566666666667777 ;\nvar c = mobagel.client(product_key);\n\nc.registerDevice({\n    s_string: 'Node SDK',\n    d_number: 123\n}, function(err, res, body) {\n    if (err) throw err;\n    if (Math.floor(res.statusCode / 100) === 2) {\n        console.log('Response data: ');\n    }\n    console.log(body);\n});", 
+            "title": "Registering your first device"
+        }, 
+        {
+            "location": "/integrations/node/#connecting-custom-properties-or-events", 
+            "text": "In your device application, you will need to prepare your report before sending it to MoBagel.     Determining different  states  of your devices to send along with your report   //example states state :  normal  state :  error    Adding custom properties or events with a key beginning with  c_   //example custom properties or events d_temperature : 30 s_event :  turned_on    Deciding when to send reports (time, frequency, events)", 
+            "title": "Connecting custom properties or events"
+        }, 
+        {
+            "location": "/integrations/node/#sending-first-report", 
+            "text": "var mobagel = require('mobagel-node-sdk');\nvar product_key =  ;\nvar device_key =  1111111111222222222233333333334444444444555555555566666666667777 ;\nvar c = mobagel.client(product_key, device_key);\n\nc.sendReport({\n    state: 'normal',\n    s_category: 'nodeSDK',\n    d_numeric: 123\n}, function(err, res, body) {\n    if (err) throw err;\n    if (Math.floor(res.statusCode / 100) === 2) {\n        console.log('Response data: ');\n    }\n    console.log(body);\n});", 
+            "title": "Sending first report"
+        }, 
+        {
+            "location": "/integrations/ios_swift/", 
+            "text": "MoBagel iOS SDK\n\n\nUse MoBagel iOS SDK to quickly install MoBagel to your device(s).  MoBagel iOS SDK is an open-source iOS library that makes it easy to integrate your iOS application with MoBagel. \n\u200b\n\n\n\n\nPreparation\n\n\nCreating an account\n\n\nIf you do not have an account, please create an account \nhere\n. After you create an account, you will be directed to the dashboard.\n\n  \n\n\n\n\nCreating a new product\n\n\nTo use MoBagel, you first have to create a \nproduct\n, which is essentially a group of same \ndevice\n. You will be prompted to create a new product when you first enter the dashboard.\n\n\n  \n\n\nAfter you create a \nproduct\n, you can go to \nConfiguration -\n Product Settings\n Info to retrieve your \nproduct_key\n, which will be used to create \ndevice\n later on.\n\n\n  \n\n\n\n\nAdding custom properties\n\n\n \n\nIn \nProduct Settings\n under \nConfiguration\n, you can add custom properties to your product. \n\nCustom properties should have the following requirements:   \n\n\n   \n\n\n\n\n\n\nID\n: \n\nProperty ID will always begin with \nd_\n (for numbers) or \ns_\n (for strings) to indicate that it is a custom property, this will be automatically asigned when you select a \nType\n. Property IDs are unique and cannot repeat with itself.\n\n\n\n\n\n\nName\n: \n\nYou can set a custom name for each property. For example, if your ID is \nd_012421\n, you can set the name as \ntemperature\n. The modules in the dashboard will display your property name instead of your property ID.\n\n\n\n\n\n\nType\n: \n\nThere are two types of properties: \nnumber\n and \nstring\n.\n\n\n\n\n\n\nPlease note that you must configure your properties in your configuration before you send your first customized report.\n\n\u200b\n\n\n\n\nInstallation\n\n\n\n\niOS\n\u200b\n\n\n\n\nRequirement\n\n\n'AFNetworking', '~\n 2.3'\n\n\nInstalling SDK\n\n\nMoBagel iOS SDK\n is available through \nCocoaPods\n. To install the SDK, simply add the following line to your Podfile:\n\u200b\n\n\npod \nMoBagel\n, '~\n 1.0.0'\n\n\n\n\n\n\nExample Walkthrough (Swift)\n\n\nRegistering your first device\n\n\n\u200b\nUsing your \nproduct_key\n from the dashboard, you can replace the default \nproduct_key\n to your own \nproduct_key\n as following. \n\u200b\n\n\n#import \nMoBagel/MoBagel.h\n\n\nMoBagelHandler* handler = [[MoBagelHandler alloc] init];\nMoBagelClient* client = [MoBagelClient clientWithProductKey:productKey];\n\nself.handler.apiHandler =  ^(NSInteger code, id responseObject) {\n    // responseObject contain deviceId \n deviceKey\n    NSLog(@\nResponseObject: %@\n,responseObject);\n};\n\nself.handler.exceptionHandler =  ^(NSInteger code, id responseObject) {\n    NSLog(@\nException: %@\n,responseObject);\n};\n[client register:@{} handler:handler];\n\u200b\n\n\n\n\n\u200b\n\n\nYou can then use the \nregisterDevice\n function to register a \ndevice\n in your application.\n\nIf you get your \ndevice-key\n , congratulations! You have successfully register a device.\n\n\u200b\n\n\nlet handler = MoBagelHandler();\nhandler.registerHandler = {(code, data) -\n Void in\n    print(\nHttp code: \\(code) , device-key: \\(data)\n);\n    let key = data\n    // Store your key here\n}\nhandler.exceptionHandler = {(code, error) -\n Void in\n    print(\nHttp code: \\(code) , Error msg: \\(error)\n);\n}\nclient.registerDevice(handler)\n\n\n\n\nConnecting custom properties or events\n\n\n\u200b\nIn your device application, you will need to prepare your report before sending it to MoBagel.  \n\n\n\n\nDetermining different \nstates\n of your devices to send along with your report\n\u200b\n\n\n\n\n//example states\n\u200b\n\nstate\n: \nnormal\n\n\nstate\n: \nerror\n\n\n\n\n\n\n\nAdding custom properties or events with a key beginning with \ns_\n or \nd_\n\n\n\n\n//example custom properties or events\n\u200b\n\nd_temperature\n: 30\n\ns_event\n: \nturned_on\n\n\n\n\n\n\n\nDeciding when to send reports (time, frequency, events)\n\n\n\n\nSending first report\n\n\n\u200bYou need \ndevice-key\n to send a report.\n\nIf you see \nreport response\n , congratulations! You have successfully send a report.  \n\n\n#import \nMoBagel/MoBagel.h\n\n\nMoBagelHandler* handler = [[MoBagelHandler alloc] init];\nMoBagelClient* client = [MoBagelClient clientWithDeviceKey:deviceKey];\n\nself.handler.apiHandler =  ^(NSInteger code, id responseObject) {\n    // responseObject contain deviceId \n deviceKey\n    NSLog(@\nResponseObject: %@\n,responseObject);\n};\n\nself.handler.exceptionHandler =  ^(NSInteger code, id responseObject) {\n    NSLog(@\nException: %@\n,responseObject);\n};\n\nNSDictionary* data = @{\n    @\nstate\n: @\nnormal\n,\n    @\nd_temperature\n: @(30),\n    @\ns_event\n: @\nturned_on\n,\n};\n[client report:data handler:handler];", 
+            "title": "iOS Swift"
+        }, 
+        {
+            "location": "/integrations/ios_swift/#mobagel-ios-sdk", 
+            "text": "Use MoBagel iOS SDK to quickly install MoBagel to your device(s).  MoBagel iOS SDK is an open-source iOS library that makes it easy to integrate your iOS application with MoBagel. \n\u200b", 
+            "title": "MoBagel iOS SDK"
+        }, 
+        {
+            "location": "/integrations/ios_swift/#preparation", 
+            "text": "", 
+            "title": "Preparation"
+        }, 
+        {
+            "location": "/integrations/ios_swift/#creating-an-account", 
+            "text": "If you do not have an account, please create an account  here . After you create an account, you will be directed to the dashboard.", 
+            "title": "Creating an account"
+        }, 
+        {
+            "location": "/integrations/ios_swift/#creating-a-new-product", 
+            "text": "To use MoBagel, you first have to create a  product , which is essentially a group of same  device . You will be prompted to create a new product when you first enter the dashboard.      After you create a  product , you can go to  Configuration -  Product Settings  Info to retrieve your  product_key , which will be used to create  device  later on.", 
+            "title": "Creating a new product"
+        }, 
+        {
+            "location": "/integrations/ios_swift/#adding-custom-properties", 
+            "text": "In  Product Settings  under  Configuration , you can add custom properties to your product.  \nCustom properties should have the following requirements:            ID :  \nProperty ID will always begin with  d_  (for numbers) or  s_  (for strings) to indicate that it is a custom property, this will be automatically asigned when you select a  Type . Property IDs are unique and cannot repeat with itself.    Name :  \nYou can set a custom name for each property. For example, if your ID is  d_012421 , you can set the name as  temperature . The modules in the dashboard will display your property name instead of your property ID.    Type :  \nThere are two types of properties:  number  and  string .    Please note that you must configure your properties in your configuration before you send your first customized report. \n\u200b", 
+            "title": "Adding custom properties"
+        }, 
+        {
+            "location": "/integrations/ios_swift/#installation", 
+            "text": "iOS\n\u200b", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/integrations/ios_swift/#requirement", 
+            "text": "'AFNetworking', '~  2.3'", 
+            "title": "Requirement"
+        }, 
+        {
+            "location": "/integrations/ios_swift/#installing-sdk", 
+            "text": "MoBagel iOS SDK  is available through  CocoaPods . To install the SDK, simply add the following line to your Podfile:\n\u200b  pod  MoBagel , '~  1.0.0'", 
+            "title": "Installing SDK"
+        }, 
+        {
+            "location": "/integrations/ios_swift/#example-walkthrough-swift", 
+            "text": "", 
+            "title": "Example Walkthrough (Swift)"
+        }, 
+        {
+            "location": "/integrations/ios_swift/#registering-your-first-device", 
+            "text": "\u200b\nUsing your  product_key  from the dashboard, you can replace the default  product_key  to your own  product_key  as following. \n\u200b  #import  MoBagel/MoBagel.h \n\nMoBagelHandler* handler = [[MoBagelHandler alloc] init];\nMoBagelClient* client = [MoBagelClient clientWithProductKey:productKey];\n\nself.handler.apiHandler =  ^(NSInteger code, id responseObject) {\n    // responseObject contain deviceId   deviceKey\n    NSLog(@ ResponseObject: %@ ,responseObject);\n};\n\nself.handler.exceptionHandler =  ^(NSInteger code, id responseObject) {\n    NSLog(@ Exception: %@ ,responseObject);\n};\n[client register:@{} handler:handler];\n\u200b  \u200b  You can then use the  registerDevice  function to register a  device  in your application. \nIf you get your  device-key  , congratulations! You have successfully register a device. \n\u200b  let handler = MoBagelHandler();\nhandler.registerHandler = {(code, data) -  Void in\n    print( Http code: \\(code) , device-key: \\(data) );\n    let key = data\n    // Store your key here\n}\nhandler.exceptionHandler = {(code, error) -  Void in\n    print( Http code: \\(code) , Error msg: \\(error) );\n}\nclient.registerDevice(handler)", 
+            "title": "Registering your first device"
+        }, 
+        {
+            "location": "/integrations/ios_swift/#connecting-custom-properties-or-events", 
+            "text": "\u200b\nIn your device application, you will need to prepare your report before sending it to MoBagel.     Determining different  states  of your devices to send along with your report\n\u200b   //example states\n\u200b state :  normal  state :  error    Adding custom properties or events with a key beginning with  s_  or  d_   //example custom properties or events\n\u200b d_temperature : 30 s_event :  turned_on    Deciding when to send reports (time, frequency, events)", 
+            "title": "Connecting custom properties or events"
+        }, 
+        {
+            "location": "/integrations/ios_swift/#sending-first-report", 
+            "text": "\u200bYou need  device-key  to send a report. \nIf you see  report response  , congratulations! You have successfully send a report.    #import  MoBagel/MoBagel.h \n\nMoBagelHandler* handler = [[MoBagelHandler alloc] init];\nMoBagelClient* client = [MoBagelClient clientWithDeviceKey:deviceKey];\n\nself.handler.apiHandler =  ^(NSInteger code, id responseObject) {\n    // responseObject contain deviceId   deviceKey\n    NSLog(@ ResponseObject: %@ ,responseObject);\n};\n\nself.handler.exceptionHandler =  ^(NSInteger code, id responseObject) {\n    NSLog(@ Exception: %@ ,responseObject);\n};\n\nNSDictionary* data = @{\n    @ state : @ normal ,\n    @ d_temperature : @(30),\n    @ s_event : @ turned_on ,\n};\n[client report:data handler:handler];", 
+            "title": "Sending first report"
+        }, 
+        {
+            "location": "/glossary/", 
+            "text": "Glossary\n\n\n\n\ncustom property\n\n\nCustomize sensor properties. You can include various sensor properties in your report. Take smart air conditioner as an example, temperature and humidity might be your custom properties. \n\n\n\n\ndevice\n\n\nEach device should only belong to a single product, but a product can contain multiple devices. You can use the \nproduct_key\n and \nregisterDevice\n function to register a device in your application.\n\n\n\n\ndevice key\n\n\nA 64 bytes unique immutable identifier. Key of a device. You will get the \ndevice_key\n when you register your device. Each device has only one \ndevice_key\n. You use it to send reports. MoBagel system uses device key to do authentication.   \n\n\n\n\nproduct\n\n\nDevice group. One product will have many devices. It's the type of your device. Such as Smart light bulb, Smart air conditioner or Smart Lock. You can create new products on the dashboard. Once you create a product, the system will generate a \nproduct_key\n. \n\n\n\n\nproduct key\n\n\nA 64 bytes unique immutable identifier. Key of the product. Each product has only one \nproduct_key\n. After you create a product, the system will generate a \nproduct_key\n, which will be used to create devices.\n\n\n\n\nreport\n\n\nSensor data from the device. Includes all kinds of sensor property. You must include state, latitude and longitude in the report. Other custom states(e.g., temperature, humidity, mode) are optional. More information about report.\n\n\n\n\nstate\n\n\nThe status of the device. Must included in the report. For example, you can set \"Normal\", \"Error\" for smart air conditioner.", 
+            "title": "Glossary"
+        }, 
+        {
+            "location": "/glossary/#glossary", 
+            "text": "", 
+            "title": "Glossary"
+        }, 
+        {
+            "location": "/glossary/#custom-property", 
+            "text": "Customize sensor properties. You can include various sensor properties in your report. Take smart air conditioner as an example, temperature and humidity might be your custom properties.", 
+            "title": "custom property"
+        }, 
+        {
+            "location": "/glossary/#device", 
+            "text": "Each device should only belong to a single product, but a product can contain multiple devices. You can use the  product_key  and  registerDevice  function to register a device in your application.", 
+            "title": "device"
+        }, 
+        {
+            "location": "/glossary/#device-key", 
+            "text": "A 64 bytes unique immutable identifier. Key of a device. You will get the  device_key  when you register your device. Each device has only one  device_key . You use it to send reports. MoBagel system uses device key to do authentication.", 
+            "title": "device key"
+        }, 
+        {
+            "location": "/glossary/#product", 
+            "text": "Device group. One product will have many devices. It's the type of your device. Such as Smart light bulb, Smart air conditioner or Smart Lock. You can create new products on the dashboard. Once you create a product, the system will generate a  product_key .", 
+            "title": "product"
+        }, 
+        {
+            "location": "/glossary/#product-key", 
+            "text": "A 64 bytes unique immutable identifier. Key of the product. Each product has only one  product_key . After you create a product, the system will generate a  product_key , which will be used to create devices.", 
+            "title": "product key"
+        }, 
+        {
+            "location": "/glossary/#report", 
+            "text": "Sensor data from the device. Includes all kinds of sensor property. You must include state, latitude and longitude in the report. Other custom states(e.g., temperature, humidity, mode) are optional. More information about report.", 
+            "title": "report"
+        }, 
+        {
+            "location": "/glossary/#state", 
+            "text": "The status of the device. Must included in the report. For example, you can set \"Normal\", \"Error\" for smart air conditioner.", 
+            "title": "state"
+        }, 
+        {
+            "location": "/examples/", 
+            "text": "Examples\n\n\nIn order to use MoBagel to effectively manage and analyze your devices, you will need address the two following questions about your product:\n\n\nWhat custom properties or events should I add to my report?\n\n\nCustom properties or events enables you to track anything that your hardware allows, such as temperature sensors, humidity sensors, accelerometers, feature usage, and status of components. To determine which custom properties to add, you should first list out all of the possible properties that your hardware is capable of tracking, and then ask yourself which of these properties would help your device management and analytics, such as which properties will lead to malfunctioning, or which properties will give you the customer insights that you want.\n\n\nHow often should I send reports?\n\n\nThe frequency of sending reports varies according to the type of your product. It can range from once every few days to once every few seconds. If your product requires constant and careful monitoring, such as industrial machines or security systems, then you should send reports frequently in order to avoid delays in error detection. \n\n\n\n\nExample: Smart Home\n\n\nSmart Air Conditioner\n\n\nIf you have a smart air conditioner, you might ask yourself these questions to help you decide which custom properties or events to track:\n\n\n\n\n\n\nWhat do I want to know about my users?\n\n\n\n\n\n\nHow can I track these information?   \n\n\n\n\n\n\nHow do they actually use your product?  \n\n\n\n\n\n\nWhat is the user's exact temperature preference over the course of a day/month/year?  \n\n\n\n\n\n\nIs the compressor functional?\n\n\n\n\n\n\nIs the ambient temperature abnormal?  \n\n\n\n\n\n\nIs the air conditioner actually saving the user on energy bills?\n\n\n\n\n\n\nReport basic device state with location\n\n\nPOST /products/A001/devices/D001/reports\n\n{\n    \ndata\n:\n    {\n        \nstate\n: \nNormal\n,\n        \nlatitude\n: 12.321,\n        \nlongitude\n: -32.12\n    }\n}\n\n\n\n\nReport custom device\n\n\n(including Device-ID, Mode, Temperature, Ambient-Temperature, Fan-Speed, Humidity, Power-Consumption, Power-Stability and Compressor-Status.)\n\n\nPOST /products/A001/devices/D001/reports\n\n{\n    \ndata\n:\n    {\n        \nstate\n: \nNormal\n,\n        \nc_id\n: 5512,\n        \nc_mode\n: \ncooling\n,\n        \nc_temperature\n: 23.5,\n        \nc_t-unit\n: \n\u00b0C\n,\n        \nc_ambient_temp\n: 27,\n        \nc_at-unit\n: \n\u00b0C\n,\n        \nc_speed\n: \nLow\n,\n        \nc_humidity\n: 58,\n        \nc_h-unit\n: \n%\n,\n        \nc_power-consum\n: 2.0,\n        \nc_p-unit\n: \nkW\n,\n        \nc_power-stable\n: \nnormal\n,\n        \nc_compressor\n: \nnormal\n\n\n    }\n}\n\n\n\n\nSmart Air Cleaner\n\n\nIf you have a smart air cleaner, you might ask yourself these questions to help you decide which custom properties or events to track:\n\n\n\n\n\n\nWhat do I want to know about my users?\n\n\n\n\n\n\nHow can I track these information?   \n\n\n\n\n\n\nHow do they actually use your product?  \n\n\n\n\n\n\nHow often does the user use the product and under what conditions?\n\n\n\n\n\n\nHow long do your air filters last?\n\n\n\n\n\n\nWhat season of the year do your customers use the air clean the most?\n\n\n\n\n\n\nWhat feature does the user love most about your product?\n\n\n\n\n\n\nWhat is the air quality of the user's room like? Could you possibly use this information to upsell more products?\n\n\n\n\n\n\nReport basic device state with location\n\n\nPOST /products/A002/devices/D001/reports\n\n{\n    \ndata\n:\n    {\n        \nstate\n: \nNormal\n,\n        \nlatitude\n: 14.174,\n        \nlongitude\n: -72.17\n    }\n}\n\n\n\n\nReport custom device\n\n\n(Including Device-ID, Mode, Speeed, Air-Quality, Fan-Status, Compressor-Status, Filter-Usage.)\n\n\nPOST /products/A002/devices/D001/reports\n\n{\n    \ndata\n:\n    {\n        \nstate\n: \nNormal\n,\n        \nc_id\n: 1612,\n        \nc_mode\n: \nnight mode\n,\n        \nc_speed\n: \nhigh\n,\n        \nc_air-quality\n: 2.7,\n        \nc_air-unit\n: \nPM\n,\n        \nc_fan-status\n: \nNormal\n,\n        \nc_compressor\n: \nNormal\n\n        \nc_filter-usage\n: 76,\n        \nc_filter-unit\n: \n%\n,\n\n    }\n}\n\n\n\n\n\n\nExample: Vending Machine\n\n\nSmart Vending Machine\n\n\nSmart Vending Machine technology is evolving quickly, and new machines are engaging with customers like never before with touch-screen controls,  gesture-based interaction, and cashless payment. Unlike the past, vendors can now gain powerful insights about their vending machines and use them to maximize their business objectives. MoBagel can convert customer data to advanced inventory management and use predictive analytics to improve product forecasting. Through real-time monitor and predictive analytics, you can visualize and analyze your entire line of vending machines in a simple, easy-to-use dashboard.\n\n\nPossible questions to ask yourself:\n\n\n\n\n\n\nWhat are the top factors that contribute to succcessful sales?\n\n\n\n\n\n\nWhat is your top selling product, and how many of them will be sold next month?\n\n\n\n\n\n\nHow do I make the most efficient maintenance routes?\n\n\n\n\n\n\nIs the machine currently functional? When will the next malfunction be?\n\n\n\n\n\n\nHow do your customers behave under different locations and times?\n\n\n\n\n\n\nReport basic device state with location\n\n\nPOST /products/A003/devices/D001/reports\n\n{\n    \ndata\n:\n    {\n        \nstate\n: \nNormal\n,\n        \nlatitude\n: 15.175,\n        \nlongitude\n: -73.14\n    }\n}\n\n\n\n\n\nReport custom device\n\n\n(Including Device-ID, Mode, Speeed, Air-Quality, Fan-Status, Compressor-Status, Filter-Usage.)\n\n\nPOST /products/A003/devices/D001/reports\n\n{\n    \ndata\n:\n    {\n        \nstate\n: \nNormal\n,\n        \nc_id\n: 3456,\n        \nc_temperature\n: 8,\n        \nc_temp-unit\n: \n\u00b0C\n,\n        \nc_coin\n: 47,\n        \nc_coin-unit\n: \n%\n,\n        \nc_product_1\n: 1,\n        \nc_p1-unit\n: \ntimes\n,\n        \nc_product_2\n: 3,\n        \nc_p2-unit\n: \ntimes\n,\n        \nc_product_6\n: 1,\n        \nc_p6-unit\n: \ntimes\n,\n        \nc_female\n: 2,\n        \nc_male\n: 3,\n        \nc_age-10~15\n: 0,\n        \nc_age-15~25\n: 1,\n        \nc_age-25~35\n: 0,\n        \nc_age-35~45\n: 3,\n        \nc_age-35~45\n: 1,\n        \nc_age-45~55\n: 0,\n        \nc_ambient-tem\n: 28,\n        \nc_ambient-unit\n: \n\u00b0C\n,\n    }\n}", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/examples/#examples", 
+            "text": "In order to use MoBagel to effectively manage and analyze your devices, you will need address the two following questions about your product:", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/examples/#what-custom-properties-or-events-should-i-add-to-my-report", 
+            "text": "Custom properties or events enables you to track anything that your hardware allows, such as temperature sensors, humidity sensors, accelerometers, feature usage, and status of components. To determine which custom properties to add, you should first list out all of the possible properties that your hardware is capable of tracking, and then ask yourself which of these properties would help your device management and analytics, such as which properties will lead to malfunctioning, or which properties will give you the customer insights that you want.", 
+            "title": "What custom properties or events should I add to my report?"
+        }, 
+        {
+            "location": "/examples/#how-often-should-i-send-reports", 
+            "text": "The frequency of sending reports varies according to the type of your product. It can range from once every few days to once every few seconds. If your product requires constant and careful monitoring, such as industrial machines or security systems, then you should send reports frequently in order to avoid delays in error detection.", 
+            "title": "How often should I send reports?"
+        }, 
+        {
+            "location": "/examples/#example-smart-home", 
+            "text": "", 
+            "title": "Example: Smart Home"
+        }, 
+        {
+            "location": "/examples/#smart-air-conditioner", 
+            "text": "If you have a smart air conditioner, you might ask yourself these questions to help you decide which custom properties or events to track:    What do I want to know about my users?    How can I track these information?       How do they actually use your product?      What is the user's exact temperature preference over the course of a day/month/year?      Is the compressor functional?    Is the ambient temperature abnormal?      Is the air conditioner actually saving the user on energy bills?", 
+            "title": "Smart Air Conditioner"
+        }, 
+        {
+            "location": "/examples/#report-basic-device-state-with-location", 
+            "text": "POST /products/A001/devices/D001/reports\n\n{\n     data :\n    {\n         state :  Normal ,\n         latitude : 12.321,\n         longitude : -32.12\n    }\n}", 
+            "title": "Report basic device state with location"
+        }, 
+        {
+            "location": "/examples/#report-custom-device", 
+            "text": "(including Device-ID, Mode, Temperature, Ambient-Temperature, Fan-Speed, Humidity, Power-Consumption, Power-Stability and Compressor-Status.)  POST /products/A001/devices/D001/reports\n\n{\n     data :\n    {\n         state :  Normal ,\n         c_id : 5512,\n         c_mode :  cooling ,\n         c_temperature : 23.5,\n         c_t-unit :  \u00b0C ,\n         c_ambient_temp : 27,\n         c_at-unit :  \u00b0C ,\n         c_speed :  Low ,\n         c_humidity : 58,\n         c_h-unit :  % ,\n         c_power-consum : 2.0,\n         c_p-unit :  kW ,\n         c_power-stable :  normal ,\n         c_compressor :  normal \n\n    }\n}", 
+            "title": "Report custom device"
+        }, 
+        {
+            "location": "/examples/#smart-air-cleaner", 
+            "text": "If you have a smart air cleaner, you might ask yourself these questions to help you decide which custom properties or events to track:    What do I want to know about my users?    How can I track these information?       How do they actually use your product?      How often does the user use the product and under what conditions?    How long do your air filters last?    What season of the year do your customers use the air clean the most?    What feature does the user love most about your product?    What is the air quality of the user's room like? Could you possibly use this information to upsell more products?", 
+            "title": "Smart Air Cleaner"
+        }, 
+        {
+            "location": "/examples/#report-basic-device-state-with-location_1", 
+            "text": "POST /products/A002/devices/D001/reports\n\n{\n     data :\n    {\n         state :  Normal ,\n         latitude : 14.174,\n         longitude : -72.17\n    }\n}", 
+            "title": "Report basic device state with location"
+        }, 
+        {
+            "location": "/examples/#report-custom-device_1", 
+            "text": "(Including Device-ID, Mode, Speeed, Air-Quality, Fan-Status, Compressor-Status, Filter-Usage.)  POST /products/A002/devices/D001/reports\n\n{\n     data :\n    {\n         state :  Normal ,\n         c_id : 1612,\n         c_mode :  night mode ,\n         c_speed :  high ,\n         c_air-quality : 2.7,\n         c_air-unit :  PM ,\n         c_fan-status :  Normal ,\n         c_compressor :  Normal \n         c_filter-usage : 76,\n         c_filter-unit :  % ,\n\n    }\n}", 
+            "title": "Report custom device"
+        }, 
+        {
+            "location": "/examples/#example-vending-machine", 
+            "text": "", 
+            "title": "Example: Vending Machine"
+        }, 
+        {
+            "location": "/examples/#smart-vending-machine", 
+            "text": "Smart Vending Machine technology is evolving quickly, and new machines are engaging with customers like never before with touch-screen controls,  gesture-based interaction, and cashless payment. Unlike the past, vendors can now gain powerful insights about their vending machines and use them to maximize their business objectives. MoBagel can convert customer data to advanced inventory management and use predictive analytics to improve product forecasting. Through real-time monitor and predictive analytics, you can visualize and analyze your entire line of vending machines in a simple, easy-to-use dashboard.  Possible questions to ask yourself:    What are the top factors that contribute to succcessful sales?    What is your top selling product, and how many of them will be sold next month?    How do I make the most efficient maintenance routes?    Is the machine currently functional? When will the next malfunction be?    How do your customers behave under different locations and times?", 
+            "title": "Smart Vending Machine"
+        }, 
+        {
+            "location": "/examples/#report-basic-device-state-with-location_2", 
+            "text": "POST /products/A003/devices/D001/reports\n\n{\n     data :\n    {\n         state :  Normal ,\n         latitude : 15.175,\n         longitude : -73.14\n    }\n}", 
+            "title": "Report basic device state with location"
+        }, 
+        {
+            "location": "/examples/#report-custom-device_2", 
+            "text": "(Including Device-ID, Mode, Speeed, Air-Quality, Fan-Status, Compressor-Status, Filter-Usage.)  POST /products/A003/devices/D001/reports\n\n{\n     data :\n    {\n         state :  Normal ,\n         c_id : 3456,\n         c_temperature : 8,\n         c_temp-unit :  \u00b0C ,\n         c_coin : 47,\n         c_coin-unit :  % ,\n         c_product_1 : 1,\n         c_p1-unit :  times ,\n         c_product_2 : 3,\n         c_p2-unit :  times ,\n         c_product_6 : 1,\n         c_p6-unit :  times ,\n         c_female : 2,\n         c_male : 3,\n         c_age-10~15 : 0,\n         c_age-15~25 : 1,\n         c_age-25~35 : 0,\n         c_age-35~45 : 3,\n         c_age-35~45 : 1,\n         c_age-45~55 : 0,\n         c_ambient-tem : 28,\n         c_ambient-unit :  \u00b0C ,\n    }\n}", 
+            "title": "Report custom device"
+        }
+    ]
+}
