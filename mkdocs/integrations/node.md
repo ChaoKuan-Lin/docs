@@ -30,13 +30,13 @@ Custom properties should have the following requirements:
 <img src="../../../img/MoBagel_Getting_Started/Device_Settings.png" width="800">   
 
 * **ID**:   
-Property ID (with the exception of `state`) should always begin with `c_` to indicate that it is a custom property. In addition, property IDs are unique and cannot repeat with itself.
+Property ID will always begin with `d_` (for numbers) or `s_` (for strings) to indicate that it is a custom property, this will be automatically asigned when you select a `Type`. Property IDs are unique and cannot repeat with itself.
 
 * **Name**:   
-The property name is your nickname for your property. For example, if your ID is `c_012421`, you can set the name as `temperature`. The modules in the dashboard will display your property name instead of your property ID.
+You can set a custom name for each property. For example, if your ID is `c_012421`, you can set the name as `temperature`. The modules in the dashboard will display your property name instead of your property ID.
 
 * **Type**:   
-There are two types of properties: `string` and `number`.  
+There are two types of properties: `number` and `string`.
 
 **_Please note that you must configure your properties in your configuration before you send your first customized report._**
 
