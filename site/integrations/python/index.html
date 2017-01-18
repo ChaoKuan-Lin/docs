@@ -129,6 +129,12 @@
                         
                             
 <li >
+    <a href="../php/">PHP</a>
+</li>
+
+                        
+                            
+<li >
     <a href="../ios_swift/">iOS Swift</a>
 </li>
 
@@ -282,15 +288,14 @@ There are two types of properties: <code>number</code> and <code>string</code>.<
 import json
 import pybagel
 
-# Initialize a client instance by product_key
-c = pybagel.MoBagelClient(
-    product_key=&quot;1111111111222222222233333333334444444444555555555566666666667777&quot;
-)
+# Initialize a Client Instance by product_key
+c = pybagel.MoBagelClient()
+c.product_key=&quot;YOUR_PRODUCT_KEY&quot;
 
 # Custom properties, should be created in the MoBagel dashboard
 content = {
-    &quot;s_string&quot;: &quot;7777&quot;,
-    &quot;d_number&quot;: 7777
+    &quot;s_string&quot;: &quot;PythonSDK&quot;,
+    &quot;d_number&quot;: 100
 }
 
 # register a new device
@@ -307,15 +312,6 @@ print(&quot;Device Key:&quot;, response[&quot;key&quot;])
 <h2 id="connecting-custom-properties-or-events">Connecting custom properties or events</h2>
 <p>In your device application, you will need to prepare your report before sending it to MoBagel.  </p>
 <ul>
-<li>Determining different <code>states</code> of your devices to send along with your report</li>
-</ul>
-<pre><code>//example states
-
-&quot;state&quot;: &quot;normal&quot;
-&quot;state&quot;: &quot;error&quot;
-</code></pre>
-
-<ul>
 <li>Adding custom properties or events with a key beginning with <code>d_</code> or <code>s_</code></li>
 </ul>
 <pre><code>//example custom properties or events
@@ -324,32 +320,20 @@ print(&quot;Device Key:&quot;, response[&quot;key&quot;])
 &quot;s_event&quot;: &quot;turned_on&quot;
 </code></pre>
 
-<ul>
-<li>Deciding when to send reports (time, frequency, events)</li>
-</ul>
 <h2 id="sending-first-report">Sending first report</h2>
 <pre><code># ENV: python3.5.1 / python2.7.6
 import json
-try:
-    import pybagel
-except:
-    import sys
-    import os
-    filepath = os.path.dirname(os.path.abspath(__file__))
-    sys.path.append(filepath+'/..')
-    import pybagel
+import pybagel
 
 # Initialize a Client Instance by product_key
 # You can register a device and get a device_key according &quot;example_registerDevice.py&quot;
-c = pybagel.MoBagelClient(
-    device_key=&quot;1111111111222222222233333333334444444444555555555566666666667777&quot;
-)
+c = pybagel.MoBagelClient()
+c.device_key=&quot;YOUR_DEVICE_KEY&quot;
 
 # Custom properties, should be created in the MoBagel dashboard
 content = {
-    &quot;state&quot;: &quot;normal&quot;,
-    &quot;s_category&quot;: &quot;555&quot;,
-    &quot;d_numeric&quot;: 555
+    &quot;s_category&quot;: &quot;PythonSDK&quot;,
+    &quot;d_numeric&quot;: 999
 }
 
 # send report with device key

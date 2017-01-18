@@ -5,13 +5,13 @@
         
     <url>
      <loc>None/</loc>
-     <lastmod>2017-01-04</lastmod>
+     <lastmod>2017-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/started/dashboard/</loc>
-     <lastmod>2017-01-04</lastmod>
+     <lastmod>2017-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -21,25 +21,31 @@
         
     <url>
      <loc>None/integrations/rest/</loc>
-     <lastmod>2017-01-04</lastmod>
+     <lastmod>2017-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/integrations/python/</loc>
-     <lastmod>2017-01-04</lastmod>
+     <lastmod>2017-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/integrations/node/</loc>
-     <lastmod>2017-01-04</lastmod>
+     <lastmod>2017-01-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/integrations/php/</loc>
+     <lastmod>2017-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/integrations/ios_swift/</loc>
-     <lastmod>2017-01-04</lastmod>
+     <lastmod>2017-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -49,13 +55,13 @@
         
     <url>
      <loc>None/glossary/</loc>
-     <lastmod>2017-01-04</lastmod>
+     <lastmod>2017-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/examples/</loc>
-     <lastmod>2017-01-04</lastmod>
+     <lastmod>2017-01-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

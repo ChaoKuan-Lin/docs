@@ -129,6 +129,12 @@
                         
                             
 <li >
+    <a href="../php/">PHP</a>
+</li>
+
+                        
+                            
+<li >
     <a href="../ios_swift/">iOS Swift</a>
 </li>
 
@@ -174,7 +180,7 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../ios_swift/">
+                        <a rel="prev" href="../php/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -283,12 +289,11 @@ There are two types of properties: <code>number</code> and <code>string</code>.<
 <h2 id="registering-your-first-device">Registering your first device</h2>
 <p>Once you generated a product_key from the dashboard, you can use the product_key and registerDevice function to register a device in your application.</p>
 <pre><code>var mobagel = require('mobagel-node-sdk');
-var product_key = &quot;1111111111222222222233333333334444444444555555555566666666667777&quot;;
-var c = mobagel.client(product_key);
-
+var c = mobagel.client();
+c.product_key =  &quot;YOUR_PRODUCT_KEY&quot;;
 c.registerDevice({
-    s_string: 'Node SDK',
-    d_number: 123
+    s_string: 'NodeSDK',
+    d_number: 100
 }, function(err, res, body) {
     if (err) throw err;
     if (Math.floor(res.statusCode / 100) === 2) {
@@ -302,16 +307,7 @@ c.registerDevice({
 <h2 id="connecting-custom-properties-or-events">Connecting custom properties or events</h2>
 <p>In your device application, you will need to prepare your report before sending it to MoBagel.  </p>
 <ul>
-<li>Determining different <code>states</code> of your devices to send along with your report</li>
-</ul>
-<pre><code>//example states
-
-&quot;state&quot;: &quot;normal&quot;
-&quot;state&quot;: &quot;error&quot;
-</code></pre>
-
-<ul>
-<li>Adding custom properties or events with a key beginning with <code>c_</code></li>
+<li>Adding custom properties or events with a key beginning with <code>d_</code> or <code>s_</code></li>
 </ul>
 <pre><code>//example custom properties or events
 
@@ -319,19 +315,16 @@ c.registerDevice({
 &quot;s_event&quot;: &quot;turned_on&quot;
 </code></pre>
 
-<ul>
-<li>Deciding when to send reports (time, frequency, events)</li>
-</ul>
 <h2 id="sending-first-report">Sending first report</h2>
 <pre><code>var mobagel = require('mobagel-node-sdk');
 var product_key = &quot;&quot;;
-var device_key = &quot;1111111111222222222233333333334444444444555555555566666666667777&quot;;
+var device_key = &quot;YOUR_DEVICE_KEY&quot;;
 var c = mobagel.client(product_key, device_key);
 
 c.sendReport({
     state: 'normal',
-    s_category: 'nodeSDK',
-    d_numeric: 123
+    s_category: 'NodeSDK',
+    d_numeric: 999
 }, function(err, res, body) {
     if (err) throw err;
     if (Math.floor(res.statusCode / 100) === 2) {
