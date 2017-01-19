@@ -72,15 +72,14 @@ Once you generated a product_key from the dashboard, you can use the product_key
 import json
 import pybagel
 
-# Initialize a client instance by product_key
-c = pybagel.MoBagelClient(
-    product_key="1111111111222222222233333333334444444444555555555566666666667777"
-)
+# Initialize a Client Instance by product_key
+c = pybagel.MoBagelClient()
+c.product_key="YOUR_PRODUCT_KEY"
 
 # Custom properties, should be created in the MoBagel dashboard
 content = {
-    "s_string": "7777",
-    "d_number": 7777
+    "s_string": "PythonSDK",
+    "d_number": 100
 }
 
 # register a new device
@@ -98,15 +97,6 @@ print("Device Key:", response["key"])
 
 In your device application, you will need to prepare your report before sending it to MoBagel.  
 
-* Determining different `states` of your devices to send along with your report
-
-```
-//example states
-
-"state": "normal"
-"state": "error"
-```
-
 * Adding custom properties or events with a key beginning with `d_` or `s_`
     
 ```
@@ -116,32 +106,21 @@ In your device application, you will need to prepare your report before sending 
 "s_event": "turned_on"
 ```
 
-* Deciding when to send reports (time, frequency, events)
-
 ## Sending first report
 ```
 # ENV: python3.5.1 / python2.7.6
 import json
-try:
-    import pybagel
-except:
-    import sys
-    import os
-    filepath = os.path.dirname(os.path.abspath(__file__))
-    sys.path.append(filepath+'/..')
-    import pybagel
+import pybagel
 
 # Initialize a Client Instance by product_key
 # You can register a device and get a device_key according "example_registerDevice.py"
-c = pybagel.MoBagelClient(
-    device_key="1111111111222222222233333333334444444444555555555566666666667777"
-)
+c = pybagel.MoBagelClient()
+c.device_key="YOUR_DEVICE_KEY"
 
 # Custom properties, should be created in the MoBagel dashboard
 content = {
-    "state": "normal",
-    "s_category": "555",
-    "d_numeric": 555
+    "s_category": "PythonSDK",
+    "d_numeric": 999
 }
 
 # send report with device key

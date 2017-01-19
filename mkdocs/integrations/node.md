@@ -66,12 +66,11 @@ Once you generated a product_key from the dashboard, you can use the product_key
 
 ```
 var mobagel = require('mobagel-node-sdk');
-var product_key = "1111111111222222222233333333334444444444555555555566666666667777";
-var c = mobagel.client(product_key);
-
+var c = mobagel.client();
+c.product_key =  "YOUR_PRODUCT_KEY";
 c.registerDevice({
-    s_string: 'Node SDK',
-    d_number: 123
+    s_string: 'NodeSDK',
+    d_number: 100
 }, function(err, res, body) {
     if (err) throw err;
     if (Math.floor(res.statusCode / 100) === 2) {
@@ -86,16 +85,7 @@ c.registerDevice({
 
 In your device application, you will need to prepare your report before sending it to MoBagel.  
 
-* Determining different `states` of your devices to send along with your report
-
-```
-//example states
-
-"state": "normal"
-"state": "error"
-```
-
-* Adding custom properties or events with a key beginning with `c_`
+* Adding custom properties or events with a key beginning with `d_` or `s_`
     
 ```
 //example custom properties or events
@@ -104,19 +94,17 @@ In your device application, you will need to prepare your report before sending 
 "s_event": "turned_on"
 ```
 
-* Deciding when to send reports (time, frequency, events)
-
 ## Sending first report
 ```
 var mobagel = require('mobagel-node-sdk');
 var product_key = "";
-var device_key = "1111111111222222222233333333334444444444555555555566666666667777";
+var device_key = "YOUR_DEVICE_KEY";
 var c = mobagel.client(product_key, device_key);
 
 c.sendReport({
     state: 'normal',
-    s_category: 'nodeSDK',
-    d_numeric: 123
+    s_category: 'NodeSDK',
+    d_numeric: 999
 }, function(err, res, body) {
     if (err) throw err;
     if (Math.floor(res.statusCode / 100) === 2) {
