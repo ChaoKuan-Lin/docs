@@ -9,7 +9,7 @@ This short tutorial will outline the steps to integrate MoBagel with your device
 
 ---
 # Creating an account
-If you do not have an account, please create an account [here](https://app.mobagel.com/signup). After you create an account, you will be directed to the dashboard.
+If you do not have an account, please create an account [here](https://app.mobagel.com/login). After you create an account, you will be directed to the dashboard.
 <img src="../img/MoBagel_Getting_Started/Sign_up.png" width="800">  
 
 ---
@@ -27,13 +27,10 @@ After you create a `product`, you can go to **_Configuration -> Product Settings
 MoBagel offers SDK in the following languages: 
 
 * REST
-* Java
 * Node
-* Swift
-* Objective-C
-* C++
 * Python
 * PHP
+* iOS swift
 
 To find the detailed guide of a specific language, please click on `Integrations` in the menu bar.
 
