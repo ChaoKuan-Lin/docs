@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
     <link rel="shortcut icon" href="../../../../favicon.png">
 
-    <title>Node - MoBagel Docs</title>
+    <title>iOS Objective C - MoBagel Docs</title>
 
     <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
@@ -122,8 +122,8 @@
 
                         
                             
-<li class="active">
-    <a href="./">Node</a>
+<li >
+    <a href="../node/">Node</a>
 </li>
 
                         
@@ -134,8 +134,8 @@
 
                         
                             
-<li >
-    <a href="../ios_objective_c/">iOS Objective C</a>
+<li class="active">
+    <a href="./">iOS Objective C</a>
 </li>
 
                         
@@ -175,12 +175,12 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../python/">
+                        <a rel="next" href="../php/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../php/">
+                        <a rel="prev" href="../../glossary/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -196,19 +196,19 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="first-level active"><a href="#mobagel-node-sdk">MoBagel Node SDK</a></li>
+        <li class="first-level active"><a href="#mobagel-ios-sdk">MoBagel iOS SDK</a></li>
         
     
         <li class="first-level "><a href="#preparation">Preparation</a></li>
         
-    
-        <li class="first-level "><a href="#creating-an-account">Creating an account</a></li>
+            <li class="second-level"><a href="#creating-an-account">Creating an account</a></li>
+            
         
-    
-        <li class="first-level "><a href="#creating-a-new-product">Creating a new product</a></li>
+            <li class="second-level"><a href="#creating-a-new-product">Creating a new product</a></li>
+            
         
-    
-        <li class="first-level "><a href="#adding-custom-properties">Adding custom properties</a></li>
+            <li class="second-level"><a href="#adding-custom-properties">Adding custom properties</a></li>
+            
         
     
         <li class="first-level "><a href="#installation">Installation</a></li>
@@ -223,7 +223,13 @@
             
         
     
-        <li class="first-level "><a href="#example-walkthrough">Example Walkthrough</a></li>
+        <li class="first-level "><a href="#example-walkthrough-objective-c">Example Walkthrough (Objective-C)</a></li>
+        
+            <li class="second-level"><a href="#full-example">Full Example</a></li>
+            
+        
+            <li class="second-level"><a href="#import-framework">Import Framework</a></li>
+            
         
             <li class="second-level"><a href="#registering-your-first-device">Registering your first device</a></li>
             
@@ -239,98 +245,195 @@
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="mobagel-node-sdk">MoBagel Node SDK</h1>
-<p>Use MoBagel Node SDK to quickly install MoBagel to your device(s). MoBagel Node SDK is an open-source node library that makes it easy to integrate your node application with MoBagel. </p>
+<h1 id="mobagel-ios-sdk">MoBagel iOS SDK</h1>
+<p>Use MoBagel iOS SDK to quickly install MoBagel to your device(s).  MoBagel iOS SDK is an open-source iOS library that makes it easy to integrate your iOS application with MoBagel. 
+​</p>
 <hr />
 <h1 id="preparation">Preparation</h1>
-<h1 id="creating-an-account">Creating an account</h1>
-<p>If you do not have an account, please create an account <a href="https://app.mobagel.com/login">here</a>. After you create an account, you will be directed to the dashboard.
-<img src="../../../img/MoBagel_Getting_Started/Sign_up.png" width="800">  </p>
-<hr />
-<h1 id="creating-a-new-product">Creating a new product</h1>
+<h2 id="creating-an-account">Creating an account</h2>
+<p>If you do not have an account, please create an account <a href="https://app.mobagel.com/signup">here</a>. After you create an account, you will be directed to the dashboard.</p>
+<h2 id="creating-a-new-product">Creating a new product</h2>
 <p>To use MoBagel, you first have to create a <code>product</code>, which is essentially a group of same <code>device</code>. You will be prompted to create a new product when you first enter the dashboard.</p>
-<p><img src="../../../img/MoBagel_Getting_Started/Enter_Product_name.png" width="800">  </p>
-<p>After you create a <code>product</code>, you can go to <strong><em>Configuration -&gt; Product Settings</em></strong> Info to retrieve your <code>product_key</code>, which will be used to create <code>device</code> later on.</p>
-<p><img src="../../../img/MoBagel_Getting_Started/Product_key.png" width="800">  </p>
-<hr />
-<h1 id="adding-custom-properties">Adding custom properties</h1>
-<p><img src="../../../img/MoBagel_Getting_Started/Config_settings.png" width="200"> <br />
-In <strong><em>Product Settings</em></strong> under <strong><em>Configuration</em></strong>, you can add custom properties to your product. <br />
-Custom properties should have the following requirements:   </p>
-<p><img src="../../../img/MoBagel_Getting_Started/Device_Settings.png" width="800">   </p>
+<p>After you create a <code>product</code>, you can go to Configuration -&gt; Device Info to retrieve your <code>product_key</code>, which will be used to create <code>device</code> later on.</p>
+<h2 id="adding-custom-properties">Adding custom properties</h2>
+<p>In the Configuration, you can add custom properties to your product. Custom properties should have the following requirements:</p>
 <ul>
 <li>
-<p><strong>ID</strong>: <br />
-Property ID will always begin with <code>d_</code> (for numbers) or <code>s_</code> (for strings) to indicate that it is a custom property, this will be automatically asigned when you select a <code>Type</code>. Property IDs are unique and cannot repeat with itself.</p>
+<p><strong>ID</strong>: Property ID (with the exception of <code>state</code>) should always begin with <code>c_</code> to indicate that it is a custom property. In addition, property IDs are unique and cannot repeat with itself.</p>
 </li>
 <li>
-<p><strong>Name</strong>: <br />
-You can set a custom name for each property. For example, if your ID is <code>d_012421</code>, you can set the name as <code>temperature</code>. The modules in the dashboard will display your property name instead of your property ID.</p>
+<p><strong>Name</strong>: The property name is your nickname for your property. For example, if your ID is 'c_012421', you can set the name as 'temperature'. The modules in the dashboard will display your property name instead of your property ID.</p>
 </li>
 <li>
-<p><strong>Type</strong>: <br />
-There are two types of properties: <code>number</code> and <code>string</code>.</p>
+<p><strong>Type</strong>: There are two types of properties: category and numeric. Category uses a set of string options and numeric uses numeric options (optional).</p>
+</li>
+<li>
+<p><strong>Options</strong>:</p>
+<ul>
+<li>
+<p><strong>Category</strong>: please add all the possible string values of your property by typing in the options column. The server will use this to prevent your devices from sending erroraneous reports.</p>
+</li>
+<li>
+<p><strong>Numeric</strong> (optional): please set a min and max value for your numeric property to help protect your data from errors. For example, if your numeric property is humidity level, then you can set min and max to 0 and 100, respectively. This will allow our system to reject any reports with humidity levels that are not in this range because those values are theoretically impossible (i.e. negative humidity level).</p>
 </li>
 </ul>
-<p><strong><em>Please note that you must configure your properties in your configuration before you send your first customized report.</em></strong></p>
+</li>
+</ul>
+<p>Please note that you must configure your properties in your configuration before you send your first customized report.
+​
+​</p>
 <hr />
 <h1 id="installation">Installation</h1>
 <h2 id="supported-platform">Supported Platform</h2>
-<p>Operating System: Windows, OS X, Linux and <a href="https://nodejs.org/en/download/">more</a></p>
+<ul>
+<li>iOS
+​</li>
+</ul>
 <h2 id="requirement">Requirement</h2>
-<p><a href="https://nodejs.org/">Node.js</a></p>
+<p><a href="https://github.com/AFNetworking/AFNetworking">'AFNetworking', '~&gt; 2.3'</a>
+​</p>
 <h2 id="installing-sdk">Installing SDK</h2>
-<pre><code>npm install mobagel-node-sdk
+<p><code>MoBagel iOS SDK</code> is available through <a href="http://cocoapods.org/">CocoaPods</a>. To install the SDK, simply add the following line to your Podfile:
+​</p>
+<pre><code>pod &quot;MoBagel&quot;, '~&gt; 1.0.0'
 </code></pre>
 
-<p>or <a href="https://github.com/MOBAGEL/mobagel-node-sdk">download directly from GitHub</a></p>
 <hr />
-<h1 id="example-walkthrough">Example Walkthrough</h1>
-<h2 id="registering-your-first-device">Registering your first device</h2>
-<p>Once you generated a product_key from the dashboard, you can use the product_key and registerDevice function to register a device in your application.</p>
-<pre><code>var mobagel = require('mobagel-node-sdk');
-var c = mobagel.client();
-c.product_key =  &quot;YOUR_PRODUCT_KEY&quot;;
-c.registerDevice({
-    s_string: 'NodeSDK',
-    d_number: 100
-}, function(err, res, body) {
-    if (err) throw err;
-    if (Math.floor(res.statusCode / 100) === 2) {
-        console.log('Response data: ');
-    }
-    console.log(body);
-});
+<h1 id="example-walkthrough-objective-c">Example Walkthrough (Objective-C)</h1>
+<h2 id="full-example">Full Example</h2>
+<p>​
+Please refer to example codes in <a href="https://github.com/MOBAGEL/mobagel-iOS-sdk/tree/master/Example">Github</a>
+​</p>
+<h2 id="import-framework">Import Framework</h2>
+<p>Please import MoBagel iOS SDK as following.
+​</p>
+<pre><code> #import &lt;MoBagel/MoBagel.h&gt;
+</code></pre>
 
+<h2 id="registering-your-first-device">Registering your first device</h2>
+<p>​
+Using your <code>product_key</code> from the dashboard, you can replace the default <code>product_key</code> to your own <code>product_key</code> as following. 
+​</p>
+<pre><code>// create MobagelClient object
+MoBagelClient* client = [[MoBagelClient alloc] initWithKey:@&quot;&lt;#Put your product_key here#&gt;&quot;];
+
+</code></pre>
+
+<p>​
+You can then use the <code>registerDevice</code> function to register a <code>device</code> in your application.<br />
+​If you get your <code>device-key</code> , congratulations! You have successfully register a device.  </p>
+<pre><code>// register a device
+MoBagelHandler* handler = [[MoBagelHandler alloc] init];
+​
+[handler setRegisterHandler:^(NSInteger code, NSString* data){
+    NSLog(@&quot;Http code: %d , device-key: %@&quot;,code, data);
+​
+    NSString* key = data;
+    // Store this key
+}];
+[handler setExceptionHandler:^(NSInteger code, NSError* error){
+    NSLog(@&quot;Http code: %d , Error msg: %@&quot;,code, error);
+}];
+​
+[client registerDevice:handler];
+​
 </code></pre>
 
 <h2 id="connecting-custom-properties-or-events">Connecting custom properties or events</h2>
-<p>In your device application, you will need to prepare your report before sending it to MoBagel.  </p>
+<p>​
+In your device application, you will need to prepare your report before sending it to MoBagel.  </p>
 <ul>
-<li>Adding custom properties or events with a key beginning with <code>d_</code> or <code>s_</code></li>
+<li>Determining different <code>states</code> of your devices to send along with your report
+​</li>
 </ul>
-<pre><code>//example custom properties or events
-
-&quot;d_temperature&quot;: 30
-&quot;s_event&quot;: &quot;turned_on&quot;
+<pre><code>//example states
+​
+@&quot;state&quot;: @&quot;normal&quot;
+@&quot;state&quot;: @&quot;error&quot;
 </code></pre>
 
-<h2 id="sending-first-report">Sending first report</h2>
-<pre><code>var mobagel = require('mobagel-node-sdk');
-var c = mobagel.client();
-c.device_key = &quot;YOUR_PRODUCT_KEY&quot;;
+<ul>
+<li>Adding custom properties or events with a key beginning with <code>c_</code></li>
+</ul>
+<pre><code>//example custom properties or events
+​
+@&quot;c_temperature&quot;: 30
+@&quot;c_event&quot;: @&quot;turned_on&quot;
+</code></pre>
 
-c.sendReport({
-    s_category: 'NodeSDK',
-    d_numeric: 100
-}, function(err, res, body) {
-    if (err) throw err;
-    if (Math.floor(res.statusCode / 100) === 2) {
-        console.log('Response data: ');
-    }
-    console.log(body);
-});
-</code></pre></div>
+<ul>
+<li>Deciding when to send reports (time, frequency, events)
+​</li>
+</ul>
+<h2 id="sending-first-report">Sending first report</h2>
+<p>​You need <code>device-key</code> to send a report.<br />
+If you see <code>Update device</code> , congratulations! You have successfully send a report.  </p>
+<pre><code>NSString* device_key = @&quot;&lt;#Get your device key#&gt;&quot;;
+​
+MoBagelDevice* device = [[MoBagelDevice alloc] initWithKey:device_key];
+​
+MoBagelHandler* handler = [[MoBagelHandler alloc] init];
+[handler setApiHandler:^(NSInteger code, NSString* data){
+    NSLog(@&quot;Http code: %d , Update device: %@&quot;,code, data);
+}];
+[handler setExceptionHandler:^(NSInteger code, NSError* error){
+    NSLog(@&quot;Http code: %d , Error msg: %@&quot;,code, error);
+}];
+​
+NSDictionary* reportData = @{
+                              @&quot;state&quot;: @&quot;normal&quot;,
+                              @&quot;c_temperature&quot;: 30,
+                              @&quot;c_event&quot;: @&quot;turned_on&quot;,
+                             };
+    // Put your properties or events for report here
+​
+[device device:reportData
+       handler:handler];
+​
+​
+</code></pre>
+
+<!-- ---
+# Objective-C Sample code
+## Import framework
+
+wzxhzdk:7
+
+## Register device
+
+Using your `product_key` from the dashboard, you can replace the default `product_key` in /examples/main.cpp to your own `product_key`.  
+If you get your `device-key` , congratulations! You have successfully register a device.  
+
+
+wzxhzdk:8
+
+
+## Send report
+
+You need `device-key` to send a report.  
+If you see `Update device` , congratulations! You have successfully send a report.  
+
+```
+NSString* device_key = @"<#Get your device key#>";
+
+MoBagelDevice* device = [[MoBagelDevice alloc] initWithKey:device_key];
+
+MoBagelHandler* handler = [[MoBagelHandler alloc] init];
+[handler setApiHandler:^(NSInteger code, NSString* data){
+    NSLog(@"Http code: %d , Update device: %@",code, data);
+}];
+[handler setExceptionHandler:^(NSInteger code, NSError* error){
+    NSLog(@"Http code: %d , Error msg: %@",code, error);
+}];
+
+NSDictionary* reportData = @{
+                              @"state" : @"available",
+                              @"c_develop_zone" : @"iOS",
+                             };
+
+[device device:reportData
+       handler:handler];
+``` --></div>
         
     </div>
 

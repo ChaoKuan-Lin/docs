@@ -90,7 +90,7 @@
                         
                             
 <li >
-    <a href="../..">Connect To MoBagel</a>
+    <a href="../..">Welcome</a>
 </li>
 
                         
@@ -106,7 +106,7 @@
                 
                 
                     <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Integrations <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SDKs <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
@@ -135,7 +135,7 @@
                         
                             
 <li >
-    <a href="../ios_swift/">iOS Swift</a>
+    <a href="../ios_objective_c/">iOS Objective C</a>
 </li>
 
                         
@@ -231,11 +231,12 @@
         <div class="col-md-9" role="main">
 
 <h1 id="mobagel-python-sdk">MoBagel Python SDK</h1>
-<p>Use MoBagel Python SDK to quickly install MoBagel to your device(s). MoBagel Python SDK is an open-source python library that makes it easy to integrate your python application with MoBagel. </p>
+<p>Use the <code>MoBagel Python SDK</code> to quickly install MoBagel to your device(s).    </p>
+<p>MoBagel Python SDK is an open-source python library that makes it easy to integrate your python application with MoBagel. </p>
 <hr />
 <h1 id="preparation">Preparation</h1>
 <h1 id="creating-an-account">Creating an account</h1>
-<p>If you do not have an account, please create an account <a href="https://app.mobagel.com/signup">here</a>. After you create an account, you will be directed to the dashboard.
+<p>If you do not have an account, please create an account <a href="https://app.mobagel.com/login">here</a>. After you create an account, you will be directed to the dashboard.
 <img src="../../../img/MoBagel_Getting_Started/Sign_up.png" width="800">  </p>
 <hr />
 <h1 id="creating-a-new-product">Creating a new product</h1>
@@ -264,19 +265,25 @@ There are two types of properties: <code>number</code> and <code>string</code>.<
 </li>
 </ul>
 <p><strong><em>Please note that you must configure your properties in your configuration before you send your first customized report.</em></strong></p>
-<p>​---  </p>
+<hr />
 <h2 id="installation">Installation</h2>
-<p>Before you run mobagel-python-sdk, you need to install <a href="https://pip.pypa.io/en/stable/">pip</a> first.</p>
-<p>pip (Mac OS X)</p>
+<hr />
+<ul>
+<li>Install <a href="https://pip.pypa.io/en/stable/">pip</a> first.    </li>
+</ul>
+<p>Pip for <code>Mac OS X</code></p>
 <pre><code class="shell">    $ sudo easy_install pip
 </code></pre>
 
-<p>pip (Ubuntu 14.04)</p>
+<p>Pip for <code>Ubuntu 14.04</code></p>
 <pre><code class="shell">    $ sudo apt-get install python-pip python-dev build-essential 
     $ sudo pip install --upgrade pip 
 </code></pre>
 
-<p>mobagel-python-sdk</p>
+<hr />
+<ul>
+<li>Next, install the <code>MoBagel Python SDK</code></li>
+</ul>
 <pre><code class="shell">    $ sudo pip install mobagel-python-sdk
 </code></pre>
 
@@ -333,7 +340,7 @@ c.device_key=&quot;YOUR_DEVICE_KEY&quot;
 # Custom properties, should be created in the MoBagel dashboard
 content = {
     &quot;s_category&quot;: &quot;PythonSDK&quot;,
-    &quot;d_numeric&quot;: 999
+    &quot;d_numeric&quot;: 100
 }
 
 # send report with device key

@@ -90,7 +90,7 @@
                         
                             
 <li >
-    <a href="../..">Connect To MoBagel</a>
+    <a href="../..">Welcome</a>
 </li>
 
                         
@@ -106,7 +106,7 @@
                 
                 
                     <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Integrations <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SDKs <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
@@ -135,7 +135,7 @@
                         
                             
 <li >
-    <a href="../ios_swift/">iOS Swift</a>
+    <a href="../ios_objective_c/">iOS Objective C</a>
 </li>
 
                         
@@ -180,7 +180,7 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../ios_swift/">
+                        <a rel="prev" href="../ios_objective_c/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -235,7 +235,7 @@
 <hr />
 <h1 id="preparation">Preparation</h1>
 <h1 id="creating-an-account">Creating an account</h1>
-<p>If you do not have an account, please create an account <a href="https://app.mobagel.com/signup">here</a>. After you create an account, you will be directed to the dashboard.
+<p>If you do not have an account, please create an account <a href="https://app.mobagel.com/login">here</a>. After you create an account, you will be directed to the dashboard.
 <img src="../../../img/MoBagel_Getting_Started/Sign_up.png" width="800">  </p>
 <hr />
 <h1 id="creating-a-new-product">Creating a new product</h1>
@@ -269,7 +269,7 @@ There are two types of properties: <code>number</code> and <code>string</code>.<
 <h2 id="requirement">Requirement</h2>
 <p>You need to download <a href="https://getcomposer.org/download/">composer.</a></p>
 <h2 id="installing-sdk">Installing SDK</h2>
-<pre><code>composer install mobagel/mobagel-php-sdk
+<pre><code>composer require mobagel/mobagel-php-sdk
 </code></pre>
 
 <p>or <a href="https://github.com/MOBAGEL/mobagel-php-sdk">download directly from GitHub</a></p>
@@ -288,7 +288,7 @@ There are two types of properties: <code>number</code> and <code>string</code>.<
 require 'vendor/autoload.php';
 echo &quot;This is MoBagel PHP SDK sample, you can learn how to `register device` and `report state` in this sample code\n&quot;;
 // setup your product key
-$productKey = &quot;1111111111222222222233333333334444444444555555555566666666667777&quot;;
+$productKey = &quot;YOUR_PRODUCT_KEY&quot;;
 $client = \MoBagel\MoBagel::Instance();
 $client-&gt;setProductKey($productKey);
 // register a new device
@@ -307,7 +307,7 @@ $object = json_decode($body);
 $client-&gt;setDeviceKey($object-&gt;key);
 $contents = [
     &quot;s_category&quot; =&gt; &quot;phpSDK&quot;,
-    &quot;d_numeric&quot; =&gt; 999
+    &quot;d_numeric&quot; =&gt; 100
 ];
 $response = $client-&gt;sendReport($contents);
 $body = $response-&gt;getBody()-&gt;getContents();

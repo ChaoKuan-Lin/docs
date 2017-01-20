@@ -1,12 +1,15 @@
-# MoBagel Python SDK   
-Use MoBagel Python SDK to quickly install MoBagel to your device(s). MoBagel Python SDK is an open-source python library that makes it easy to integrate your python application with MoBagel. 
+# MoBagel Python SDK
+
+Use the `MoBagel Python SDK` to quickly install MoBagel to your device(s).    
+
+MoBagel Python SDK is an open-source python library that makes it easy to integrate your python application with MoBagel. 
 
 ---
 
 # Preparation
 
 # Creating an account
-If you do not have an account, please create an account [here](https://app.mobagel.com/signup). After you create an account, you will be directed to the dashboard.
+If you do not have an account, please create an account [here](https://app.mobagel.com/login). After you create an account, you will be directed to the dashboard.
 <img src="../../../img/MoBagel_Getting_Started/Sign_up.png" width="800">  
 
 ---
@@ -39,23 +42,29 @@ There are two types of properties: `number` and `string`.
 
 **_Please note that you must configure your properties in your configuration before you send your first customized report._**
 
-​---  
+---
 
-## Installation
-Before you run mobagel-python-sdk, you need to install [pip](https://pip.pypa.io/en/stable/) first.
+## Installation    
 
-pip (Mac OS X)
+---
+
++ Install [pip](https://pip.pypa.io/en/stable/) first.    
+
+Pip for `Mac OS X`
 ```shell
     $ sudo easy_install pip
 ```
 
-pip (Ubuntu 14.04)
+Pip for `Ubuntu 14.04`
 ```shell
     $ sudo apt-get install python-pip python-dev build-essential 
     $ sudo pip install --upgrade pip 
 ```
 
-mobagel-python-sdk
+---
+
++ Next, install the `MoBagel Python SDK`
+
 ```shell
     $ sudo pip install mobagel-python-sdk
 ```
@@ -120,7 +129,7 @@ c.device_key="YOUR_DEVICE_KEY"
 # Custom properties, should be created in the MoBagel dashboard
 content = {
     "s_category": "PythonSDK",
-    "d_numeric": 999
+    "d_numeric": 100
 }
 
 # send report with device key

@@ -6,7 +6,7 @@ Use MoBagel PHP SDK to quickly install MoBagel to your device(s). MoBagel PHP SD
 # Preparation
 
 # Creating an account
-If you do not have an account, please create an account [here](https://app.mobagel.com/signup). After you create an account, you will be directed to the dashboard.
+If you do not have an account, please create an account [here](https://app.mobagel.com/login). After you create an account, you will be directed to the dashboard.
 <img src="../../../img/MoBagel_Getting_Started/Sign_up.png" width="800">  
 
 ---
@@ -47,7 +47,7 @@ You need to download [composer.](https://getcomposer.org/download/)
 
 ## Installing SDK
 ```
-composer install mobagel/mobagel-php-sdk
+composer require mobagel/mobagel-php-sdk
 ```
 or [download directly from GitHub](https://github.com/MOBAGEL/mobagel-php-sdk)
 
@@ -68,7 +68,7 @@ or [download directly from GitHub](https://github.com/MOBAGEL/mobagel-php-sdk)
 require 'vendor/autoload.php';
 echo "This is MoBagel PHP SDK sample, you can learn how to `register device` and `report state` in this sample code\n";
 // setup your product key
-$productKey = "1111111111222222222233333333334444444444555555555566666666667777";
+$productKey = "YOUR_PRODUCT_KEY";
 $client = \MoBagel\MoBagel::Instance();
 $client->setProductKey($productKey);
 // register a new device
@@ -87,7 +87,7 @@ $object = json_decode($body);
 $client->setDeviceKey($object->key);
 $contents = [
     "s_category" => "phpSDK",
-    "d_numeric" => 999
+    "d_numeric" => 100
 ];
 $response = $client->sendReport($contents);
 $body = $response->getBody()->getContents();
