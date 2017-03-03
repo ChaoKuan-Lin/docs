@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="shortcut icon" href="../../favicon.png">
+
+    <title>Home - MoBagel Docs</title>
+
+    <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.018/css/hack.min.css">
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/cinder.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+
+
+    <link href="../extra.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+            families: ['Open Sans', 'PT Sans']
+        }
+    });
+    </script>
+
+    
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-70490559-1', 'mobagel.com');
+    ga('send', 'pageview');
+    </script>
+    
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="./">MoBagel Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="first-level active"><a href="#mobagel-dashboard">MoBagel Dashboard</a></li>
+        
+            <li class="second-level"><a href="#introduction">Introduction</a></li>
+            
+        
+            <li class="second-level"><a href="#your-current-products">Your Current Products</a></li>
+            
+        
+    
+        <li class="first-level "><a href="#the-dashboard">The Dashboard</a></li>
+        
+            <li class="second-level"><a href="#analytics">Analytics</a></li>
+            
+                <li class="third-level"><a href="#usage">Usage</a></li>
+            
+                <li class="third-level"><a href="#segmentation">Segmentation</a></li>
+            
+        
+            <li class="second-level"><a href="#monitoring">Monitoring</a></li>
+            
+                <li class="third-level"><a href="#real-time">Real Time</a></li>
+            
+                <li class="third-level"><a href="#notification">Notification</a></li>
+            
+        
+            <li class="second-level"><a href="#prediction">Prediction</a></li>
+            
+                <li class="third-level"><a href="#recommendations">Recommendations</a></li>
+            
+        
+    
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="mobagel-dashboard">MoBagel Dashboard</h1>
+<hr />
+<h2 id="introduction">Introduction</h2>
+<p>Welcome to the <strong><code>MoBagel Dashboard</code></strong>, a snapshot of your devices for easy tracking and analysis.  </p>
+<p>In this tutorial, we will guide you through each part of the MoBagel Dashboard.</p>
+<hr />
+<h2 id="your-current-products">Your Current Products</h2>
+<p>On the left hand side of the dashboard, under the MoBagel logo, a drop-down menu will list the products you have already created.  </p>
+<p><img src="../../../img/MoBagel_Dashboard/current_product-01.png" width="800">  </p>
+<p>To create a new one, simply click on <strong><code>+New Product</code></strong>.    </p>
+<p><img src="../../../img/MoBagel_Dashboard/current_product_new_product.png" width="800">  </p>
+<hr />
+<h1 id="the-dashboard">The Dashboard</h1>
+<p>Listed below follows the order of the left menu on the MoBagel dashboard, skip to the page that most interests you or follow along and see what MoBagel's dashboard can do!</p>
+<ul>
+<li>Analytics<ul>
+<li><a href="#Usage">Usage</a></li>
+<li><a href="#Segmentation">Segmentation</a></li>
+</ul>
+</li>
+<li>Monitoring<ul>
+<li><a href="#Real_Time">Real Time</a></li>
+<li><a href="#Notification">Notification</a></li>
+</ul>
+</li>
+<li>Prediction<ul>
+<li><a href="#Recommendations">Recommendations</a></li>
+</ul>
+</li>
+<li>Configuration<ul>
+<li>Product Settings</li>
+<li>Device Management</li>
+<li>Data Setup</li>
+<li>Docs</li>
+</ul>
+</li>
+</ul>
+<p><a name="Usage"></a>  </p>
+<hr />
+<h2 id="analytics">Analytics</h2>
+<h3 id="usage">Usage</h3>
+<ul>
+<li>
+<p><code>Usage</code> allows you to have a quick overview of all your devices all on one page, showing the number of users with regard to the time.</p>
+<p><img src="../../../img/MoBagel_Dashboard/dashboard_overview.png" width="800">  </p>
+</li>
+<li>
+<p>On the upper right hand side, click on <code>Day</code>, <code>Week</code>, <code>Month</code> or <code>Year</code> and the graph changes along with <code>Peak Usage</code> and <code>Lowest Usage</code> underneath.</p>
+<p><img src="../../../img/MoBagel_Dashboard/dashboard_overview_day.png" width="800"></p>
+</li>
+</ul>
+<blockquote>
+<ul>
+<li><code>Total Users</code><ul>
+<li>Shows all the current devices available</li>
+</ul>
+</li>
+<li><code>Active Users</code><ul>
+<li>Shows devices currently active, this information can also be found in <strong><em>Configuration -&gt; Device Management</em></strong></li>
+</ul>
+</li>
+<li><code>Peak Usage</code><ul>
+<li>Indicated at the highest point in the graph above.</li>
+</ul>
+</li>
+<li><code>Lowest Usage</code><ul>
+<li>Indicated at the lowest point in the graph above.</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p><img src="../../../img/MoBagel_Dashboard/dashboard_overview_bottom.png" width="800"></p>
+<ul>
+<li>
+<p>On the upper right hand side we will also find some useful tabs under Day, Week, Month, and Year for manipulating the user frequency graph.</p>
+<p><img src="../../../img/MoBagel_Dashboard/Useful_tabs.png" width="200">
+<img src="../../../img/MoBagel_Dashboard/dashboard_zoom.png" width="800"></p>
+<hr />
+<ul>
+<li><img src="../../../img/MoBagel_Dashboard/useful_tabs_zoom.png" width="50"> - <code>Zoom</code>  <ul>
+<li>Choose a timeframe by clicking on Zoom once, then select the area on the graph you would like to magnify. Repeat to zoom in again.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li><img src="../../../img/MoBagel_Dashboard/useful_tabs_reset.png" width="45"> - <code>Reset</code><ul>
+<li>Graph goes back one step each time you click on Reset.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li><img src="../../../img/MoBagel_Dashboard/useful_tabs_raw_data.png" width="45"> - <code>Raw Data</code>  <ul>
+<li>See Raw Data used to create the graph, click on “close” on the lower-right hand side to return to graph.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li><img src="../../../img/MoBagel_Dashboard/useful_tabs_line.png" width="45"> - <code>Line</code>  <ul>
+<li>Line graph is set as default.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li><img src="../../../img/MoBagel_Dashboard/useful_tabs_bar.png" width="45"> - <code>Bar</code><ul>
+<li>Click on Bar to show data as a Bar graph.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li><img src="../../../img/MoBagel_Dashboard/useful_tabs_save.png" width="45"> - <code>Save as Image</code><ul>
+<li>Download current graph shown.  </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p><code>Last Usage</code><br />
+    <img src="../../../img/MoBagel_Dashboard/Last_usage.gif" width="800">  </p>
+<ul>
+<li>See how many reports were sent each hour for the last 24 hours. Place mouse cursor on bar for details.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li><code>Last Usage Detail</code>
+    <img src="../../../img/MoBagel_Dashboard/Last_usage_detail.png" width="800"><ul>
+<li>Time<ul>
+<li>Last time a report was sent.</li>
+</ul>
+</li>
+<li>Total Devices</li>
+<li>Total Reports</li>
+<li>See More In Segmentation<ul>
+<li>Click to filter customised results in the “Segmentation” page.  </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li><code>Property Breakdown</code>
+    <img src="../../../img/MoBagel_Dashboard/property_breakdown.png" width="800"><ul>
+<li>Listed here are all sensor properties sent in each report, also showing the range of values for each property.<ul>
+<li>Numeric Property</li>
+<li>Category Property</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li><code>Usage Location</code><ul>
+<li>Manage your devices and see where they are located from latitude and longitude data in the report.<ul>
+<li>Country</li>
+<li>User</li>
+<li>%User</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><a name="Segmentation"></a>  </p>
+<hr />
+<h3 id="segmentation">Segmentation</h3>
+<ul>
+<li>
+<p><code>Condition</code>  </p>
+<hr />
+<ul>
+<li>Create a segment using filters, for a specific timeframe or property states
+<img src="../../../img/MoBagel_Dashboard/Segmentation_none.gif" width="800"></li>
+</ul>
+<hr />
+<ul>
+<li>Click on <code>Add rule</code> on the right hand side
+<img src="../../../img/MoBagel_Dashboard/Segmentation_condition.png" width="800"></li>
+</ul>
+<hr />
+<ul>
+<li>Click on <code>Add group</code> for more complex filtering</li>
+<li>
+<p>Select the properties you would like to filter with <code>AND</code> / <code>OR</code>.
+<img src="../../../img/MoBagel_Dashboard/Segmentation_final.png" width="800"></p>
+</li>
+<li>
+<p>e.g. "state equal normal" <code>AND</code> "temperature_C is greater than 30” <code>AND</code> ("light_pct is null" <code>OR</code> “period_s is not null”)</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p><code>Series</code></p>
+<hr />
+<ul>
+<li>Analyse the segment by comparing different series.
+<img src="../../../img/MoBagel_Dashboard/segmentation_series_1.png" width="800"></li>
+</ul>
+<hr />
+<ul>
+<li>Click <code>+Add</code> to create a new series.
+<img src="../../../img/MoBagel_Dashboard/segmentation_series_2.png" width="800"></li>
+</ul>
+<hr />
+<ul>
+<li>Add as many series you would like to compare.
+<img src="../../../img/MoBagel_Dashboard/segmentation_series_3.png" width="800"></li>
+<li>e.g. We would like to see the a series that shows “state equal normal” and compare this to another series “temperature_C greater 33” on the same graph</li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p><code>Select Y-Axis</code></p>
+<hr />
+<ul>
+<li>Configure your result to display the number of devices, number of reports, or property with respect to time.
+<img src="../../../img/MoBagel_Dashboard/select_y_1.png" width="800"></li>
+</ul>
+<hr />
+<ul>
+<li>e.g. Here we choose <code>Device</code>.
+<img src="../../../img/MoBagel_Dashboard/select_y_2.png" width="800"></li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p><code>Select Chart Type</code></p>
+<hr />
+<ul>
+<li>Line graph is set as default.
+<img src="../../../img/MoBagel_Dashboard/select_chart_type.png" width="800">  </li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>
+<p><code>Result</code></p>
+<hr />
+<ul>
+<li>Scroll to the bottom of the page to generate results.
+<img src="../../../img/MoBagel_Dashboard/result_0.png" width="800">  </li>
+</ul>
+<hr />
+<ul>
+<li>Set the time frame on the right hand side
+<img src="../../../img/MoBagel_Dashboard/result_dates.png" width="800"> </li>
+</ul>
+<hr />
+<ul>
+<li>e.g. 12/01/2015 - 12/03/2016
+<img src="../../../img/MoBagel_Dashboard/result_dates_custom.png" width="800"> </li>
+</ul>
+<hr />
+<ul>
+<li>Click <code>Generate</code>, this will need to be done every time there are changes made to the filters above.
+<img src="../../../img/MoBagel_Dashboard/result_generate.gif" width="800"> </li>
+</ul>
+<hr />
+<ul>
+<li>Click on the name of the series to hide/show it on the graph.
+<img src="../../../img/MoBagel_Dashboard/result_result_hide.gif" width="800"> </li>
+</ul>
+<hr />
+<ul>
+<li><code>Zoom</code>, <code>Reset</code>, <code>Raw Data</code>, <code>Line</code>, <code>Bar</code> and <code>Save as Image</code> work the same way as mentioned before.</li>
+</ul>
+</li>
+</ul>
+<p><a name="Real_Time"></a>  </p>
+<hr />
+<h2 id="monitoring">Monitoring</h2>
+<h3 id="real-time">Real Time</h3>
+<ul>
+<li>If you have not set up any monitoring or alerts, click on the blue <code>Set up now</code> button. You will then be taken to the <code>Notification</code> page.</li>
+<li>Continue this part after you have configured your settings in <code>Notificaiton</code>.
+    <img src="../../../img/MoBagel_Dashboard/Real_time_set_up.png" width="800"> </li>
+<li>All changes from your device reports will show on screen in real time, coming from the right.
+    <img src="../../../img/MoBagel_Dashboard/Real_Time.gif" width="800"></li>
+</ul>
+<p><a name="Notification"></a>  </p>
+<hr />
+<h3 id="notification">Notification</h3>
+<ul>
+<li>
+<p>Click on <code>Configure Notification</code> to set up monitoring for your product. 
+<img src="../../../img/MoBagel_Dashboard/Notifications_start.png" width="800"></p>
+</li>
+<li>
+<p>Current Notification Method</p>
+<ul>
+<li>Your currnet method of notification is shown here.
+<img src="../../../img/MoBagel_Dashboard/Notifications_empty_1.png" width="800"></li>
+</ul>
+</li>
+<li>
+<p>Configure Method</p>
+<ul>
+<li>Your currnet method of notification is shown here.
+<img src="../../../img/MoBagel_Dashboard/Notifications_empty_2.png" width="800"></li>
+</ul>
+</li>
+<li>
+<p>Configure Normal Ranges</p>
+<ul>
+<li>If you have not set up <code>Device Settings</code> you will find nothing here.
+<img src="../../../img/MoBagel_Dashboard/Notifications_empty_000.png" width="800"></li>
+<li>Configure your normal ranges here by clicking on the <code>Edit</code> button. If your report values exceed the ranges, you will receive a notification.
+<img src="../../../img/MoBagel_Dashboard/Configure_Normal_Ranges.gif" width="800"></li>
+</ul>
+</li>
+</ul>
+<p><a name="Recommendations"></a>      </p>
+<hr />
+<h2 id="prediction">Prediction</h2>
+<h3 id="recommendations">Recommendations</h3>
+<hr />
+<ul>
+<li>
+<p>On the top of the page, you can decide the frequency of the data and the time window you would like to observerve.
+<img src="../../../img/MoBagel_Dashboard/Recommendations_none.gif" width="800"></p>
+<hr />
+<ul>
+<li>The <code>History</code>(Red Line) and <code>Prediction</code>(Dotted Line) of your report data will be shown here.
+<img src="../../../img/MoBagel_Dashboard/Recommendations_all.png" width="800"></li>
+</ul>
+<hr />
+<ul>
+<li>Click on <code>Prediction</code> to hide <code>Prediction</code>.
+<img src="../../../img/MoBagel_Dashboard/Recommendations_hide_prediction.png" width="800"> </li>
+</ul>
+<hr />
+<ul>
+<li>Click on <code>History</code> to hide <code>History</code>.
+<img src="../../../img/MoBagel_Dashboard/Recommendations_hide_history.png" width="800"></li>
+</ul>
+<hr />
+<ul>
+<li>Suggestions for various actions will be listed on the right hand side.
+<img src="../../../img/MoBagel_Dashboard/Recommendations_suggestions.png" width="800"></li>
+</ul>
+</li>
+</ul>
+<!--
+
+----
+## Configuration
+
+* Product Settings
+    * Device Settings 
+    * Report Settings 
+    * Delete Product
+* Device Management
+    * Device Summary 
+    * Device List 
+* Data Setup
+    * Register Sample Device 
+    * Send Sample Report 
+* Docs
+--></div>
+        
+    </div>
+
+    <footer class="col-md-12 text-center">
+        <hr>
+        <p>
+        <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p></small>
+    </footer>
+
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+    var base_url = '..';
+    </script>
+    <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+    <script src="../js/base.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        From here you can search these documents. Enter your search terms below.
+                    </p>
+                    <form role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                        </div>
+                    </form>
+                    <div id="mkdocs-search-results"></div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,13 @@
+site_name: MoBagel Docs
+site_description: MoBagel API Documentation
+docs_dir: mkdocs-sb
+site_favicon: favicon.png
+extra_css: [extra.css]
+theme_dir: cinder
+site_dir: site-sb
+google_analytics: ['UA-70490559-1', 'mobagel.com']
+# theme: united
+
+
+pages: 
+- Home: index.md
