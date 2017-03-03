@@ -1,0 +1,24 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "MoBagel Dashboard\n\n\n\n\nIntroduction\n\n\nWelcome to the \nMoBagel Dashboard\n, a snapshot of your devices for easy tracking and analysis.  \n\n\nIn this tutorial, we will guide you through how to upload data to the MoBagel Dashboard.\n\n\n\n\nUploading your data\n\n\nWith the \nMoBagel data uploading tool\n, you can easily upload your .csv data to process on the MoBagel Dashboard.\n\n\n\n\nType in a name for your product.  \n\n\n \n\n\n\n\nClick on continue.  \n\n\n \n\n\n\n\nFind the \nProduct Key\n under Product Settings.  \n\n\n \n\n\n\n\nSet up your \nReport Settings\n under Product settings.  \n\n\n \n\n\n\n\nCopy the \nProduct Key\n.  \n\n\n \n\n\n\n\nOpen the MoBagel data uploading tool.  \n\n\n \n\n\n\n\nFind the .csv file you would to upload.  \n\n\n \n\n\n\n\nHere you can see what your data looks like.  \n\n\n \n\n\n\n\nHere you can see all the data types of your data.  \n\n\n\n\n\n\nYou will need to come here and Copy the \nProduct Key\n if you haven't yet.   \n\n\n \n\n\n\n\nOn the third tab \nAnalyze\n you will find a place to fill in the \nProduct Key\n.  \n\n\n \n\n\n\n\nPaste the \nProduct Key\n.  \n\n\n \n\n\n\n\nClick on Submit and upload.  \n\n\n \n\n\n\n\nReturn to the dashboard and find your new device under \nDevice Management\n.  \n\n\n \n\n\n\n\nClick on the device and you will find that all your data has been uploaded.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#mobagel-dashboard", 
+            "text": "", 
+            "title": "MoBagel Dashboard"
+        }, 
+        {
+            "location": "/#introduction", 
+            "text": "Welcome to the  MoBagel Dashboard , a snapshot of your devices for easy tracking and analysis.    In this tutorial, we will guide you through how to upload data to the MoBagel Dashboard.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/#uploading-your-data", 
+            "text": "With the  MoBagel data uploading tool , you can easily upload your .csv data to process on the MoBagel Dashboard.   Type in a name for your product.        Click on continue.        Find the  Product Key  under Product Settings.        Set up your  Report Settings  under Product settings.        Copy the  Product Key .        Open the MoBagel data uploading tool.        Find the .csv file you would to upload.        Here you can see what your data looks like.        Here you can see all the data types of your data.      You will need to come here and Copy the  Product Key  if you haven't yet.         On the third tab  Analyze  you will find a place to fill in the  Product Key .        Paste the  Product Key .        Click on Submit and upload.        Return to the dashboard and find your new device under  Device Management .        Click on the device and you will find that all your data has been uploaded.", 
+            "title": "Uploading your data"
+        }
+    ]
+}

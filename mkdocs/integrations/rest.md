@@ -2,22 +2,64 @@
 
 This section covers the basics of the MoBagel API and how you can utilize MoBagel's platform to improve your IoT devices.
 
+---
+
+# Preparation
+
+# Creating an account
+If you do not have an account, please create an account [here](https://app.mobagel.com/login). After you create an account, you will be directed to the dashboard.
+<img src="../../../img/MoBagel_Getting_Started/Sign_up.png" width="800">  
+
+---
+# Creating a new product
+To use MoBagel, you first have to create a `product`, which is essentially a group of same `device`. You will be prompted to create a new product when you first enter the dashboard.
+
+<img src="../../../img/MoBagel_Getting_Started/Enter_Product_name.png" width="800">  
+
+After you create a `product`, you can go to **_Configuration -> Product Settings_** Info to retrieve your `product_key`, which will be used to create `device` later on.
+
+<img src="../../../img/MoBagel_Getting_Started/Product_key.png" width="800">  
+
+---
+# Adding custom properties
+
+<img src="../../../img/MoBagel_Getting_Started/Config_settings.png" width="200">   
+In **_Product Settings_** under **_Configuration_**, you can add custom properties to your product.   
+Custom properties should have the following requirements:   
+
+<img src="../../../img/MoBagel_Getting_Started/Device_Settings.png" width="800">   
+
+* **ID**:   
+Property ID will always begin with `d_` (for numbers) or `s_` (for strings) to indicate that it is a custom property, this will be automatically asigned when you select a `Type`. Property IDs are unique and cannot repeat with itself.
+
+* **Name**:   
+You can set a custom name for each property. For example, if your ID is `d_012421`, you can set the name as `temperature`. The modules in the dashboard will display your property name instead of your property ID.
+
+* **Type**:   
+There are two types of properties: `number` and `string`.
+
+**_Please note that you must configure your properties in your configuration before you send your first customized report._**
+
 ----
+
 # API List
 
 ####[`Register API`](#Register)
 * Register a new device for your product.
 
 ####[`Report API`](#Report)
-* Send a report.
+* Send a report 
 
 
 <a name="Register"></a>
 
 ----
+
 # Register API
 This API is used to register a new `Device` for your `Product`.  
 You can simply use this API to generate mass devices to do mass deployment. However, your devices are limited. Please use this API carefully to avoid reaching the limitation of your account.
+
+----
 
 ### Request
 + Method: `POST`
@@ -31,53 +73,42 @@ You can simply use this API to generate mass devices to do mass deployment. Howe
     * Fill in `Device Attribute` you have set on the dashboard. (Under `Device Settings` in **_Configeration -> Product Settings_**)  
       `
       {
-        "c_temp": "1",
-        "c_motion": "2",
+        "d_numeric": 11,
+        "s_category": "11"
       }
       `  
-      (This serves as an example, please use the attributes you have manaually set.)
 
+----
 
 ### Response
-+ Success response:
-    * `HTTP status code`: 200
-    * `Body`:
-```
-{
-  "_id": "An id will be generated automatically.",
-  "key": "A key will be genereated here for each new device.",
-  "productId": "A productId will be generated automatically.",
-  "createdAt": "A timestamp of the time created.",
-  "updatedAt": "A timestamp of the time updated.",
-  "activatedAt": "0001-01-01T00:00:00Z",
-  "properties": {
-    "c_temp": "1",
-    "c_motion": "2",
-  }
-}
-```
-<!---
 
-+ Fail response:
-    * `HTTP status code`: not 200
++ Successful response example:
+    * `HTTP status code`: 201
     * `Body`:
 ```
 {
-  "errors": [
-    {
-      "title": "{ERROR_TITLE}",
-      "detail": "{ERROR_DETAIL}"
-    }
-  ]
+  "id": "5881c64f0136eef58c4ed83d",
+  "key": "e189a3a2dc8212da87c95043c26204e8efd98f2c07b66a6f126d3ca58b2cafec"
 }
 ```
---->
+
++ Failed response example:
+    * `HTTP status code`: any other code than 201
+    * `Body`:
+```
+{
+  "msg": "Key: c7aa3cff154001ec458fc9eb51f1a377b27a7348ae302bdc84098e8b9946c58 does not validate as length(64|64);"
+}
+```
 
 <a name="Report"></a> 
 
 ----
-### Report API
-This API is used to report the state of your devices. The report content can be customised to what you want. If you would like to report the temperature of your device, just use add `c_` as the prefix.
+
+# Report API
+This API is used to report the state of your devices. The content can be customised, with custom properties beginning with `d_` (for numbers) or `s_` (for strings) to indicate that it is a string.
+
+----
 
 ### Request
 + Method: `POST`
@@ -86,43 +117,31 @@ This API is used to report the state of your devices. The report content can be 
     * `Device-Key`: The Device Key of a created device. (Under `Device List` in **_Configeration -> Device Management_**)
 + Body:
 
-| Parameter        | Type          | Description                       |
-| :--:             | :-----:       | :----                             |
-| state            | string        | State of device                   |
-| c_xxx            | string/number | Custom parameters must start with prefix `c_` |
+```
+{
+  "d_numeric": 11,
+  "s_category": "11"
+}
+```
 
-An example would look like this. 
-      `
-      {
-        "state": "Normal",
-        "c_temp": "99",
-        "c_motion": "100"
-      }
-      `
-
+----
 
 ### Response
-+ Success response:
-    * Returns an id string.
++ Successful response example:
+    * Returns an `id string`.
 
-<!---
-Example: Report basic device  
-
-```http
+```
 {
-    "state": "ERROR"
+"id": "5881d17e0136eef58c4ee212"
 }
 ```
 
-Example: Report custom device
-```http
++ Failed response example:
+    * `HTTP status code`: any other code than 201
+    * `Body`:
+```
 {
-    "state": "ERROR",
-    "c_id": 5512,
-    "c_temperature": 31.5,
-    "c_t-unit": "°C",
-    "c_pressure": 1.12,
-    "c_p-unit": "atm"
+  "msg": "No device key in headers."
 }
 ```
---->
+

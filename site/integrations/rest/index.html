@@ -90,7 +90,7 @@
                         
                             
 <li >
-    <a href="../..">Connect To MoBagel</a>
+    <a href="../..">Welcome</a>
 </li>
 
                         
@@ -106,7 +106,7 @@
                 
                 
                     <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Integrations <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SDKs <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
@@ -135,7 +135,7 @@
                         
                             
 <li >
-    <a href="../ios_swift/">iOS Swift</a>
+    <a href="../ios_objective_c/">iOS Objective C</a>
 </li>
 
                         
@@ -199,6 +199,18 @@
         <li class="first-level active"><a href="#rest-api">REST API</a></li>
         
     
+        <li class="first-level "><a href="#preparation">Preparation</a></li>
+        
+    
+        <li class="first-level "><a href="#creating-an-account">Creating an account</a></li>
+        
+    
+        <li class="first-level "><a href="#creating-a-new-product">Creating a new product</a></li>
+        
+    
+        <li class="first-level "><a href="#adding-custom-properties">Adding custom properties</a></li>
+        
+    
         <li class="first-level "><a href="#api-list">API List</a></li>
         
             <li class="second-level"><a href="#register-api">Register API</a></li>
@@ -216,8 +228,8 @@
             <li class="second-level"><a href="#response">Response</a></li>
             
         
-            <li class="second-level"><a href="#report-api_1">Report API</a></li>
-            
+    
+        <li class="first-level "><a href="#report-api_1">Report API</a></li>
         
             <li class="second-level"><a href="#request_1">Request</a></li>
             
@@ -233,6 +245,38 @@
 <h1 id="rest-api">REST API</h1>
 <p>This section covers the basics of the MoBagel API and how you can utilize MoBagel's platform to improve your IoT devices.</p>
 <hr />
+<h1 id="preparation">Preparation</h1>
+<h1 id="creating-an-account">Creating an account</h1>
+<p>If you do not have an account, please create an account <a href="https://app.mobagel.com/login">here</a>. After you create an account, you will be directed to the dashboard.
+<img src="../../../img/MoBagel_Getting_Started/Sign_up.png" width="800">  </p>
+<hr />
+<h1 id="creating-a-new-product">Creating a new product</h1>
+<p>To use MoBagel, you first have to create a <code>product</code>, which is essentially a group of same <code>device</code>. You will be prompted to create a new product when you first enter the dashboard.</p>
+<p><img src="../../../img/MoBagel_Getting_Started/Enter_Product_name.png" width="800">  </p>
+<p>After you create a <code>product</code>, you can go to <strong><em>Configuration -&gt; Product Settings</em></strong> Info to retrieve your <code>product_key</code>, which will be used to create <code>device</code> later on.</p>
+<p><img src="../../../img/MoBagel_Getting_Started/Product_key.png" width="800">  </p>
+<hr />
+<h1 id="adding-custom-properties">Adding custom properties</h1>
+<p><img src="../../../img/MoBagel_Getting_Started/Config_settings.png" width="200"> <br />
+In <strong><em>Product Settings</em></strong> under <strong><em>Configuration</em></strong>, you can add custom properties to your product. <br />
+Custom properties should have the following requirements:   </p>
+<p><img src="../../../img/MoBagel_Getting_Started/Device_Settings.png" width="800">   </p>
+<ul>
+<li>
+<p><strong>ID</strong>: <br />
+Property ID will always begin with <code>d_</code> (for numbers) or <code>s_</code> (for strings) to indicate that it is a custom property, this will be automatically asigned when you select a <code>Type</code>. Property IDs are unique and cannot repeat with itself.</p>
+</li>
+<li>
+<p><strong>Name</strong>: <br />
+You can set a custom name for each property. For example, if your ID is <code>d_012421</code>, you can set the name as <code>temperature</code>. The modules in the dashboard will display your property name instead of your property ID.</p>
+</li>
+<li>
+<p><strong>Type</strong>: <br />
+There are two types of properties: <code>number</code> and <code>string</code>.</p>
+</li>
+</ul>
+<p><strong><em>Please note that you must configure your properties in your configuration before you send your first customized report.</em></strong></p>
+<hr />
 <h1 id="api-list">API List</h1>
 <h4 id="register-api"><a href="#Register"><code>Register API</code></a></h4>
 <ul>
@@ -240,13 +284,14 @@
 </ul>
 <h4 id="report-api"><a href="#Report"><code>Report API</code></a></h4>
 <ul>
-<li>Send a report.</li>
+<li>Send a report </li>
 </ul>
 <p><a name="Register"></a></p>
 <hr />
 <h1 id="register-api_1">Register API</h1>
 <p>This API is used to register a new <code>Device</code> for your <code>Product</code>.<br />
 You can simply use this API to generate mass devices to do mass deployment. However, your devices are limited. Please use this API carefully to avoid reaching the limitation of your account.</p>
+<hr />
 <h3 id="request">Request</h3>
 <ul>
 <li>Method: <code>POST</code></li>
@@ -261,49 +306,44 @@ You can simply use this API to generate mass devices to do mass deployment. Howe
 <code>{}</code></li>
 <li>Fill in <code>Device Attribute</code> you have set on the dashboard. (Under <code>Device Settings</code> in <strong><em>Configeration -&gt; Product Settings</em></strong>)<br />
 <code>{
-    "c_temp": "1",
-    "c_motion": "2",
-  }</code><br />
-  (This serves as an example, please use the attributes you have manaually set.)</li>
+    "d_numeric": 11,
+    "s_category": "11"
+  }</code>  </li>
 </ul>
 </li>
 </ul>
+<hr />
 <h3 id="response">Response</h3>
 <ul>
-<li>Success response:<ul>
-<li><code>HTTP status code</code>: 200</li>
+<li>Successful response example:<ul>
+<li><code>HTTP status code</code>: 201</li>
 <li><code>Body</code>:</li>
 </ul>
 </li>
 </ul>
 <pre><code>{
-  &quot;_id&quot;: &quot;An id will be generated automatically.&quot;,
-  &quot;key&quot;: &quot;A key will be genereated here for each new device.&quot;,
-  &quot;productId&quot;: &quot;A productId will be generated automatically.&quot;,
-  &quot;createdAt&quot;: &quot;A timestamp of the time created.&quot;,
-  &quot;updatedAt&quot;: &quot;A timestamp of the time updated.&quot;,
-  &quot;activatedAt&quot;: &quot;0001-01-01T00:00:00Z&quot;,
-  &quot;properties&quot;: {
-    &quot;c_temp&quot;: &quot;1&quot;,
-    &quot;c_motion&quot;: &quot;2&quot;,
-  }
+  &quot;id&quot;: &quot;5881c64f0136eef58c4ed83d&quot;,
+  &quot;key&quot;: &quot;e189a3a2dc8212da87c95043c26204e8efd98f2c07b66a6f126d3ca58b2cafec&quot;
 }
 </code></pre>
 
-<!---
-
-+ Fail response:
-    * `HTTP status code`: not 200
-    * `Body`:
-
-wzxhzdk:1
-
---->
+<ul>
+<li>Failed response example:<ul>
+<li><code>HTTP status code</code>: any other code than 201</li>
+<li><code>Body</code>:</li>
+</ul>
+</li>
+</ul>
+<pre><code>{
+  &quot;msg&quot;: &quot;Key: c7aa3cff154001ec458fc9eb51f1a377b27a7348ae302bdc84098e8b9946c58 does not validate as length(64|64);&quot;
+}
+</code></pre>
 
 <p><a name="Report"></a> </p>
 <hr />
-<h3 id="report-api_1">Report API</h3>
-<p>This API is used to report the state of your devices. The report content can be customised to what you want. If you would like to report the temperature of your device, just use add <code>c_</code> as the prefix.</p>
+<h1 id="report-api_1">Report API</h1>
+<p>This API is used to report the state of your devices. The content can be customised, with custom properties beginning with <code>d_</code> (for numbers) or <code>s_</code> (for strings) to indicate that it is a string.</p>
+<hr />
 <h3 id="request_1">Request</h3>
 <ul>
 <li>Method: <code>POST</code></li>
@@ -314,51 +354,36 @@ You can simply use this API to generate mass devices to do mass deployment. Howe
 </li>
 <li>Body:</li>
 </ul>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>state</td>
-<td>string</td>
-<td>State of device</td>
-</tr>
-<tr>
-<td>c_xxx</td>
-<td>string/number</td>
-<td>Custom parameters must start with prefix <code>c_</code></td>
-</tr>
-</tbody>
-</table>
-<p>An example would look like this. 
-      <code>{
-        "state": "Normal",
-        "c_temp": "99",
-        "c_motion": "100"
-      }</code></p>
+<pre><code>{
+  &quot;d_numeric&quot;: 11,
+  &quot;s_category&quot;: &quot;11&quot;
+}
+</code></pre>
+
+<hr />
 <h3 id="response_1">Response</h3>
 <ul>
-<li>Success response:<ul>
-<li>Returns an id string.</li>
+<li>Successful response example:<ul>
+<li>Returns an <code>id string</code>.</li>
 </ul>
 </li>
 </ul>
-<!---
-Example: Report basic device
+<pre><code>{
+&quot;id&quot;: &quot;5881d17e0136eef58c4ee212&quot;
+}
+</code></pre>
 
-wzxhzdk:2
-
-
-Example: Report custom device
-
-wzxhzdk:3
-
----></div>
+<ul>
+<li>Failed response example:<ul>
+<li><code>HTTP status code</code>: any other code than 201</li>
+<li><code>Body</code>:</li>
+</ul>
+</li>
+</ul>
+<pre><code>{
+  &quot;msg&quot;: &quot;No device key in headers.&quot;
+}
+</code></pre></div>
         
     </div>
 

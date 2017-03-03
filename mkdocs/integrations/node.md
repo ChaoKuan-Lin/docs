@@ -7,7 +7,7 @@ Use MoBagel Node SDK to quickly install MoBagel to your device(s). MoBagel Node 
 # Preparation
 
 # Creating an account
-If you do not have an account, please create an account [here](https://app.mobagel.com/signup). After you create an account, you will be directed to the dashboard.
+If you do not have an account, please create an account [here](https://app.mobagel.com/login). After you create an account, you will be directed to the dashboard.
 <img src="../../../img/MoBagel_Getting_Started/Sign_up.png" width="800">  
 
 ---
@@ -97,14 +97,12 @@ In your device application, you will need to prepare your report before sending 
 ## Sending first report
 ```
 var mobagel = require('mobagel-node-sdk');
-var product_key = "";
-var device_key = "YOUR_DEVICE_KEY";
-var c = mobagel.client(product_key, device_key);
+var c = mobagel.client();
+c.device_key = "YOUR_PRODUCT_KEY";
 
 c.sendReport({
-    state: 'normal',
     s_category: 'NodeSDK',
-    d_numeric: 999
+    d_numeric: 100
 }, function(err, res, body) {
     if (err) throw err;
     if (Math.floor(res.statusCode / 100) === 2) {
