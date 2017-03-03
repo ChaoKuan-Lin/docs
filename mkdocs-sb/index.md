@@ -27,12 +27,12 @@ Find the `Product Key` under Product Settings.
 <img src="../img/SB_Dashboard/3.png" width="800"> 
 
 ---
-Set up your `Report Settings` under Product settings.    
-<img src="../img/SB_Dashboard/4.png" width="800"> 
-
----
 Copy the `Product Key`.    
 <img src="../img/SB_Dashboard/5.png" width="800"> 
+
+---
+Set up your `Report Settings` under Product settings.    
+<img src="../img/SB_Dashboard/4.png" width="800"> 
 
 ---
 Open the MoBagel data uploading tool.    
@@ -188,79 +188,6 @@ Listed below follows the order of the left menu on the MoBagel dashboard, skip t
 
 <a name="Segmentation"></a>  
 
-----
-
-### Segmentation
-* `Condition`  
-    
-    ----
-    * Create a segment using filters, for a specific timeframe or property states
-    <img src="../img/MoBagel_Dashboard/Segmentation_none.gif" width="800">
-    ----
-    * Click on `Add rule` on the right hand side
-    <img src="../img/MoBagel_Dashboard/Segmentation_condition.png" width="800">
-    ----
-    * Click on `Add group` for more complex filtering
-    * Select the properties you would like to filter with `AND` / `OR`.
-    <img src="../img/MoBagel_Dashboard/Segmentation_final.png" width="800">
-    
-    * e.g. "state equal normal" `AND` "temperature_C is greater than 30” `AND` ("light_pct is null" `OR` “period_s is not null”)
-
-----
-* `Series`
-    
-    ----
-    * Analyse the segment by comparing different series.
-    <img src="../img/MoBagel_Dashboard/segmentation_series_1.png" width="800">
-    ---- 
-    * Click `+Add` to create a new series.
-    <img src="../img/MoBagel_Dashboard/segmentation_series_2.png" width="800">
-    ----
-    * Add as many series you would like to compare.
-    <img src="../img/MoBagel_Dashboard/segmentation_series_3.png" width="800">
-    * e.g. We would like to see the a series that shows “state equal normal” and compare this to another series “temperature_C greater 33” on the same graph
-
-----
-* `Select Y-Axis`
-    
-    ----
-    * Configure your result to display the number of devices, number of reports, or property with respect to time.
-    <img src="../img/MoBagel_Dashboard/select_y_1.png" width="800">
-    
-    ----
-    * e.g. Here we choose `Device`.
-    <img src="../img/MoBagel_Dashboard/select_y_2.png" width="800">
-
-
-----
-* `Select Chart Type`
-    
-    ----
-    * Line graph is set as default.
-    <img src="../img/MoBagel_Dashboard/select_chart_type.png" width="800">  
-
-----    
-* `Result`
-    
-    ----
-    * Scroll to the bottom of the page to generate results.
-    <img src="../img/MoBagel_Dashboard/result_0.png" width="800">  
-    ----
-    * Set the time frame on the right hand side
-    <img src="../img/MoBagel_Dashboard/result_dates.png" width="800"> 
-    ----
-    * e.g. 12/01/2015 - 12/03/2016
-    <img src="../img/MoBagel_Dashboard/result_dates_custom.png" width="800"> 
-    ----
-    * Click `Generate`, this will need to be done every time there are changes made to the filters above.
-    <img src="../img/MoBagel_Dashboard/result_generate.gif" width="800"> 
-    ----
-    * Click on the name of the series to hide/show it on the graph.
-    <img src="../img/MoBagel_Dashboard/result_result_hide.gif" width="800"> 
-    ----
-    * `Zoom`, `Reset`, `Raw Data`, `Line`, `Bar` and `Save as Image` work the same way as mentioned before.
-
-<a name="Real_Time"></a>  
 
 ----
 ## Monitoring
